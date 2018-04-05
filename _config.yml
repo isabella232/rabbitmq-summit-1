@@ -1,0 +1,29 @@
+# Site settings
+title: RabbitMQ summit
+email: daniel.b.marklund@gmail.com
+name: RabbitMQ Summit
+description: >
+  The first RabbitMQ Summit brings together RabbitMQ users and developers from around the world.
+  Learn from speakers and keynotes on what’s happening in and around RabbitMQ.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "localhost:4000" # add your website url or 'localhost:3000'
+
+twitter:
+  username: danielmarklund
+github_username:  danielmarklund
+author:
+    name: Daniel Marklund
+    email: daniel@nofilter.nu
+
+# Other
+highlighter: rouge # or rouge or null
+
+# Build settings
+markdown: kramdown
+sass:
+    sass_dir: _sass
+    sourcemap: true
+    style: compressed
+pliugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
