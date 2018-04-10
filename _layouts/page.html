@@ -2,9 +2,10 @@
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %}
+    <div id="wrapper" class="bg-dark">
       {{ content }}
-    {% include footer.html %}
+      {% include footer.html %}
+    </div>
     {% include scripts.html %}
   </body>
 </html>
