@@ -215,7 +215,7 @@ $easing-default: linear;
 	$list:();
 	@each $prop in $properties {
 		$str: #{$prop} #{$duration} #{$easing};
-		$list: join($list, #{$str}, comma);
+		$list: join($list, unquote("#{$str}"), comma);
 	}
 	transition: $list;
 }
