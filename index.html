@@ -60,8 +60,19 @@ image: /img/og-frontpage.jpg
 										</label>
 									</div>
 								</div>
+                <div class="text-sm text-info">
+                  <p class="editable mb-0">
+                    <small><i class="fa fa-check-square-o" aria-hidden="true"></i> I consent that my e-mail will be collected for information about RabbitMQ conferences.</small>
+                  </p>
+                </div>
 							</form>
-              <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+              <div class="check-email" style="display: none;">
+                <p class="mb-2 pl-3 text-sm"><span class="editable up-to-date">Please check your inbox to confirm your subscription.</span> <span class="emojis">💪✉️</span></p>
+              </div>
+              <div class="thank-you" style="display: none;">
+                <p class="mb-2 pl-3 text-sm"><span class="editable up-to-date">Awesome! We will get back to you when we have those tickets ready.</span> <span class="emojis">🐰👍</span></p>
+              </div>
+
 						</div>
 					</div>
 				</div>
@@ -95,9 +106,9 @@ image: /img/og-frontpage.jpg
                   <li class="editable">
                     Short bio&nbsp;</li>
                 </ul>
-                <p class="editable">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScy2S7fAPAD72x4ENc7PvibJ9Hs6UPNRG_mKs29EAp6GW0eyA/viewform?usp=sf_link">Submit your application</a>
-                </p>
+                <label class="button-lines-wrap mt-4">
+                  <a class="call-for-talks btn btn-primary text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLScy2S7fAPAD72x4ENc7PvibJ9Hs6UPNRG_mKs29EAp6GW0eyA/viewform?usp=sf_link" target="_blank">Submit your application</a>
+								</label>
 							</div>
 						</div>
             <div class="col-12 col-md-6">
@@ -271,11 +282,11 @@ image: /img/og-frontpage.jpg
 					</div>
 					<div class="row justify-content-center mb-3 mb-lg-5 mb-xl-6">
 						<div class="col-12 col-lg-8">
-							<form action="#" class="form">
+							<form id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1ABE67317EED1425F4DA1D22811AE14F233F38252D31218C83AEA852BBBB13EB2BE2D0771B1F041557C12A584799C4EB88" class="form text-info js-cm-form">
 								<div class="form-row">
 									<div class="col-12 col-md-8 mb-3 mb-md-0">
 										<label class="d-block input-label pr-md-3">
-											<input type="email" class="form-control cyan-input" placeholder="email" />
+											<input type="email" id="fieldEmail" name="cm-zdyhrt-zdyhrt" class="form-control cyan-input js-cm-email-input" placeholder="email"  required/>
 										</label>
 									</div>
 									<div class="col-12 col-md-4">
@@ -284,11 +295,12 @@ image: /img/og-frontpage.jpg
 											<span class="lines"></span>
 											<span class="lines"></span>
 											<span class="lines"></span>
-											<button type="submit" class="btn btn-secondary w-100 text-uppercase text-dark">subscribe</button>
+											<button type="submit" class="btn btn-secondary w-100 text-uppercase text-dark js-cm-submit-button">subscribe</button>
 										</label>
 									</div>
 								</div>
 							</form>
+              <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 						</div>
 					</div>
 				</div>

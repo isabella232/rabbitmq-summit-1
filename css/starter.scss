@@ -640,3 +640,18 @@ address{
 .text-info .arrow {
 	vertical-align: sub;
 }
+
+.call-for-talks {
+	font-family: 'space-mono-bold';
+	font-size: 1.5rem;
+}
+.thank-you, .check-email {
+	height: 135px;
+	.up-to-date {
+		line-height: 135px;
+	}
+}
+.emojis {
+	vertical-align: middle;
+	font-size: 36px;
+}
