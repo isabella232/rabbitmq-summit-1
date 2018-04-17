@@ -631,3 +631,12 @@ address{
 		margin-right: .5rem;
 	}
 }
+
+.up-to-date, .text-info .arrow  {
+	font-family: "roboto-medium",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	color: $pink;
+}
+
+.text-info .arrow {
+	vertical-align: sub;
+}
