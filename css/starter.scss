@@ -94,6 +94,7 @@ h2{
 	}
 }
 h3{
+	font-size: 2.75rem;
 	@include media(">=widescreen") {
 		font-size: 3rem;
 	}
@@ -321,7 +322,7 @@ address{
 	}
 }
 .logo-wrap,
-.head-wrap{
+.head-wrap {
 	background-color: rgba($deep-purple,0.8);
 	position: relative;
 	&:after {
@@ -632,6 +633,11 @@ address{
 	font-family: 'space-mono-bold';
 	font-size: 1.5rem;
 }
+
+.space-mono {
+	font-family: 'space-mono-bold';
+}
+
 .thank-you, .check-email {
 	height: 135px;
 	.up-to-date {
@@ -644,4 +650,85 @@ address{
 }
 .footer-logo {
 	max-width: 200px;
+}
+
+#subForm input[type="email"] {
+	border-width: 2px;
+	&:focus {
+		border-color: $pink;
+	}
+}
+.check-me label {
+	font-size: 1rem;
+}
+
+.email-address {
+	font-size: 1.5rem;
+	word-break: break-all;
+
+}
+
+
+@include media-breakpoint-down(md) {
+	.top-hero {
+		background-color: rgba($deep-purple,0.8);
+		position: relative;
+		transform: skewX(-10deg);
+		>*{
+			transform: skewX(10deg);
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			left: -90%;
+			height: 100%;
+			background-color: rgba($white,0.02);
+			transform: skewX(25deg);
+		}
+		.logo-wrap, .head-wrap {
+			background-color: transparent;
+			&:after {
+				display: none;
+			}
+		}
+		.head-wrap {
+			padding-top: 0;
+		}
+	}
+
+	.py-3 {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	.call-for-talks {
+		font-size: 1.25rem;
+	}
+
+	.skew-img-section .skew-img-row:nth-child(even) .img-event-wrap {
+		padding-left: 0;
+		padding-right: 0;
+		.skew-box {
+			transform: skewX(0) translateX(0);
+			>*{
+				transform: skewX(0) translateX(0);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.py-lg-12 {
+		padding-top: 13rem !important;
+		padding-bottom: 13rem !important;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.email-address {
+		font-size: 1.875rem;
+	}
 }
