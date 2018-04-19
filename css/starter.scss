@@ -668,6 +668,18 @@ address{
 
 }
 
+@include media-breakpoint-down(sm) {
+	h3 {
+		font-size: 2rem;
+	}
+	main .top-hero, .gallery-item .skew-box {
+		transform: skewX(0);
+		>*{
+			transform: skewX(0);
+		}
+	}
+}
+
 
 @include media-breakpoint-down(md) {
 	.top-hero {
@@ -706,6 +718,7 @@ address{
 
 	.call-for-talks {
 		font-size: 1.25rem;
+		white-space: normal;
 	}
 
 	.skew-img-section .skew-img-row:nth-child(even) .img-event-wrap {
