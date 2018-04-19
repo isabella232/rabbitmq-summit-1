@@ -639,9 +639,9 @@ address{
 }
 
 .thank-you, .check-email {
-	height: 135px;
+	min-height: 135px;
 	.up-to-date {
-		line-height: 135px;
+		vertical-align: middle;
 	}
 }
 .emojis {
