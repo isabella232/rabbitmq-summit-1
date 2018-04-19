@@ -1,6 +1,6 @@
 # Site settings
 title: RabbitMQ summit
-email: daniel.b.marklund@gmail.com
+email: info@rabbitmqsummit.com
 name: RabbitMQ Summit
 description: >
   The first RabbitMQ Summit brings together RabbitMQ users and developers from around the world.
@@ -9,11 +9,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "localhost:4000" # add your website url or 'localhost:3000'
 
 twitter:
-  username: danielmarklund
-github_username:  danielmarklund
+  username: RabbitMQSummit
 author:
-    name: Daniel Marklund
-    email: daniel@nofilter.nu
+    name: RabbitMQ Summit Team
+    email: info@rabbitmqsummit.com
 
 # Other
 highlighter: rouge # or rouge or null
