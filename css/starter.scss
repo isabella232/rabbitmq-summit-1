@@ -747,3 +747,17 @@ address{
 		font-size: 1.875rem;
 	}
 }
+
+footer .footer-alt {
+	background-color: rgba(0,0,0,.2);
+	color: $gray-100;
+	opacity: .8;
+	a {
+		color: $gray-100;
+		text-decoration: underline;
+		&:hover {
+			opacity: .8;
+			text-decoration: none;
+		}
+	}
+}
