@@ -6,7 +6,7 @@ description: >
   The first RabbitMQ Summit brings together RabbitMQ users and developers from around the world.
   Learn from speakers and keynotes on what’s happening in and around RabbitMQ.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://rabbitmqsummit.com" # add your website url or 'localhost:3000'
+url: "https://rabbitmqsummit.com" # add your website url or 'localhost:3000'
 
 twitter:
   username: RabbitMQSummit
