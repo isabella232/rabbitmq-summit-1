@@ -173,9 +173,13 @@ button[type="submit"]{
 	@include media(">=desktop") {
 		min-width: 260px;
 	}
-	>button{
+	&:hover {
+		>.lines {
+			display: block;
+		}
+	}
+	>button, >a.btn {
 		overflow: hidden;
-		white-space: pre-wrap;
 		max-height: 100px;
 		position: relative;
 		&:before {
@@ -192,6 +196,7 @@ button[type="submit"]{
 		}
 	}
 	>.lines{
+		display: none;
 		position: absolute;
 		z-index: 2;
 		height: 50px;
@@ -627,7 +632,7 @@ address{
 	vertical-align: sub;
 }
 
-.call-for-talks {
+.big-space-mono {
 	font-family: 'space-mono-bold';
 	font-size: 1.5rem;
 }
