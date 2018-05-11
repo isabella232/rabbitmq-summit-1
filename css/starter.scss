@@ -799,3 +799,21 @@ footer .footer-alt {
 		border-radius: 0;
 	}
 }
+
+.pink {
+	color: $pink;
+}
+
+.committee .media {
+	.img {
+		width: 100px;
+		height: 100px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-color: rgba(250,53,153,0.5);
+		background-blend-mode: multiply;
+	}
+	img {
+		max-width: 100px;
+	}
+}
