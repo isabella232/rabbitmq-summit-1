@@ -10,16 +10,31 @@
      location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){p[k]=v})
      return k?p[k]:p;
     }
+
+    var fnCloseNotification = function(e) {
+      $(".rs-notification").fadeOut(300);
+    }
+
+    $(".rs-close").click(function(){
+      fnCloseNotification();
+    });
     if (getSearchParams("registered") == 1) {
       $("#subForm").hide();
-      $(".check-email").show();
       $('.thank-you').hide();
+      $(".rs-notification-confirm").delay(1000).fadeIn(500);
+      setTimeout(function(){
+        fnCloseNotification();
+      },7000);
     }
     if (getSearchParams("registered") == 2) {
       $("#subForm").hide();
-      $(".check-email").hide();
+      $(".rs-notification-subscribed").delay(1000).fadeIn(500);
       $('.thank-you').show();
+      setTimeout(function(){
+        fnCloseNotification();
+      },7000);
     }
+
     var subFormBtn = $("#submit-fx");
     var subFormCheck = $("#default-check");
     subFormCheck.click(function() {

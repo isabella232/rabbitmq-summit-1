@@ -7,13 +7,32 @@ image: /img/og-frontpage.jpg
 ---
 
 <main id="main">
+  <div class="rs-notification rs-notification-confirm" style="display: none;">
+    <span class="float-right rs-close"><i class="fa fa-times"></i></span>
+    <div class="float-left">
+      <span class="emojis">✉️</span>
+    </div>
+    <p class="text-sm">
+      Please check your inbox to confirm your subscription.
+    </p>
+  </div>
+
+  <div class="rs-notification rs-notification-subscribed" style="display: none;">
+    <span class="float-right rs-close"><i class="fa fa-times"></i></span>
+    <div class="float-left">
+      <span class="emojis">👍</span>
+    </div>
+    <p class="text-sm">
+      Great! We will keep you in the loop via email. Stay tuned.
+    </p>
+  </div>
   <section class="bg-section pt-3 pt-lg-9 pb-3 pb-md-6" style="background-image: url(/img/bg-hero.png);">
     <div class="container">
       <div class="row align-items-center justify-content-center mb-4 mb-lg-2 top-hero">
         <div class="col-10 col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-0 text-center">
           <div class="logo-wrap skew-box">
             <div class="logo">
-              <a href="#" class="d-block pr-0 pr-md-4 text-center text-xl-left">
+              <a href="/" class="d-block pr-0 pr-md-4 text-center text-xl-left">
                 <img src="/img/logo.png" alt="RabbitMQ Summit 2018" />
               </a>
             </div>
@@ -32,7 +51,7 @@ image: /img/og-frontpage.jpg
           </div>
         </div>
       </div>
-      <div class="row justify-content-center mb-4 mt-5">
+      <div class="row justify-content-center mb-3 mt-5">
         <div class="col-12 col-lg-10">
           <div class="text-sm text-info mb-3">
             <p class="editable">
@@ -45,16 +64,50 @@ image: /img/og-frontpage.jpg
         </div>
       </div>
       <div class="row justify-content-center mb-5">
+        <div class="col-12 col-lg-10">
+          <form id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1ABE67317EED1425F4DA1D22811AE14F233F38252D31218C83AEA852BBBB13EB2BE2D0771B1F041557C12A584799C4EB88" class="form text-info js-cm-form pt-3">
+            <a name="subscribe"></a>
+            <p class="mb-1 pl-3 text-sm"><span class="editable up-to-date">Stay up-to-date about ticket sales and news</span></p>
+            <div class="form-check check-me ml-3 mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="default-check" required>
+              <label class="form-check-label" for="default-check">
+                I consent that my e-mail will be collected for information about RabbitMQ conferences.
+              </label>
+            </div>
+            <div class="form-row justify-content-center">
+              <div class="col-11 col-md-8 col-lg-7 col-xl-8 mb-3 mb-md-0">
+                <label class="d-block input-label pr-md-3">
+                  <input type="email" id="fieldEmail" name="cm-zdyhrt-zdyhrt" class="form-control js-cm-email-input" placeholder="email" required />
+                </label>
+              </div>
+              <div class="col-11 col-md-4 col-lg-5 col-xl-4">
+                <label class="button-lines-wrap" id="submit-fx">
+                  <span class="lines" style="display: none;"></span>
+                  <span class="lines" style="display: none;"></span>
+                  <span class="lines" style="display: none;"></span>
+                  <span class="lines" style="display: none;"></span>
+                  <button type="submit" class="btn btn-primary w-100 text-uppercase js-cm-submit-button">subscribe</button>
+                </label>
+              </div>
+            </div>
+          </form>
+          <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+          <div class="thank-you text-center" style="display: none;">
+            <a href="https://twitter.com/RabbitMQSummit?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @RabbitMQSummit</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
         <div class="col-12 text-info">
           <p class="mb-3 pl-3 text-sm text-center"><span class="editable up-to-date">Early Bird tickets available</span> <span class="arrow">⤵</span></p>
         </div>
         <div class="col-11 col-md-4 col-lg-5 text-center">
-          <label class="button-lines-wrap" id="submit-fx">
+          <label class="button-lines-wrap">
             <span class="lines"></span>
             <span class="lines"></span>
             <span class="lines"></span>
             <span class="lines"></span>
-            <a href="https://www.eventbrite.com/e/rabbitmq-summit-tickets-45597419108" target="_blank" class="btn btn-primary w-100 text-uppercase js-cm-submit-button big-space-mono">
+            <a href="https://www.eventbrite.com/e/rabbitmq-summit-tickets-45597419108" target="_blank" class="btn btn-primary w-100 text-uppercase big-space-mono">
               Buy your ticket
             </a>
           </label>
@@ -391,7 +444,7 @@ image: /img/og-frontpage.jpg
           </div>
         </div>
       </div>
-      <div class="row justify-content-center mb-3 mb-lg-5 mb-xl-6">
+      <div class="row justify-content-center mb-3">
         <div class="form-row">
           <div class="col-12 col-md-4">
             <label class="button-lines-wrap lines-secondary">
@@ -404,6 +457,17 @@ image: /img/og-frontpage.jpg
           </div>
         </div>
       </div>
+      <div class="row justify-content-center mb-3 mb-lg-5 mb-xl-6">
+          <div class="col-12 col-md-8 text-center">
+            <label class="button-lines-wrap lines-secondary mx-auto btn-newsletter">
+              <span class="lines"></span>
+              <span class="lines"></span>
+              <span class="lines"></span>
+              <span class="lines"></span>
+              <a href="#subForm" class="btn btn-secondary w-100 text-uppercase text-dark js-cm-submit-button big-space-mono">Subscribe <span class="d-none d-sm-inline">to</span> Newsletter</a>
+            </label>
+          </div>
+				</div>
     </div>
   </section>
 </main>

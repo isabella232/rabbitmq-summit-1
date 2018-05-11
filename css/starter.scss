@@ -165,6 +165,9 @@ button[type="submit"]{
 	position: relative;
 	transform: skewX(-15deg);
 	display: block;
+	&.btn-newsletter {
+		max-width: none !important;
+	}
 	@include media(">=tablet") {
 		display: inline-block;
 		vertical-align: top;
@@ -640,13 +643,6 @@ address{
 .space-mono {
 	font-family: 'space-mono-bold';
 }
-
-.thank-you, .check-email {
-	min-height: 135px;
-	.up-to-date {
-		vertical-align: middle;
-	}
-}
 .emojis {
 	vertical-align: middle;
 	font-size: 36px;
@@ -765,5 +761,41 @@ footer .footer-alt {
 			opacity: .8;
 			text-decoration: none;
 		}
+	}
+}
+
+.rs-notification {
+	max-width: 400px;
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	padding: 10px;
+	background-color: rgba(0,0,0,.7);
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,.8);
+	z-index: 100;
+	p {
+		margin: 6px 0 0 50px;
+		font-family: $roboto-medium;
+		color: $pink;
+		line-height: 1.2rem;
+	}
+	.rs-close {
+		color: $white;
+		opacity: 0.8;
+		cursor: pointer;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+@include media-breakpoint-down(xs) {
+	.rs-notification {
+		background-color: rgba(0,0,0,.9);
+		width:100%;
+		max-width: none;
+		top:0;
+		right: 0;
+		border-radius: 0;
 	}
 }
