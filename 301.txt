@@ -1,0 +1,2 @@
+http://www.rabbitmqsummit.com/* https://rabbitmqsummit.com
+https://www.rabbitmqsummit.com/* https://rabbitmqsummit.com
