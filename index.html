@@ -327,7 +327,6 @@ image: /img/og-frontpage.jpg
       </div>
     </div>
   </section>
-
   <section class="bg-light pt-6 pb-3 pt-xl-7">
     <div class="container">
       <div class="row justify-content-center mb-3">
@@ -340,461 +339,43 @@ image: /img/og-frontpage.jpg
 					</h3>
         </div>
       </div>
+		{% for activity in site.data.schedule %}
       <div class="row border-bottom pb-0 pb-lg-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T08:15">8:15 am - 9:00 am</time>
+        <div class="col-6 col-md-3 order-1">
+          <h4 class="text-primary text-uppercase text-left text-sm-right">
+            <time datetime="2018-11-12T{{ activity.start }}">{{ activity.time }}</time>
           </h4>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-7 order-3 order-sm-2">
           <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Registration</h4>
-          </div>
-        </div>
-        <div class="col-12 col-md-3"></div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T09:00">9:00 am - 9:15 am</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Welcome and Introduction</h4>
-          </div>
-        </div>
-        <div class="col-12 col-md-3"></div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T09:15">9:15 am - 10:00 am</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Keynote: Idiomatic RabbitMQ</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p>In this talk Gavin will cover AMQP in the context of its use in RabbitMQ with a premise that if you don't fully understand AMQP, you don't understand RabbitMQ. Gavin will discuss the by-directional RPC behavior, connections, channels, objects, methods, and properties.</p>
+            <h4 class="text-uppercase mb-2">{{ activity.title }}</h4>
+            {% if activity.abstract %}
+              <div class="row">
+                <div class="col-12 col-xl-10 text-sm">
+                  <p class="mb-lg-4">
+                    <em>{{ activity.speaker }}</em>
+                  </p>
+                  <p>{{ activity.abstract }}</p>
+                </div>
               </div>
-            </div>
+            {% endif %}
           </div>
         </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="/img/speakers/gavin-roy.jpg" alt="Gavin Roy">
+        {% if activity.img %}
+          <div class="col-12 col-md-2 order-2 order-sm-3">
+            <div class="row">
+              <div class="schedule-speaker mb-3">
+                <div class="skew-box">
+                  <div class="img-wrap">
+                    <img src="{{ activity.img }}" alt="{{ activity.speaker }}">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        {% endif %}
       </div>
-      <div class="row border-bottom pb-0 pb-lg-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T10:00">10:00 am - 10:40 am</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">To be announced</h4>
-          </div>
-        </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="/img/speakers/michael-klishin.jpg" alt="Michael Klishin">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T10:40">10:40 AM - 11:00 AM</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Coffee Break</h4>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T11:00">11:00 AM - 11:40 AM</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Real Life RabbitMQ on steroids</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p>Going from monoliths to distributed systems with RabbitMQ as a core component for online transaction processing. RabbitMQ has powerful abstractions that help you get up and running quickly. The talk will focus on the importance of understanding RabbitMQ's abstractions deeply to make them work for you in a distributed world. The talk will cover setting up RabbitMQ as a service broker and using it in a CI/CD pipeline for near zero developer effort.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="/img/speakers/monish-unni.jpg" alt="Monish Unni">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 pb-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T11:40">11:40 AM - 12:20 pm</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Developing RabbitMQ plugins in Elixir</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p>Elixir is a rather new programming language fully compatible with the Erlang Virtual Machine. Due to its growing popularity, the RabbitMQ core team has recently decided to evaluate it in the next generation CLI-tools. Matteo has developed a RabbitMQ plugin without prior knowledge of RabbitMQ internals or the Erlang and Elixir languages. Elixir is an interesting language and to adopt it in RabbitMQ a few gaps need to be filled. The presentation discusses the challenges faced when developing RabbitMQ plugins in new languages and the ways to facilitate such processes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <!--<img src="/img/speakers/matteo-cafasso.jpg" alt="Matteo Cafasso">-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 pb-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T12:20">12:20 pm - 13:00 pm</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Panel Debate: What's new and what's on the horizon for RabbitMQ</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p>This is a panel debate with a selection of guests, including questions from the audience. It's time to talk about the future for the most widely deployed open source message broker in the world. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="/img/dormain-drewitz.jpg" alt="Dormain Drewitz">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T13:00">13:00 AM - 14:00 AM</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Lunch</h4>
-          </div>
-        </div>
-        <div class="col-12 col-md-2"></div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 pb-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T12:20">14:00 pm - 14:40 pm</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Real-world RabbitMQ Deployments</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p>Come and join me in exploring what it looks like to succeed with RabbitMQ in production. We will cover 3 different enterprise messaging implementations that rely on RabbitMQ for:</p>
-                  <ol>
-                    <li>
-                      Financial trading
-                    </li>
-                    <li>
-                      Vehicle telemetry
-                    </li>
-                    <li>
-                      Monitoring of medical equipment
-                    </li>
-                  </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="/img/speakers/gerhard-lazu.jpg" alt="Gerhard Lazu">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 pb-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T14:40">14:40 pm - 15:20 pm</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">RabbitMQ Engineered Systems' Design & Architecture: A Structured Approach</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="/img/speakers/ayanda-dube.jpg" alt="Ayanda Dube">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T15:20">15:20 AM - 15:40 AM</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Coffee</h4>
-          </div>
-        </div>
-        <div class="col-12 col-md-2"></div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 pb-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T15:40">15:40 pm - 16:20 pm</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">What it’s like to bet your entire startup on rabbit</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p>Wunderlist made big bets on two technologies: AWS and RabbitMQ. Everything else was replaceable.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="/img/speakers/nathan-herald.jpg" alt="Nathan Herald">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 pb-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T16:20">16:20 pm - 17:00 pm</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">To be Announced</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-2">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="/img/speakers/carl-horberg.jpg" alt="Carl Hörberg">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row border-bottom pb-0 pb-lg-3 pb-3 mb-3 mb-lg-5">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T17:00">17:00 pm - 17:45 pm</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Keynote: To Be Announced</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5 mb-lg-7">
-        <div class="col-12 col-md-3">
-          <h4 class="text-primary text-uppercase text-right">
-            <time datetime="2018-11-12T17:45">17:45 pm - 19:00 pm</time>
-          </h4>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-lg-4">Closing and drinks</h4>
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h4 class="text-uppercase text-center text-primary mb-3 editable" data-cms-source="/index.html" data-cms-index="14">
-            Programme Committee
-          </h4>
-        </div>
-      </div>
-      <div class="row justify-content-center mb-5">
-        <div class="col-12">
-          <div class="text text-sm text-success">
-            <p class="editable text-center" data-cms-source="/index.html" data-cms-index="15">
-              The following RabbitMQ Summit Committee has the honor to review, rate and select submissions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center committee">
-        <div class="col-12 col-sm-6 col-md-5 mb-3">
-          <div class="media">
-            <div class="img mr-3" style="background-image: url(/img/dormain-drewitz.jpg)"></div>
-            <div class="media-body">
-              <h5 class="mt-0 text-uppercase">Dormain Drewitz</h5>
-              <p class="mb-1">
-                <strong class="pink space-mono">Pivotal</strong>
-              </p>
-              <p class="mb-0">
-                Senior Director of Product Marketing
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-5 mb-3">
-          <div class="media">
-            <div class="img mr-3" style="background-image: url(/img/pieter-humphrey.jpg)"></div>
-            <div class="media-body">
-              <h5 class="mt-0 text-uppercase">Pieter Humphrey</h5>
-              <p class="mb-1">
-                <strong class="pink space-mono">Pivotal</strong>
-              </p>
-              <p class="mb-0">
-                Principal Product Marketing Manager
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-5 mb-3">
-          <div class="media">
-            <div class="img mr-3" style="background-image: url(/img/speakers/ayanda-dube.jpg)"></div>
-            <div class="media-body">
-              <h5 class="mt-0 text-uppercase">Ayanda Dube</h5>
-              <p class="mb-1">
-                <strong class="pink space-mono">Erlang Solutions</strong>
-              </p>
-              <p class="mb-0">
-                Senior Erlang Engineer
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-5 mb-3">
-          <div class="media">
-            <div class="img mr-3" style="background-image: url(/img/lovisa-johansson.jpg)"></div>
-            <div class="media-body">
-              <h5 class="mt-0 text-uppercase">Lovisa Johansson</h5>
-              <p class="mb-1">
-                <strong class="pink space-mono">84codes</strong>
-              </p>
-              <p class="mb-0">
-                Marketing Manager / System Developer
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gallery-wrap py-6 py-lg-6">
-        <div class="row justify-content-center">
-          <div class="col-4 col-md-4 mb-4 mb-md-0 gallery-item  d-none d-md-block">
-            <div class="skew-box">
-              <div class="gallery-img photo-1">
-                <img src="/img/gallery-item01.jpg" alt="image" class="editable" />
-              </div>
-            </div>
-          </div>
-          <div class="col-4 col-md-4 mb-4 mb-md-0 gallery-item d-none d-md-block">
-            <div class="skew-box">
-              <div class="gallery-img photo-2">
-                <img src="/img/gallery-item02.jpg" alt="image" class="editable" />
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mb-4 mb-md-0 gallery-item">
-            <div class="skew-box">
-              <div class="gallery-img photo-3">
-                <img src="/img/gallery-item03.jpg " alt="image" class="editable" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+		{% endfor %}
     </div>
   </section>
   <section class="bg-light pt-4 pb-4 pb-xl-6 ">
