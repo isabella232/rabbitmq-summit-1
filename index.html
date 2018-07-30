@@ -356,6 +356,13 @@ image: /img/og-frontpage.jpg
                     <em>{{ activity.speaker }}</em>
                   </p>
                   <p>{{ activity.abstract }}</p>
+                  {% if activity.topic1 %}
+                    <ol>
+                      <li>{{ activity.topic1 }}</li>
+                      {% if activity.topic2 %}<li>{{ activity.topic2 }}</li>{% endif %}
+                      {% if activity.topic3 %}<li>{{ activity.topic3 }}</li>{% endif %}
+                    </ol>
+                  {% endif %}
                 </div>
               </div>
             {% endif %}
