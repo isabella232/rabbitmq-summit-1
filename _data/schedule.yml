@@ -16,8 +16,12 @@
   img: "/img/speakers/gavin-roy.jpg"
 - start: "10:00"
   time: "10:00 - 10:40"
-  title: "To Be Announced"
+  title: "An update from the RabbitMQ team"
   speaker: "Michael Klishin"
+  abstract: >
+    Curious about what the RabbitMQ team has been up to since 3.7.0
+    shipped in November 2017? In this talk we will cover what's coming
+    in 3.8.0 and beyond.
   img: "/img/speakers/michael-klishin.jpg"
 - start: "10:40"
   time: "10:40 - 11:00"
@@ -78,6 +82,7 @@
   time: "14:40 - 15:20"
   title: "RabbitMQ engineered systems' design & architecture: a structured approach"
   speaker: "Ayanda Dube"
+  abstract: " "
   img: "/img/speakers/ayanda-dube.jpg"
 - start: "15:20"
   time: "15:20 - 15:40"
@@ -94,6 +99,7 @@
   time: "16:20 - 17:00"
   title: "To be announced"
   speaker: "Carl Hörberg"
+  abstract: " "
   img: "/img/speakers/carl-horberg.jpg"
 - start: "17:00"
   time: "17:00 - 17:45"
