@@ -1,109 +1,113 @@
-- start: "08:15"
-  time: "8:15 - 9:00"
-  title: "Registration"
-- start: "9:00"
-  time: "09:00 - 9:15"
-  title: "Welcome and Introduction"
-- start: "9:15"
-  time: "09:15 - 10:00"
-  title: "Keynote: Idiomatic RabbitMQ"
-  speaker: "Gavin Roy"
-  abstract: >
-    In this talk Gavin will cover AMQP in the context of its use in RabbitMQ with a
-    premise that if you don't fully understand AMQP, you don't understand RabbitMQ.
-    Gavin will discuss the by-directional RPC behavior, connections, channels, objects,
-    methods, and properties.
-  img: "/img/speakers/gavin-roy.jpg"
-- start: "10:00"
-  time: "10:00 - 10:40"
-  title: "An update from the RabbitMQ team"
-  speaker: "Michael Klishin"
-  abstract: >
-    Curious about what the RabbitMQ team has been up to since 3.7.0
-    shipped in November 2017? In this talk we will cover what's coming
-    in 3.8.0 and beyond.
-  img: "/img/speakers/michael-klishin.jpg"
-- start: "10:40"
-  time: "10:40 - 11:00"
-  title: "Coffee Break"
-- start: "11:00"
-  time: "11:00 - 11:40"
-  title: "Real life RabbitMQ on steroids"
-  speaker: "Monish Unni"
-  abstract: >
-    Going from monoliths to distributed systems with RabbitMQ
-    as a core component for online transaction processing.
-    RabbitMQ has powerful abstractions that help you get up
-    and running quickly. The talk will focus on the importance
-    of understanding RabbitMQ's abstractions deeply to make them
-    work for you in a distributed world. The talk will cover
-    setting up RabbitMQ as a service broker and using it in a
-    CI/CD pipeline for near zero developer effort.
-  img: "/img/speakers/monish-unni.jpg"
-- start: "11:40"
-  time: "11:40 - 12:20"
-  title: "Developing RabbitMQ plugins in Elixir"
-  speaker: "Matteo Cafasso"
-  abstract: >
-    Elixir is a rather new programming language fully compatible with the
-    Erlang Virtual Machine. Due to its growing popularity, the RabbitMQ
-    core team has recently decided to evaluate it in the next generation
-    CLI-tools. Matteo has developed a RabbitMQ plugin without prior
-    knowledge of RabbitMQ internals or the Erlang and Elixir languages.
-    Elixir is an interesting language and to adopt it in RabbitMQ a few gaps
-    need to be filled. The presentation discusses the challenges faced when
-    developing RabbitMQ plugins in new languages and the ways to facilitate
-    such processes.
-- start: "12:20"
-  time: "12:20 - 13:00"
-  title: "Panel Debate: What's new and what's on the horizon for RabbitMQ"
-  speaker: "Dormain Drewitz"
-  abstract: >
+- start: '08:15'
+  time:
+  title: Registration
+- start: '9:00'
+  time:
+  title: Welcome and Introduction
+- start: '9:15'
+  time:
+  title: 'Keynote: Idiomatic RabbitMQ'
+  speaker: Gavin Roy
+  abstract: >-
+    In this talk Gavin will cover AMQP in the context of its use in RabbitMQ
+    with a premise that if you don't fully understand AMQP, you don't understand
+    RabbitMQ. Gavin will discuss the by-directional RPC behavior, connections,
+    channels, objects, methods, and properties.
+  img: /img/speakers/gavin-roy.jpg
+- start: '10:00'
+  time:
+  title: An update from the RabbitMQ team
+  speaker: Michael Klishin
+  abstract: >-
+    Curious about what the RabbitMQ team has been up to since 3.7.0 shipped in
+    November 2017? In this talk we will cover what's coming in 3.8.0 and beyond.
+  img: /img/speakers/michael-klishin.jpg
+- start: '10:40'
+  time:
+  title: Coffee Break
+- start: '11:00'
+  time:
+  title: Real life RabbitMQ on steroids
+  speaker: Monish Unni
+  abstract: >-
+    Going from monoliths to distributed systems with RabbitMQ as a core
+    component for online transaction processing. RabbitMQ has powerful
+    abstractions that help you get up and running quickly. The talk will focus
+    on the importance of understanding RabbitMQ's abstractions deeply to make
+    them work for you in a distributed world. The talk will cover setting up
+    RabbitMQ as a service broker and using it in a CI/CD pipeline for near zero
+    developer effort.
+  img: /img/speakers/monish-unni.jpg
+- start: '11:40'
+  time:
+  title: Developing RabbitMQ plugins in Elixir
+  speaker: Matteo Cafasso
+  abstract: >-
+    Elixir is a rather new programming language fully compatible with the Erlang
+    Virtual Machine. Due to its growing popularity, the RabbitMQ core team has
+    recently decided to evaluate it in the next generation CLI-tools. Matteo has
+    developed a RabbitMQ plugin without prior knowledge of RabbitMQ internals or
+    the Erlang and Elixir languages. Elixir is an interesting language and to
+    adopt it in RabbitMQ a few gaps need to be filled. The presentation
+    discusses the challenges faced when developing RabbitMQ plugins in new
+    languages and the ways to facilitate such processes.
+- start: '12:20'
+  time:
+  title: 'Panel Debate: What''s new and what''s on the horizon for RabbitMQ'
+  speaker: Dormain Drewitz
+  abstract: >-
     It's time for a panel debate with a selection of guests, including questions
     from the audience. It's time to talk about the future for the most widely
     deployed open source message broker in the world.
-  img: "/img/dormain-drewitz.jpg"
-- start: "13:00"
-  time: "13:00 - 14:00"
-  title: "Lunch"
-- start: "11:00"
-  time: "11:00 - 11:40"
-  title: "Real-world RabbitMQ deployments"
-  speaker: "Gerhard Lazu"
-  abstract: >
-    Come and join me in exploring what it looks like to succeed with
-    RabbitMQ in production. We will cover 3 different enterprise
-    messaging implementations that rely on RabbitMQ for:
-  topic1: "Financial trading"
-  topic2: "Vehicle telemetry"
-  topic3: "Monitoring of medical equipment"
-  img: "/img/speakers/gerhard-lazu.jpg"
-- start: "14:40"
-  time: "14:40 - 15:20"
-  title: "RabbitMQ engineered systems' design & architecture: a structured approach"
-  speaker: "Ayanda Dube"
-  abstract: " "
-  img: "/img/speakers/ayanda-dube.jpg"
-- start: "15:20"
-  time: "15:20 - 15:40"
-  title: "Coffee Break"
-- start: "15:40"
-  time: "15:40 - 16:20"
-  title: "What it's like to bet your entire startup on Rabbit"
-  speaker: "Nathan Herald"
-  abstract: >
-    Wunderlist made big bets on two technologies: AWS and RabbitMQ.
-    Everything else was replaceable.
-  img: "/img/speakers/nathan-herald.jpg"
-- start: "16:20"
-  time: "16:20 - 17:00"
-  title: "To be announced"
-  speaker: "Carl Hörberg"
-  abstract: " "
-  img: "/img/speakers/carl-horberg.jpg"
-- start: "17:00"
-  time: "17:00 - 17:45"
-  title: "Keynote: To be announced"
-- start: "17:45"
-  time: "17:45 - 19:00"
-  title: "Closing and drinks"
+  img: /img/dormain-drewitz.jpg
+- start: '13:00'
+  time:
+  title: Lunch
+- start: '11:00'
+  time:
+  title: Real-world RabbitMQ deployments
+  speaker: Gerhard Lazu
+  abstract: >-
+    Come and join me in exploring what it looks like to succeed with RabbitMQ in
+    production. We will cover 3 different enterprise messaging implementations
+    that rely on RabbitMQ for:
+  topic1: Financial trading
+  topic2: Vehicle telemetry
+  topic3: Monitoring of medical equipment
+  img: /img/speakers/gerhard-lazu.jpg
+- start: '14:40'
+  time:
+  title: A Walk Through the Design and Architecture of RabbitMQ
+  speaker: Ayanda Dube
+  abstract: >-
+    As the use of RabbitMQ grows, there's a growing need for its operators and
+    engineers to have a good understanding and appreciation of its internal
+    design, and how its sub-components interact to meet the various messaging
+    requirements in industry. In this talk I walk through the internal design of
+    RabbitMQ, explaining some of the key components which attribute to its
+    robustness and reputation of being a world leading and well trusted
+    messaging system.
+  img: /img/speakers/ayanda-dube.jpg
+- start: '15:20'
+  time:
+  title: Coffee Break
+- start: '15:40'
+  time:
+  title: What it's like to bet your entire startup on Rabbit
+  speaker: Nathan Herald
+  abstract: >-
+    Wunderlist made big bets on two technologies: AWS and RabbitMQ. Everything
+    else was replaceable.
+  img: /img/speakers/nathan-herald.jpg
+- start: '16:20'
+  time:
+  title: To be announced
+  speaker: Carl Hörberg
+  abstract:
+  img: /img/speakers/carl-horberg.jpg
+- start: '17:00'
+  time:
+  title: 'Keynote: To be announced'
+- start: '17:45'
+  time:
+  title: Closing and drinks
