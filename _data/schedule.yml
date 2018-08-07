@@ -1,11 +1,11 @@
 - start: '08:15'
-  time:
+  etime: '8:15 - 9:00'
   title: Registration
-- start: '9:00'
-  time:
+- start: '09:00'
+  etime: '9:00 - 9:15'
   title: Welcome and Introduction
 - start: '9:15'
-  time:
+  etime: '9:15 - 10:00'
   title: 'Keynote: Idiomatic RabbitMQ'
   speaker: Gavin Roy
   abstract: >-
@@ -15,7 +15,7 @@
     channels, objects, methods, and properties.
   img: /img/speakers/gavin-roy.jpg
 - start: '10:00'
-  time:
+  etime: '10:00 - 10:40'
   title: An update from the RabbitMQ team
   speaker: Michael Klishin
   abstract: >-
@@ -23,10 +23,10 @@
     November 2017? In this talk we will cover what's coming in 3.8.0 and beyond.
   img: /img/speakers/michael-klishin.jpg
 - start: '10:40'
-  time:
+  etime: '10:40 - 11:00'
   title: Coffee Break
 - start: '11:00'
-  time:
+  etime: '11:00 - 11:40'
   title: Real life RabbitMQ on steroids
   speaker: Monish Unni
   abstract: >-
@@ -39,7 +39,7 @@
     developer effort.
   img: /img/speakers/monish-unni.jpg
 - start: '11:40'
-  time:
+  etime: '11:40 - 12:20'
   title: Developing RabbitMQ plugins in Elixir
   speaker: Matteo Cafasso
   abstract: >-
@@ -51,20 +51,21 @@
     adopt it in RabbitMQ a few gaps need to be filled. The presentation
     discusses the challenges faced when developing RabbitMQ plugins in new
     languages and the ways to facilitate such processes.
+  img: /img/speakers/matteo-cafasso.jpg
 - start: '12:20'
-  time:
+  etime: '12:20 - 13:00'
   title: 'Panel Debate: What''s new and what''s on the horizon for RabbitMQ'
   speaker: Dormain Drewitz
   abstract: >-
-    It's time for a panel debate with a selection of guests, including questions
-    from the audience. It's time to talk about the future for the most widely
+    It's etime for a panel debate with a selection of guests, including questions
+    from the audience. It's etime to talk about the future for the most widely
     deployed open source message broker in the world.
   img: /img/dormain-drewitz.jpg
 - start: '13:00'
-  time:
+  etime: '13:00 - 14:00'
   title: Lunch
 - start: '11:00'
-  time:
+  etime: '11:00 - 11:40'
   title: Real-world RabbitMQ deployments
   speaker: Gerhard Lazu
   abstract: >-
@@ -76,7 +77,7 @@
   topic3: Monitoring of medical equipment
   img: /img/speakers/gerhard-lazu.jpg
 - start: '14:40'
-  time:
+  etime: '14:40 - 15:20'
   title: A Walk Through the Design and Architecture of RabbitMQ
   speaker: Ayanda Dube
   abstract: >-
@@ -89,10 +90,10 @@
     messaging system.
   img: /img/speakers/ayanda-dube.jpg
 - start: '15:20'
-  time:
+  etime: '15:20 - 15:40'
   title: Coffee Break
 - start: '15:40'
-  time:
+  etime: '15:40 - 16:20'
   title: What it's like to bet your entire startup on Rabbit
   speaker: Nathan Herald
   abstract: >-
@@ -100,14 +101,17 @@
     else was replaceable.
   img: /img/speakers/nathan-herald.jpg
 - start: '16:20'
-  time:
+  etime: '16:20 - 17:00'
   title: To be announced
   speaker: Carl Hörberg
-  abstract:
+  abstract: 'To be announced'
   img: /img/speakers/carl-horberg.jpg
 - start: '17:00'
-  time:
+  etime: '17:00 - 17:45'
   title: 'Keynote: Scaling RabbitMQ @ Goldman Sachs'
+  speaker: Jonathan
+  abstract: 'To be announced'
+  img: /img/speakers/jonathan.jpg
 - start: '17:45'
-  time:
+  etime: '17:45 - 19:00'
   title: Closing and drinks
