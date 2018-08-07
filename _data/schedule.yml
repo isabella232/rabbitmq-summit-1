@@ -109,9 +109,18 @@
 - start: '17:00'
   etime: '17:00 - 17:45'
   title: 'Keynote: Scaling RabbitMQ @ Goldman Sachs'
-  speaker: Jonathan
-  abstract: 'To be announced'
-  img: /img/speakers/jonathan.jpg
+  speaker: Jonathan Skrzypek
+  abstract: >-
+    Goldman Sachs leverages hundreds of applications communicating with each other. The Data
+    Management and Distribution group provides messaging middleware services to the firm’s ecosystem.
+    This talk will be about why and how we adopted RabbitMQ as a first class citizen in our
+    messaging product portfolio. A significant proportion of application teams at Goldman
+    Sachs was used to traditional guaranteed messaging systems, and as such, moving to
+    RabbitMQ was and still is a paradigm shift in how applications interact with a
+    messaging layer. We will touch on the challenges of delivering RabbitMQ as a service
+    at enterprise scale, including but not limited to deployment model, monitoring and
+    telemetry, achieving data consistency, developer awareness.
+  img: /img/speakers/jonathan-skrzypek.jpg
 - start: '17:45'
   etime: '17:45 - 19:00'
   title: Closing and drinks
