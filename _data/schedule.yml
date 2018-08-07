@@ -107,7 +107,7 @@
   img: /img/speakers/carl-horberg.jpg
 - start: '17:00'
   time:
-  title: 'Keynote: To be announced'
+  title: 'Keynote: Scaling RabbitMQ @ Goldman Sachs'
 - start: '17:45'
   time:
   title: Closing and drinks
