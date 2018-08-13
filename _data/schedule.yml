@@ -64,8 +64,8 @@
 - start: '13:00'
   etime: '13:00 - 14:00'
   title: Lunch
-- start: '11:00'
-  etime: '11:00 - 11:40'
+- start: '14:00'
+  etime: '14:00 - 14:40'
   title: Real-world RabbitMQ deployments
   speaker: Gerhard Lazu
   abstract: >-
