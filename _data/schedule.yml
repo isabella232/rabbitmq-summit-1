@@ -43,23 +43,27 @@
   title: Developing RabbitMQ plugins in Elixir
   speaker: Matteo Cafasso
   abstract: >-
-    Elixir is a rather new programming language fully compatible with the Erlang
-    Virtual Machine. Due to its growing popularity, the RabbitMQ core team has
-    recently decided to evaluate it in the next generation CLI-tools. Matteo has
-    developed a RabbitMQ plugin without prior knowledge of RabbitMQ internals or
-    the Erlang and Elixir languages. Elixir is an interesting language and to
-    adopt it in RabbitMQ a few gaps need to be filled. The presentation
-    discusses the challenges faced when developing RabbitMQ plugins in new
-    languages and the ways to facilitate such processes.
+    RabbitMQ comprises of a state of the art plugin architecture, allowing it to
+    be highly customizable and extensible to meet various requirements which may
+    not be supported by an "out-of-the-box" broker installation. This
+    presentation gives an overview of RabbitMQ's plugin infrastructure and
+    discusses some useful, existing plugins with an overview of developing
+    custom RabbitMQ plugins in Elixir. With Elixir being a language fully
+    compatible with the Erlang Virtual Machine and growing in popularity, the
+    RabbitMQ core team also adopted it in developing the next generation
+    CLI-tools found in the latest release series, 3.7.x; a strong indication on
+    the direction and future of RabbitMQ's product development. Outcome of this
+    presentation looks to encourage more RabbitMQ plugin development in Elixir
+    from the community!
   img: /img/speakers/matteo-cafasso.jpg
 - start: '12:20'
   etime: '12:20 - 13:00'
   title: 'Panel Debate: What''s new and what''s on the horizon for RabbitMQ'
   speaker: Dormain Drewitz
   abstract: >-
-    It's etime for a panel debate with a selection of guests, including questions
-    from the audience. It's etime to talk about the future for the most widely
-    deployed open source message broker in the world.
+    It's etime for a panel debate with a selection of guests, including
+    questions from the audience. It's etime to talk about the future for the
+    most widely deployed open source message broker in the world.
   img: /img/dormain-drewitz.jpg
 - start: '13:00'
   etime: '13:00 - 14:00'
@@ -104,22 +108,24 @@
   etime: '16:20 - 17:00'
   title: To be announced
   speaker: Carl Hörberg
-  abstract: 'To be announced'
+  abstract: To be announced
   img: /img/speakers/carl-horberg.jpg
 - start: '17:00'
   etime: '17:00 - 17:45'
   title: 'Keynote: Scaling RabbitMQ @ Goldman Sachs'
   speaker: Jonathan Skrzypek
   abstract: >-
-    Goldman Sachs leverages hundreds of applications communicating with each other. The Data
-    Management and Distribution group provides messaging middleware services to the firm’s ecosystem.
-    This talk will be about why and how we adopted RabbitMQ as a first class citizen in our
-    messaging product portfolio. A significant proportion of application teams at Goldman
-    Sachs was used to traditional guaranteed messaging systems, and as such, moving to
-    RabbitMQ was and still is a paradigm shift in how applications interact with a
-    messaging layer. We will touch on the challenges of delivering RabbitMQ as a service
-    at enterprise scale, including but not limited to deployment model, monitoring and
-    telemetry, achieving data consistency, developer awareness.
+    Goldman Sachs leverages hundreds of applications communicating with each
+    other. The Data Management and Distribution group provides messaging
+    middleware services to the firm’s ecosystem. This talk will be about why and
+    how we adopted RabbitMQ as a first class citizen in our messaging product
+    portfolio. A significant proportion of application teams at Goldman Sachs
+    was used to traditional guaranteed messaging systems, and as such, moving to
+    RabbitMQ was and still is a paradigm shift in how applications interact with
+    a messaging layer. We will touch on the challenges of delivering RabbitMQ as
+    a service at enterprise scale, including but not limited to deployment
+    model, monitoring and telemetry, achieving data consistency, developer
+    awareness.
   img: /img/speakers/jonathan-skrzypek.jpg
 - start: '17:45'
   etime: '17:45 - 19:00'
