@@ -436,7 +436,7 @@ address{
 		}
 	}
 	.skew-img-row{
-		&:nth-child(odd),
+		&:nth-child(even),
 		&.left {
 			.img-event-wrap{
 				.skew-box{
@@ -459,7 +459,7 @@ address{
 				}
 			}
 		}
-		&:nth-child(even),
+		&:nth-child(odd),
 		&.right {
 			justify-content: flex-end;
 			.img-event-wrap{
