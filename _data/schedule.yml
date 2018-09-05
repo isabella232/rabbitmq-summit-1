@@ -106,9 +106,9 @@
   img: /img/speakers/nathan-herald.jpg
 - start: '16:20'
   etime: '16:20 - 17:00'
-  title: To be announced
+  title: What we've learned from running thousands of production RabbitMQ clusters
   speaker: Carl Hörberg
-  abstract: To be announced
+  abstract:
   img: /img/speakers/carl-horberg.jpg
 - start: '17:00'
   etime: '17:00 - 17:45'
