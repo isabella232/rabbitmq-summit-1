@@ -101,8 +101,12 @@
   title: What it's like to bet your entire startup on Rabbit
   speaker: Nathan Herald
   abstract: >-
-    Wunderlist made big bets on two technologies: AWS and RabbitMQ. Everything
-    else was replaceable.
+    Wunderlist made big bets on two technologies: AWS and rabbit.
+    I will give an overview of what it’s like to live with rabbit for years,
+    the tools and practices we built up around rabbit, and as many tips and learnings as I can.<br/><br/>
+    In this talk you'll see real world data, hear anecdotes from using RabbitMQ at various scales.
+    You should feel more comfortable making a bet on RabbitMQ as a critical part of your
+    infrastructure after my presentation.
   img: /img/speakers/nathan-herald.jpg
 - start: '16:20'
   etime: '16:20 - 17:00'
