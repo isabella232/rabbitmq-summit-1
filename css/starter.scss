@@ -363,10 +363,18 @@ address{
 	@include media(">=desktop") {
 		font-size: 1.25rem;
 	}
+	&.speakers-keynote >.row {
+		&:nth-child(1n) {
+			transform: translateX(0);
+		}
+	}
 	>.row{
 		@include media(">=desktop") {
+			&:nth-child(1n) {
+				transform: translateX(50px);
+			}
 			&:nth-child(2n) {
-				transform: translateX(-50px);
+				transform: translateX(0);
 			}
 			&:nth-child(3n) {
 				transform: translateX(-50px);
