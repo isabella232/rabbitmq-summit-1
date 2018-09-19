@@ -101,18 +101,25 @@
   title: What it's like to bet your entire startup on Rabbit
   speaker: Nathan Herald
   abstract: >-
-    Wunderlist made big bets on two technologies: AWS and rabbit.
-    I will give an overview of what it’s like to live with rabbit for years,
-    the tools and practices we built up around rabbit, and as many tips and learnings as I can.<br/><br/>
-    In this talk you'll see real world data, hear anecdotes from using RabbitMQ at various scales.
-    You should feel more comfortable making a bet on RabbitMQ as a critical part of your
-    infrastructure after my presentation.
+    Wunderlist made big bets on two technologies: AWS and rabbit. I will give an
+    overview of what it’s like to live with rabbit for years, the tools and
+    practices we built up around rabbit, and as many tips and learnings as I
+    can.<br/><br/> In this talk you'll see real world data, hear anecdotes from
+    using RabbitMQ at various scales. You should feel more comfortable making a
+    bet on RabbitMQ as a critical part of your infrastructure after my
+    presentation.
   img: /img/speakers/nathan-herald.jpg
 - start: '16:20'
   etime: '16:20 - 17:00'
   title: What we've learned from running thousands of production RabbitMQ clusters
   speaker: Carl Hörberg
-  abstract:
+  abstract: >-
+    Since 2012 CloudAMQP has been running dedicated and shared RabbitMQ clusters
+    for customers around the world, in seven different clouds. In this talk Carl
+    will address the most common misconception, misconfigurations and
+    anti-patterns in RabbitMQ usage, and how they can be avoided. Carl will also
+    present tools and methodologies to increase RabbitMQ reliability and
+    performance.
   img: /img/speakers/carl-horberg.jpg
 - start: '17:00'
   etime: '17:00 - 17:45'
