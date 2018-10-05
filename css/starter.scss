@@ -444,7 +444,7 @@ address{
 		}
 	}
 	.skew-img-row{
-		&:nth-child(even),
+		&:nth-child(odd),
 		&.left {
 			.img-event-wrap{
 				.skew-box{
@@ -467,7 +467,7 @@ address{
 				}
 			}
 		}
-		&:nth-child(odd),
+		&:nth-child(even),
 		&.right {
 			justify-content: flex-end;
 			.img-event-wrap{
@@ -841,4 +841,10 @@ a.pink:hover {
 
 .sp-logo {
 	max-width: 200px;
+}
+
+@include media-breakpoint-down(lg) {
+	.skew-img-section .skew-img-row:nth-child(odd) {
+		justify-content: flex-end;
+	}
 }
