@@ -14,19 +14,19 @@
     RabbitMQ. Gavin will discuss the by-directional RPC behavior, connections,
     channels, objects, methods, and properties.
   img: /img/speakers/gavin-roy.jpg
-- start: '10:00'
-  etime: '10:00 - 10:40'
+- start: '10:05'
+  etime: '10:05 - 10:45'
   title: An update from the RabbitMQ team
   speaker: Michael Klishin
   abstract: >-
     Curious about what the RabbitMQ team has been up to since 3.7.0 shipped in
     November 2017? In this talk we will cover what's coming in 3.8.0 and beyond.
   img: /img/speakers/michael-klishin.jpg
-- start: '10:40'
-  etime: '10:40 - 11:00'
+- start: '10:45'
+  etime: '10:45 - 11:05'
   title: Coffee Break
-- start: '11:00'
-  etime: '11:00 - 11:40'
+- start: '11:05'
+  etime: '11:05 - 11:45'
   title: Real life RabbitMQ on steroids
   speaker: Monish Unni
   abstract: >-
@@ -38,8 +38,8 @@
     RabbitMQ as a service broker and using it in a CI/CD pipeline for near zero
     developer effort.
   img: /img/speakers/monish-unni.jpg
-- start: '11:40'
-  etime: '11:40 - 12:20'
+- start: '11:50'
+  etime: '11:50 - 12:30'
   title: Developing RabbitMQ plugins in Elixir
   speaker: Matteo Cafasso
   abstract: >-
@@ -56,8 +56,8 @@
     presentation looks to encourage more RabbitMQ plugin development in Elixir
     from the community!
   img: /img/speakers/matteo-cafasso.jpg
-- start: '12:20'
-  etime: '12:20 - 13:00'
+- start: '12:35'
+  etime: '12:35 - 13:15'
   title: 'Panel Debate: What''s new and what''s on the horizon for RabbitMQ'
   speaker: Dormain Drewitz
   abstract: >-
@@ -65,11 +65,11 @@
     from the audience. It's time to talk about the future for the most widely
     deployed open source message broker in the world.
   img: /img/dormain-drewitz.jpg
-- start: '13:00'
-  etime: '13:00 - 14:00'
+- start: '13:15'
+  etime: '13:15 - 14:15'
   title: Lunch
-- start: '14:00'
-  etime: '14:00 - 14:40'
+- start: '14:15'
+  etime: '14:15 - 14:55'
   title: Real-world RabbitMQ deployments
   speaker: Gerhard Lazu
   abstract: >-
@@ -80,8 +80,8 @@
   topic2: Vehicle telemetry
   topic3: Monitoring of medical equipment
   img: /img/speakers/gerhard-lazu.jpg
-- start: '14:40'
-  etime: '14:40 - 15:20'
+- start: '15:00'
+  etime: '15:00 - 15:40'
   title: A Walk Through the Design and Architecture of RabbitMQ
   speaker: Ayanda Dube
   abstract: >-
@@ -93,11 +93,11 @@
     robustness and reputation of being a world leading and well trusted
     messaging system.
   img: /img/speakers/ayanda-dube.jpg
-- start: '15:20'
-  etime: '15:20 - 15:40'
-  title: Coffee Break
 - start: '15:40'
-  etime: '15:40 - 16:20'
+  etime: '15:40 - 16:00'
+  title: Coffee Break
+- start: '16:00'
+  etime: '16:00 - 16:40'
   title: What it's like to bet your entire startup on Rabbit
   speaker: Nathan Herald
   abstract: >-
@@ -109,8 +109,8 @@
     bet on RabbitMQ as a critical part of your infrastructure after my
     presentation.
   img: /img/speakers/nathan-herald.jpg
-- start: '16:20'
-  etime: '16:20 - 17:00'
+- start: '16:45'
+  etime: '16:45 - 17:25'
   title: What we've learned from running thousands of production RabbitMQ clusters
   speaker: Lovisa Johansson
   abstract: >-
@@ -120,8 +120,8 @@
      RabbitMQ reliability and performance and she will also mention common RabbitMQ use cases among CloudAMQP’s
      customers.
   img: /img/speakers/lovisa-johansson.jpg
-- start: '17:00'
-  etime: '17:00 - 17:45'
+- start: '17:30'
+  etime: '17:30 - 18:15'
   title: 'Keynote: Scaling RabbitMQ @ Goldman Sachs'
   speaker: Jonathan Skrzypek
   abstract: >-
@@ -137,6 +137,6 @@
     model, monitoring and telemetry, achieving data consistency, developer
     awareness.
   img: /img/speakers/jonathan-skrzypek.jpg
-- start: '17:45'
-  etime: '17:45 - 19:00'
+- start: '18:15'
+  etime: '18:15 - 19:30'
   title: Closing and drinks
