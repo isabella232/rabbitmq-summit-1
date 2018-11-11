@@ -575,6 +575,23 @@ address{
 		}
 	}
 }
+.schedule-speaker-mobile {
+	.skew-box {
+		height: 60px;
+		transform: none;
+		>*{
+			transform: none;
+		}
+		img {
+			transform: none;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.activity .text-success .row {
+		display: block;
+	}
+}
 .sponsor-section{
 	position: relative;
 	&:after {
