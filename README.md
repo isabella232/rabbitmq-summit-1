@@ -1,3 +1,3 @@
 # RabbitMQ Summit
 
-Website for RabbitMQ summit
+Website for RabbitMQ summit.
