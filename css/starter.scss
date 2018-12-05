@@ -867,8 +867,6 @@ a.pink:hover {
 }
 
 .talk-image {
-	display: block;
-	position: relative;
 	img {
 		display: block;
 	}
@@ -903,4 +901,17 @@ a.pink:hover {
 			display: block;
 		}
 	}
+}
+
+.youtube {
+	position: relative;
+	display: block;
+}
+
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+		z-index: 11;
 }

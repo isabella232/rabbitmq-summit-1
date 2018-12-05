@@ -2,6 +2,25 @@
 <script src="{{ "/js/popper.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/scrollTo.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  $(function() {
+    var youtube = document.querySelectorAll( ".youtube" );
+    for (var i = 0; i < youtube.length; i++) {
+      youtube[i].addEventListener( "click", function(e) {
+        e.preventDefault();
+        var wrapper = $(this);
+        var iframe = document.createElement( "iframe" );
+        iframe.setAttribute( "style", "min-height: " + wrapper.height() + "px");
+        iframe.setAttribute( "frameborder", "0" );
+        iframe.setAttribute( "allowfullscreen", "" );
+        iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+        wrapper.removeClass("talk-image");
+        this.innerHTML = "";
+        this.appendChild( iframe );
+      } );
+    }
+  });
+</script>
 
 <script type="text/javascript">
   $(function() {
