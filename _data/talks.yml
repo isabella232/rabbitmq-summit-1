@@ -1,0 +1,50 @@
+- title: 'Keynote: Idiomatic RabbitMQ'
+  speaker: Gavin Roy
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-gavin-roy.jpg
+- title: An update from the RabbitMQ team
+  speaker: Michael Klishin
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-michael-klishin.jpg
+- title: The Consistent Hash Exchange - Making RabbitMQ a Better Broker
+  speaker: Jack Vanlightly
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-jack-vanlightly.jpg
+- title: Developing RabbitMQ plugins in Elixir
+  speaker: Matteo Cafasso
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-matteo-cafasso.jpg
+- title: 'Panel Debate: What''s new and what''s on the horizon for RabbitMQ'
+  speaker: Dormain Drewitz
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-panel-debate.jpg
+- title: Real-world RabbitMQ deployments
+  speaker: Gerhard Lazu
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-gerhard-lazu.jpg
+- title: A Walk Through the Design and Architecture of RabbitMQ
+  speaker: Ayanda Dube
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-ayanda-dube.jpg
+- title: What it's like to bet your entire startup on Rabbit
+  speaker: Nathan Herald
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-nathan-herald.jpg
+- title: What we've learned from running thousands of production RabbitMQ clusters
+  speaker: Lovisa Johansson
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-lovisa-johansson.jpg
+- title: 'Keynote: Scaling RabbitMQ @ Goldman Sachs'
+  speaker: Jonathan Skrzypek
+  youtube:
+  slideshare:
+  lecture-img: /img/videos/talk-jonathan-skrzypek.jpg
