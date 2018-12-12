@@ -1,22 +1,22 @@
 - title: 'Keynote: Idiomatic RabbitMQ'
   speaker: Gavin Roy
   youtube: 8Zf4zTatQYA
-  slideshare:
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/keynote-idiomatic-rabbitmq-gavin-m-roy
   lecture-img: /img/videos/talk-gavin-roy.jpg
 - title: An update from the RabbitMQ team
   speaker: Michael Klishin
   youtube: YxFCUQ2CndA
-  slideshare:
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/an-update-from-the-rabbitmq-team-michael-klishin
   lecture-img: /img/videos/talk-michael-klishin.jpg
 - title: The Consistent Hash Exchange - Making RabbitMQ a Better Broker
   speaker: Jack Vanlightly
   youtube: g3Cq9g7sDc4
-  slideshare:
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/the-consistent-hash-exchange-making-rabbitmq-a-better-broker-jack-vanlightly
   lecture-img: /img/videos/talk-jack-vanlightly.jpg
 - title: Developing RabbitMQ plugins in Elixir
   speaker: Matteo Cafasso
   youtube: 8pNh_F-hQ54
-  slideshare:
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/developing-rabbitmq-plugins-in-elixir-matteo-cafasso
   lecture-img: /img/videos/talk-matteo-cafasso.jpg
 - title: 'Panel Discussion: What''s new and what''s on the horizon for RabbitMQ'
   speaker: Dormain Drewitz
@@ -26,25 +26,25 @@
 - title: Real-world RabbitMQ deployments
   speaker: Gerhard Lazu
   youtube: etT_VMkYrdI
-  slideshare:
+  slideshare: http://real-world.rabbitmq.pivotal.io/
   lecture-img: /img/videos/talk-gerhard-lazu.jpg
 - title: A Walk Through the Design and Architecture of RabbitMQ
   speaker: Ayanda Dube
   youtube: sRiLP5Pkqj0
-  slideshare:
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/a-walkthrough-of-the-design-and-architecture-of-rabbitmq-ayanda-dube-125711827
   lecture-img: /img/videos/talk-ayanda-dube.jpg
 - title: What it's like to bet your entire startup on Rabbit
   speaker: Nathan Herald
   youtube: 9FtMvYHS8Uk
-  slideshare:
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/what-its-like-to-bet-your-entire-startup-on-rabbit-nathan-herald
   lecture-img: /img/videos/talk-nathan-herald.jpg
 - title: What we've learned from running thousands of production RabbitMQ clusters
   speaker: Lovisa Johansson
   youtube: ez9kQEhHsnc
-  slideshare:
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/what-weve-learned-from-running-thousands-of-production-rabbitmq-clusters-lovisa-johansson
   lecture-img: /img/videos/talk-lovisa-johansson.jpg
 - title: 'Keynote: Scaling RabbitMQ @ Goldman Sachs'
   speaker: Jonathan Skrzypek
   youtube: D9H7i6Ye_to
-  slideshare:
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/keynote-scaling-rabbitmq-at-goldman-sachs-jonathan-skrzypek
   lecture-img: /img/videos/talk-jonathan-skrzypek.jpg
