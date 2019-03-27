@@ -1,0 +1,24 @@
+- name: Zoe Vance
+  company: Pivotal
+  title: Senior Product Manager
+  img: zoe-vance.jpg
+- name: Dormain Drewitz
+  company: Pivotal
+  title: Senior Director
+  img: dormain-drewitz.jpg
+- name: Johan Rhodin
+  company: 84codes Inc
+  title: Product Manager
+  img: johan-rhodin.jpg
+- name: Lovisa Johansson
+  company: 84codes AB
+  title: Marketing Manager
+  img: lovisa-johansson.jpg
+- name: Ayanda Dube
+  company: Erlang Solutions
+  title:  Lead Engineer
+  img: ayanda-dube.jpg
+- name: Bryan Hunt
+  company: Erlang Solutions
+  title: Solutions Architect
+  img: bryan-hunt3.jpg

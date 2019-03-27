@@ -1,8 +1,8 @@
 ---
 layout: page
-title: RabbitMQ Summit 2018
+title: RabbitMQ Summit 2019
 description: >
-  The first RabbitMQ Summit brings together RabbitMQ users and developers from around the world. Learn from speakers and keynotes on what’s happening in and around RabbitMQ.
+  RabbitMQ Summit brings together RabbitMQ users and developers from around the world. Learn from speakers and keynotes on what’s happening in and around RabbitMQ.
 image: /img/og-frontpage.jpg
 ---
 
@@ -39,7 +39,7 @@ image: /img/og-frontpage.jpg
         </div>
         <div class="col-10 col-md-5 col-lg-4 col-xl-5 mb-3 mb-md-0 text-center text-md-left">
           <h2 class="text-uppercase text-primary mb-0">
-            <time datetime="2018-11-12"><span class="editable">Coming November 2019</span></time>
+            <time datetime="2018-11-12"><span class="editable">November 2019</span></time>
           </h2>
         </div>
         <div class="col-11 col-lg-4 col-xl-3 text-center">
@@ -54,7 +54,8 @@ image: /img/og-frontpage.jpg
         <div class="col-12 col-lg-10">
           <div class="text-sm text-info mb-3">
             <p class="editable mb-0">
-              The first RabbitMQ Summit brought together RabbitMQ users and developers from around the world. Learn from speakers and keynotes on what&rsquo;s happening in and around RabbitMQ, and how top companies utilise RabbitMQ to power their services.
+              RabbitMQ Summit brings RabbitMQ users and developers together from around the world. Learn from speakers and keynotes on what&rsquo;s happening in and around RabbitMQ, and how top companies utilise RabbitMQ to power their services.
+              We are currently planning the upcoming event for fall 2019.
             </p>
           </div>
         </div>
@@ -95,25 +96,58 @@ image: /img/og-frontpage.jpg
       </div>
     </div>
   </section>
-  <section class="bg-light pt-4 pb-6 pt-lg-6">
+  <section class="bg-light pt-6 pb-6 pt-xl-7">
     <div class="container">
       <div class="row justify-content-center mb-3">
         <div class="col-12">
-          <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">Talks</h3>
+          <h3 class="text-uppercase text-center text-primary mb-5 editable">
+            Call for talks is now open
+          </h3>
         </div>
       </div>
-      <div class="row justify-content-center">
-        {% for talk in site.data.talks %}
-        <div class="col-12 col-md-6 col-xl-5 mb-5">
-            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" target="_blank">
-              <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
-            </a>
-            <div class="links mt-1 mb-2">
-              {% if talk.slideshare %}
-                <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
-              {% endif %}
-              <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Lecture</a>
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+          <div class="text text-sm text-success text-center">
+            <p class="editable">
+              Would you like to present a talk at the upcoming RabbitMQ Summit 2019, and share your experience and knowledge with the audience? Submit your talk now before May 10th.&nbsp;
+            </p>
+            <label class="button-lines-wrap mt-4 text-center text-md-left mb-5 ml-4">
+              <a class="big-space-mono btn btn-primary text-uppercase" href="https://eventil.com/events/rabbitmq-summit-2019/cfp" target="_blank">Submit <span class="d-none d-sm-inline">a</span> talk</a>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-3">
+        <div class="col-12">
+          <h4 class="text-uppercase text-center text-primary mb-3 editable">
+            Programme Committee
+          </h4>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-12">
+          <div class="text text-sm text-success">
+            <p class="editable text-center">
+              The following RabbitMQ Summit Committee has the honor to review, rate and select submissions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center committee">
+        {% for person in site.data.committee %}
+        <div class="col-12 col-sm-6 col-md-5 mb-3">
+          <div class="media">
+            <div class="img mr-3" style="background-image: url(/img/committee/{{ person.img }})"></div>
+            <div class="media-body">
+              <h5 class="mt-0 text-uppercase">{{ person.name }}</h5>
+              <p class="mb-1">
+                <strong class="pink space-mono">{{ person.company }}</strong>
+              </p>
+              <p class="mb-0">
+                {{ person.title }}
+              </p>
             </div>
+          </div>
         </div>
         {% endfor %}
       </div>
@@ -122,7 +156,7 @@ image: /img/og-frontpage.jpg
   <section class="sponsor-section pt-7 pb-6">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 mb-7 text-center">
+        <div class="col-12 mb-6 text-center">
           <h3 class="text-uppercase text-secondary editable">Organisers</h3>
           <a href="https://www.84codes.com" target="_blank">
             <img src="/img/logos/logo-84codes.png" alt="84codes" class="w-100 sp-logo editable mt-3 mr-0 mr-sm-4" />
@@ -131,34 +165,78 @@ image: /img/og-frontpage.jpg
             <img src="/img/logos/logo-erlang-solutions.png" alt="erlang solutions" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
           </a>
         </div>
-        <div class="col-12 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Platinum Sponsor</h3>
-          <a href="https://pivotal.io" target="_blank">
-            <img src="/img/logos/logo-pivotal.png" alt="Pivotal" class="w-100 sp-logo editable mt-3" />
-          </a>
-           <a href="//tech.labs.oliverwyman.com/" target="_blank">
-          <img src="/img/logos/logo-lshift.png" alt="LShift" class="w-100 sp-logo editable mt-3" />
-        </a>
-      </div>
-      <div class="col-12 col-md-4 text-center mb-5">
-        <h3 class="text-uppercase text-secondary editable">Gold Sponsor</h3>
-        <a href="https://trifork.com/" target="_blank">
-          <img src="/img/logos/logo-trifork.png" alt="Trifork - Think Software" class="w-100 sp-logo editable mt-3" />
-        </a>
-        <a href="https://aws.amazon.com/" target="_blank">
-          <img src="/img/logos/logo-aws.png" alt="Amazon Web Services" class="w-100 sp-logo editable mt-3" />
-        </a>
-      </div>
-      <div class="col-12 col-md-4 text-center mb-5">
-        <h3 class="text-uppercase text-secondary editable">Silver Sponsor</h3>
-        <a href="https://www.cogin.com" target="_blank">
-          <img src="/img/logos/logo-queue-explorer.png" alt="Queue Explorer" class="w-100 sp-logo editable mt-3" />
-        </a>
       </div>
     </div>
+  </section>
+  <section class="bg-light pt-7 pb-6 pt-lg-6">
+    <div class="container">
+      <div class="row justify-content-center mb-3">
+        <div class="col-12">
+          <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">Talks from 2018</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        {% for talk in site.data.talks %}
+        <div class="col-12 col-md-6 col-xl-5 mb-5">
+          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" target="_blank">
+            <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
+          </a>
+          <div class="links mt-1 mb-2">
+            {% if talk.slideshare %}
+            <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
+            {% endif %}
+            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Lecture</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <div class="img-effect-wrap mb-3">
+    <img src="/img/line-green.png" alt="image description" class="w-100">
   </div>
-</section>
-<div class="img-effect-wrap mb-3 mb-lg-6">
-  <img src="/img/line-green.png" alt="image description" class="w-100" />
-</div>
+  <section class="skew-img-section bg-light pb-0 pt-6 pt-xl-7">
+    <div class="container-fluid">
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 ">
+          <h3 class="text-uppercase text-primary text-center editable">
+            Become a Sponsor
+          </h3>
+        </div>
+      </div>
+      <div class="skew-img-row right row align-items-center">
+        <div class="col-12 col-lg-5 col-xl-5 mr-auto ml-auto mb-5 mb-lg-0">
+          <div class="text text-sm text-success sponsor-info">
+            <p class="editable">
+              Become part of our conference and let's make it the best RabbitMQ Summit it can be. We expect a great turnout this year in London.
+            </p>
+            <p class="editable">
+              As a sponsor you will get brand exposure and community engagement, and you will be able to:
+            </p>
+            <ul>
+              <li class="editable">Promote your brand and company in front of 300 RabbitMQ professionals</li>
+              <li class="editable">Recruit developers, engineers, DevOps and some of the best talent in the industry</li>
+              <li class="editable">Expand your network by meeting like-minded professionals within the RabbitMQ community</li>
+              <li class="editable">Reach out to individuals and communicate the process, preconditions, culture and most importantly the technology</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 col-xl-7 img-event-wrap">
+          <div class="skew-box py-10 py-lg-12" style="background-image: url(/img/lines-bg.jpg);">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 text interested text-light text-center text-lg-left">
+                <h3 class="text-uppercase mb-lg-1 editable">
+                  <span class="d-lg-none">Sponsor request?</span> Contact us <span class="d-none d-lg-inline">now</span>
+                </h3>
+                <p class="mb-lg-1 text-sm editable">
+                  Explore our sponsorship possibilities and receive our sponsorship brochure by sending us an email:
+                </p>
+                <a href="mailto:info@rabbitmqsummit.com" class="email-address text-primary">info@rabbitmqsummit.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
