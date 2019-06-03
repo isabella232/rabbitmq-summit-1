@@ -1,0 +1,140 @@
+- start: '08:15'
+  etime: '8:15 - 9:00'
+  title: Registration
+- start: '09:00'
+  etime: '9:00 - 9:25'
+  title: Welcome and Introduction
+- start: '9:25'
+  etime: '9:25 - 10:10'
+  title: 'Keynote: Idiomatic RabbitMQ'
+  speaker: Gavin Roy
+  abstract: >-
+    In this talk Gavin will cover AMQP in the context of its use in RabbitMQ
+    with a premise that if you don't fully understand AMQP, you don't understand
+    RabbitMQ. Gavin will discuss the by-directional RPC behavior, connections,
+    channels, objects, methods, and properties.
+  img: /img/speakers/gavin-roy.jpg
+- start: '10:15'
+  etime: '10:15 - 10:55'
+  title: An update from the RabbitMQ team
+  speaker: Michael Klishin
+  abstract: >-
+    Curious about what the RabbitMQ team has been up to since 3.7.0 shipped in
+    November 2017? In this talk we will cover what's coming in 3.8.0 and beyond.
+  img: /img/speakers/michael-klishin.jpg
+- start: '10:55'
+  etime: '10:55 - 11:15'
+  title: Coffee Break
+- start: '11:15'
+  etime: '11:15 - 11:55'
+  title: The Consistent Hash Exchange - Making RabbitMQ a Better Broker
+  speaker: Jack Vanlightly
+  abstract: >-
+    In this session we'll look at an alternative to the competing consumer pattern by
+    using the Consistent Hash Exchange. We'll see how this exchange enables different
+    messaging patterns such as data locality, message processing order guarantees at
+    scale and helping to avoid large queues which can be difficult to keep synchronized
+    in a HA configuration.
+  img: /img/speakers/jack-vanlightly.jpg
+- start: '12:00'
+  etime: '12:00 - 12:40'
+  title: Developing RabbitMQ plugins in Elixir
+  speaker: Matteo Cafasso
+  abstract: >-
+    RabbitMQ comprises of a state of the art plugin architecture, allowing it to
+    be highly customizable and extensible to meet various requirements which may
+    not be supported by an "out-of-the-box" broker installation. This
+    presentation gives an overview of RabbitMQ's plugin infrastructure and
+    discusses some useful, existing plugins with an overview of developing
+    custom RabbitMQ plugins in Elixir. With Elixir being a language fully
+    compatible with the Erlang Virtual Machine and growing in popularity, the
+    RabbitMQ core team also adopted it in developing the next generation
+    CLI-tools found in the latest release series, 3.7.x; a strong indication on
+    the direction and future of RabbitMQ's product development. Outcome of this
+    presentation looks to encourage more RabbitMQ plugin development in Elixir
+    from the community!
+  img: /img/speakers/matteo-cafasso.jpg
+- start: '12:45'
+  etime: '12:45 - 13:25'
+  title: 'Panel Debate: What''s new and what''s on the horizon for RabbitMQ'
+  speaker: Dormain Drewitz
+  abstract: >-
+    It's time for a panel debate with a selection of guests, including questions
+    from the audience. It's time to talk about the future for the most widely
+    deployed open source message broker in the world.
+  img: /img/dormain-drewitz.jpg
+- start: '13:25'
+  etime: '13:25 - 14:25'
+  title: Lunch
+- start: '14:25'
+  etime: '14:25 - 15:05'
+  title: Real-world RabbitMQ deployments
+  speaker: Gerhard Lazu
+  abstract: >-
+    Come and join me in exploring what it looks like to succeed with RabbitMQ in
+    production. We will cover 3 different enterprise messaging implementations
+    that rely on RabbitMQ for:
+  topic1: Financial trading
+  topic2: Vehicle telemetry
+  topic3: Monitoring of medical equipment
+  img: /img/speakers/gerhard-lazu.jpg
+- start: '15:10'
+  etime: '15:10 - 15:50'
+  title: A Walk Through the Design and Architecture of RabbitMQ
+  speaker: Ayanda Dube
+  abstract: >-
+    As the use of RabbitMQ grows, there's a growing need for its operators and
+    engineers to have a good understanding and appreciation of its internal
+    design, and how its sub-components interact to meet the various messaging
+    requirements in industry. In this talk I walk through the internal design of
+    RabbitMQ, explaining some of the key components which attribute to its
+    robustness and reputation of being a world leading and well trusted
+    messaging system.
+  img: /img/speakers/ayanda-dube.jpg
+- start: '15:50'
+  etime: '15:50 - 16:10'
+  title: Coffee Break
+- start: '16:10'
+  etime: '16:10 - 16:50'
+  title: What it's like to bet your entire startup on Rabbit
+  speaker: Nathan Herald
+  abstract: >-
+    Wunderlist made big bets on two technologies: AWS and rabbit. I will give an
+    overview of what it’s like to live with rabbit for years, the tools and
+    practices we built up around rabbit, and as many tips and learnings as I
+    can.<br/><br/> In this talk you'll see real world data, hear anecdotes from
+    using RabbitMQ at various scales. You should feel more comfortable making a
+    bet on RabbitMQ as a critical part of your infrastructure after my
+    presentation.
+  img: /img/speakers/nathan-herald.jpg
+- start: '16:55'
+  etime: '16:55 - 17:35'
+  title: What we've learned from running thousands of production RabbitMQ clusters
+  speaker: Lovisa Johansson
+  abstract: >-
+     Since 2012 CloudAMQP has been running dedicated and shared RabbitMQ clusters for customers around the world,
+     in seven different clouds. In this talk Lovisa will address the most common misconception, misconfigurations
+     and anti-patterns in RabbitMQ usage, and how they can be avoided. Lovisa will talk about how you can increase
+     RabbitMQ reliability and performance and she will also mention common RabbitMQ use cases among CloudAMQP’s
+     customers.
+  img: /img/speakers/lovisa-johansson.jpg
+- start: '17:40'
+  etime: '17:40 - 18:25'
+  title: 'Keynote: Scaling RabbitMQ @ Goldman Sachs'
+  speaker: Jonathan Skrzypek
+  abstract: >-
+    Goldman Sachs leverages hundreds of applications communicating with each
+    other. The Data Management and Distribution group provides messaging
+    middleware services to the firm’s ecosystem. This talk will be about why and
+    how we adopted RabbitMQ as a first class citizen in our messaging product
+    portfolio. A significant proportion of application teams at Goldman Sachs
+    was used to traditional guaranteed messaging systems, and as such, moving to
+    RabbitMQ was and still is a paradigm shift in how applications interact with
+    a messaging layer. We will touch on the challenges of delivering RabbitMQ as
+    a service at enterprise scale, including but not limited to deployment
+    model, monitoring and telemetry, achieving data consistency, developer
+    awareness.
+  img: /img/speakers/jonathan-skrzypek.jpg
+- start: '18:25'
+  etime: '18:25 - 19:30'
+  title: Closing and drinks

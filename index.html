@@ -110,60 +110,413 @@ image: /img/og-frontpage.jpg
       </div>
     </div>
   </section>
-  <section class="bg-light pt-6 pb-6 pt-xl-7">
+  <section class="bg-section py-3 py-md-5 pt-lg-2 pb-lg-7" style="background-image: url(/img/bg-img2.png)">
     <div class="container">
-      <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h3 class="text-uppercase text-center text-primary mb-5 editable">
-            Call for talks is now open
-          </h3>
-        </div>
-      </div>
-      <div class="row justify-content-center mb-5">
-        <div class="col-12 col-md-6 order-2 order-md-1">
-          <div class="text text-sm text-success text-center">
-            <p class="editable">
-              Would you like to present a talk at the upcoming RabbitMQ Summit 2019, and share your experience and knowledge with the audience? Submit your talk now before May 24th.&nbsp;
-            </p>
-            <label class="button-lines-wrap mt-4 text-center text-md-left mb-5 ml-4">
-              <a class="big-space-mono btn btn-primary text-uppercase" href="https://eventil.com/events/rabbitmq-summit-2019/cfp" target="_blank">Submit <span class="d-none d-sm-inline">a</span> talk</a>
-            </label>
+      <h3 class="text-uppercase text-primary text-center mb-4 mb-lg-7">Speakers</h3>
+      <div class="row justify-content-center">
+        <div class="speakers col-10 col-md-12 col-lg-11">
+          <div class="row justify-content-center justify-content-md-end">
+            <div class="col-10 col-md-6 col-xl-5 mb-5">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/gerhard-lazu.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Gerhard Lazu</h5>
+                    <p class="text-primary text-uppercase mb-1">Core RabbitMQ Dev</p>
+                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 col-xl-5 mb-5 mb-md-0">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/michal-kuratczyk.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Michal Kuratczyk</h5>
+                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
+                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h4 class="text-uppercase text-center text-primary mb-3 editable">
-            Programme Committee
-          </h4>
-        </div>
-      </div>
-      <div class="row justify-content-center mb-5">
-        <div class="col-12">
-          <div class="text text-sm text-success">
-            <p class="editable text-center">
-              The following RabbitMQ Summit Committee has the honor to review, rate and select submissions.
-            </p>
+          <div class="row justify-content-center justify-content-md-end">
+            <div class="col-10 col-md-6 col-xl-5 mb-5 mb-md-0">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/lovisa-johansson.jpg)"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Lovisa Johansson</h5>
+                    <p class="text-primary text-uppercase mb-1">RabbitMQ Engineer</p>
+                    <p class="text-primary text-uppercase mb-1">CloudAMQP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 col-xl-5 mb-5">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/gavin-roy.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Gavin Roy</h5>
+                    <p class="text-primary text-uppercase mb-1">VP of Architecture</p>
+                    <p class="text-primary text-uppercase mb-1">AWeber Communications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row justify-content-center committee">
-        {% for person in site.data.committee %}
-        <div class="col-12 col-sm-6 col-md-5 mb-3">
-          <div class="media">
-            <div class="img mr-3" style="background-image: url(/img/committee/{{ person.img }})"></div>
-            <div class="media-body">
-              <h5 class="mt-0 text-uppercase">{{ person.name }}</h5>
-              <p class="mb-1">
-                <strong class="pink space-mono">{{ person.company }}</strong>
-              </p>
-              <p class="mb-0">
-                {{ person.title }}
-              </p>
+          <div class="row justify-content-center justify-content-md-end">
+            <div class="col-10 col-md-6 col-xl-5 mb-5 mb-md-0">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/riccardo-piccoli.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Riccardo Piccoli</h5>
+                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
+                    <p class="text-primary text-uppercase mb-1">Softonic</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 col-xl-5 mb-5">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/basilio-vera.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Basilio Vera</h5>
+                    <p class="text-primary text-uppercase mb-1">Principal Engineer</p>
+                    <p class="text-primary text-uppercase mb-1">Softonic</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center justify-content-md-end">
+            <div class="col-10 col-md-6 col-xl-5 mb-5">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/kacper-mentel.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Kacper Mentel</h5>
+                    <p class="text-primary text-uppercase mb-1">Software Developer</p>
+                    <p class="text-primary text-uppercase mb-1">Erlang Solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 col-xl-5 mb-5 mb-md-0">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/jack-vanlightly.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Jack Vanlightly</h5>
+                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
+                    <p class="text-primary text-uppercase mb-1">SII Concatel, 84codes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center justify-content-md-end">
+            <div class="col-10 col-md-6 col-xl-5 mb-5 mb-md-0">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/omar-elasfar.jpg)"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Omar Elasfar</h5>
+                    <p class="text-primary text-uppercase mb-1">Senior Manager</p>
+                    <p class="text-primary text-uppercase mb-1">Zalando</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 col-xl-5 mb-5">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/madhav-sathe.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Madhav Sathe</h5>
+                    <p class="text-primary text-uppercase mb-1">Platform Architect</p>
+                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center justify-content-md-end">
+            <div class="col-10 col-md-6 col-xl-5 mb-5 mb-md-0">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-5 mb-3 mb-md-0">
+                  <div class="skew-box img-wrap">
+                    <div class="img-holder" style="background-image: url(/img/speakers/wander-costa.jpg);"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-7">
+                  <div class="info skew-box pl-1">
+                    <h5 class="text-light text-uppercase mb-1">Wander Costa</h5>
+                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
+                    <p class="text-primary text-uppercase mb-1">Intelligent Apps GmbH</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <section class="bg-light pt-4 pb-6 pt-lg-6">
+    <div class="container">
+      <a name="schedule"></a>
+      <div class="row justify-content-center mb-3">
+        <div class="col-12">
+          <h3 class="text-uppercase pt-4 pt-lg-6 text-center text-primary mb-2 editable">
+            Abstracts
+          </h3>
+          <!--
+          <h3 class="text-uppercase pt-4 pt-lg-6 text-center text-primary mb-2 editable">
+            Schedule
+          </h3>
+          <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">
+            <time datetime="2018-11-12">MONDAY 4 November</time>
+          </h3>
+          -->
+        </div>
+      </div>
+      {% for activity in site.data.schedule %}
+      <div class="row border-bottom pb-0 pb-lg-3 mb-5 mb-lg-5 justify-content-center">
+        <!--
+        <div class="col-6 col-md-3 order-1">
+          <h4 class="text-primary text-uppercase text-left text-sm-right">
+            <time datetime="2018-11-12T{{ activity.start }}">{{ activity.start }} - {{ activity.etime }}</time>
+          </h4>
+        </div>
+        -->
+        <div class="col-12 col-md-9 order-3 order-sm-2">
+          <div class="text text-success">
+            <h4 class="text-uppercase mb-2">{{ activity.title }}</h4>
+            {% if activity.abstract %}
+            <div class="row">
+              <div class="col-12 col-xl-10 text-sm">
+                <p class="mb-lg-4">
+                  <em>{{ activity.speaker }}</em>
+                </p>
+                <p>{{ activity.abstract }}</p>
+                {% if activity.topic1 %}
+                <ol>
+                  <li>{{ activity.topic1 }}</li>
+                  {% if activity.topic2 %}<li>{{ activity.topic2 }}</li>{% endif %}
+                  {% if activity.topic3 %}<li>{{ activity.topic3 }}</li>{% endif %}
+                </ol>
+                {% endif %}
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% if activity.img %}
+        <div class="col-12 col-md-2 order-2 order-sm-3">
+          <div class="row">
+            <div class="schedule-speaker mb-3">
+              <div class="skew-box">
+                <div class="img-wrap">
+                  <img src="{{ activity.img }}" alt="{{ activity.speaker }}" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="col-12 col-md-2 order-2 order-sm-3">
+          <div class="row">
+            <div class="schedule-speaker mb-3">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <section class="event-section skew-img-section pt-3 pt-lg-7 pt-xl-9 pb-0 bg-light">
+    <div class="container-fluid">
+      <div class="skew-img-row row">
+        <div class="img-event-wrap mb-3 mb-lg-0 col-12 col-lg-7 d-none d-lg-block">
+          <div class="skew-box">
+            <div><img src="/img/img-event01.jpg" alt="image" /></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 col-lg-5 mb-6 mb-md-0">
+          <a name="training"></a>
+          <div class="text text-success pl-lg-4 pt-lg-5 pb-5">
+            <h5 class="d-block d-lg-none text-uppercase mb-3">Optional Post-event:</h5>
+            <div class="hgroup pl-4 mb-4 skew-box text-uppercase text-primary">
+              <h4 class="mb-md-1">One day course by Pivotal</h4>
+              <h3 class="mb-0">Advanced RabbitMQ Training</h3>
+            </div>
+            <h5 class="mt-0 text-uppercase">Tuesday 5 November, London. <!-- <span class="pink space-mono">£495</span> --></h5>
+            <p class="editable text-sm">
+              You’ve got the basics of RabbitMQ. Now you’re ready for more advanced concepts, practices, and troubleshooting! Join this advanced training with RabbitMQ expert, Felipe Gutierrez to learn:
+            </p>
+            <ul>
+              <li class="editable text-sm">
+                Deep dive on RabbitMQ internals
+              </li>
+              <li class="editable text-sm">
+                RabbitMQ with Spring AMQP patterns
+              </li>
+              <li class="editable text-sm">
+                Using RabbitMQ Plugins
+              </li>
+              <li class="editable text-sm">
+                Troubleshooting RabbitMQ best practices
+              </li>
+            </ul>
+            <!--
+            <p class="editable text-sm">Get your training tickets today!</p>
+            <div class="text-lg-center">
+              <label class="button-lines-wrap mt-4 text-center text-sm-left text-lg-center">
+                <a class="call-for-talks btn btn-primary text-uppercase big-space-mono editable" href="https://www.eventbrite.com/e/rabbitmq-summit-tickets-45597419108#tickets" target="_blank">Subscribe Now</a>
+              </label>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+      <div class="skew-img-row row">
+        <div class="col-12 col-md-10 col-lg-5">
+          <a name="express"></a>
+          <div class="text text-success pl-lg-4 pt-lg-5 pb-5">
+            <h5 class="d-block d-lg-none text-uppercase mb-3">Optional Post-event:</h5>
+            <div class="hgroup pl-4 mb-4 skew-box text-uppercase text-primary">
+              <h4 class="mb-md-1">One day course by Erlang Solutions</h4>
+              <h3 class="mb-0">RabbitMQ Express</h3>
+            </div>
+            <h5 class="mt-0 text-uppercase">Tuesday 5 November, London.</h5>
+            <p class="editable text-sm">
+              Learn about the main concepts in RabbitMQ in the one day RabbitMQ Express training course taught by the RabbitMQ expert at Erlang Solutions. The training course will cover the following topics:
+            </p>
+            <ul>
+              <li class="editable text-sm">
+                RabbitMQ Fundamentals
+              </li>
+              <li class="editable text-sm">
+                Building systems with RabbitMQ
+              </li>
+              <li class="editable text-sm">
+                Extending RabbitMQ with Plugins
+              </li>
+              <li class="editable text-sm">
+                Optimising & Troubleshooting RabbitMQ
+              </li>
+            </ul>
+            <!--
+            <p class="editable text-sm">Go from Zero to Hero and subscribe now!</p>
+            <div class="text-lg-center">
+              <label class="button-lines-wrap mt-4 text-center text-sm-left text-lg-center">
+                <a class="call-for-talks btn btn-primary text-uppercase big-space-mono editable" href="https://www.eventbrite.com/e/rabbitmq-summit-tickets-45597419108#tickets" target="_blank">Subscribe Now</a>
+              </label>
+            </div>
+          -->
+          </div>
+        </div>
+        <div class="img-event-wrap mb-3 mb-lg-0 col-12 col-lg-7 d-none d-lg-block">
+          <div class="skew-box">
+            <div><img src="/img/img-event02.jpg" alt="image" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="skew-img-row row">
+        <div class="img-event-wrap mb-3 mb-lg-0 col-12 col-lg-7 d-none d-lg-block">
+          <div class="skew-box">
+            <div><img src="/img/img-event03.jpg" alt="image" /></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 col-lg-5 mb-6 mb-md-0">
+          <a name="training"></a>
+          <div class="text text-success pl-lg-4 pt-lg-5 pb-5">
+            <h5 class="d-block d-lg-none text-uppercase mb-3">Optional Post-event:</h5>
+            <div class="hgroup pl-4 mb-4 skew-box text-uppercase text-primary">
+              <h4 class="mb-md-1">One day course by Erlang Solutions</h4>
+              <h3 class="mb-0">RabbitMQ Advanced</h3>
+            </div>
+            <h5 class="mt-0 text-uppercase">Wednesday 6 November, London. <!-- <span class="pink space-mono">£495</span> --></h5>
+            <p class="editable text-sm">
+              Take a deep dive in understanding the internals, underlying principles and secrets behind the design, architecture and implementation of RabbitMQ, as well as getting hands-on with advanced lower-level operations and maintenance procedures, and plugin development!
+            </p>
+            <ul>
+              <li class="editable text-sm">
+                Erlang OTP fundamentals for RabbitMQ
+              </li>
+              <li class="editable text-sm">
+                AMQP processing
+              </li>
+              <li class="editable text-sm">
+                Messaging components and mechanisms
+              </li>
+              <li class="editable text-sm">
+                Message Storage
+              </li>
+              <li class="editable text-sm">
+                Plugin Development
+              </li>
+              <li class="editable text-sm">
+                Advanced operations and maintenance
+              </li>
+            </ul>
+            <!--
+            <p class="editable text-sm">Get your training tickets today!</p>
+            <div class="text-lg-center">
+              <label class="button-lines-wrap mt-4 text-center text-sm-left text-lg-center">
+                <a class="call-for-talks btn btn-primary text-uppercase big-space-mono editable" href="https://www.eventbrite.com/e/rabbitmq-summit-tickets-45597419108#tickets" target="_blank">Subscribe Now</a>
+              </label>
+            </div>
+            -->
+          </div>
+        </div>
       </div>
     </div>
   </section>
