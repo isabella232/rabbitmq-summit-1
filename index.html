@@ -4,6 +4,7 @@ title: RabbitMQ Summit 2019
 description: >
   RabbitMQ Summit brings together RabbitMQ users and developers from around the world. Learn from speakers and keynotes on what’s happening in and around RabbitMQ.
 image: /img/og-frontpage.jpg
+footer-logo: /img/logo-pink.png
 ---
 
 <main id="main">
@@ -77,6 +78,21 @@ image: /img/og-frontpage.jpg
           </div>
         </div>
       </div>
+      <!--
+      <div class="row justify-content-center mb-5">
+        <div class="col-11 col-md-4 col-lg-5 text-center">
+          <label class="button-lines-wrap">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <a href="https://www.eventbrite.com/e/rabbitmq-summit-tickets-45597419108" target="_blank" class="btn btn-primary w-100 text-uppercase big-space-mono">
+              Buy your ticket
+            </a>
+          </label>
+        </div>
+      </div>
+    -->
       <div class="row justify-content-center mb-5">
         <div class="col-12 col-lg-10">
           <form id="subForm" action="https://erlang-solutions.us18.list-manage.com/subscribe/post?u=423b69277281ee496d4012469&amp;id=31b3107785" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="form text-info js-cm-form pt-3">
@@ -555,20 +571,42 @@ image: /img/og-frontpage.jpg
           <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">Talks from 2018</h3>
         </div>
       </div>
-      <div class="row justify-content-center">
-        {% for talk in site.data.talks %}
-        <div class="col-12 col-md-6 col-xl-5 mb-5">
-          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" target="_blank">
-            <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
-          </a>
-          <div class="links mt-1 mb-2">
-            {% if talk.slideshare %}
-            <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
-            {% endif %}
-            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Lecture</a>
+      <div class="row">
+        <div class="col-12 col-lg-5 col-xl-5 mb-5 mb-lg-0">
+          <div class="text text-sm text-success">
+            <p class="editable">
+              Head over to our YouTube channel if you need to cure your acute RabbitMQ Summit abstinence.
+              There you will find 10 appreciated talks that was given last year.
+              Popular lectures include:
+            </p>
+            <ul>
+              <li class="editable">Keynote: Idiomatic RabbitMQ - Gavin M Roy</li>
+              <li class="editable">What we've learned from running thousands of production RabbitMQ clusters - Lovisa Johansson</li>
+              <li class="editable">What it's like to bet your entire startup on Rabbit - Nathan Herald</li>
+            </ul>
+            <p>
+              Visit the YouTube channel for a full list. Don't forget to subscribe!
+            </p>
           </div>
         </div>
-        {% endfor %}
+        <div class="col-12 col-lg-7 col-xl-7 mb-5">
+          <a href="https://www.youtube.com/watch?v=8Zf4zTatQYA&list=PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" class="talk-image youtube" data-embed="g3Cq9g7sDc4" target="_blank">
+            <img src="/img/youtube-playlist.jpg" class="img-fluid" alt="Visit our YouTube channel"/>
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5 mt-5">
+        <div class="col-11 col-md-5 col-lg-5 text-center">
+          <label class="button-lines-wrap">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <a href="https://www.youtube.com/watch?v=8Zf4zTatQYA&list=PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" target="_blank" class="btn btn-primary w-100 text-uppercase big-space-mono">
+              Watch Talks
+            </a>
+          </label>
+        </div>
       </div>
     </div>
   </section>
