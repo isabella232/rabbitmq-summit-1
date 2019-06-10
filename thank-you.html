@@ -29,27 +29,6 @@ footer-logo: /img/logo-pink.png
       </div>
     </div>
   </section>
-  <script type="text/javascript">
-
-      $("#eventbrite-widget-modal-trigger-59533630692").click(function(e) {
-        e.preventDefault();
-      });
-
-      var exampleCallback = function() {
-        ga('send', 'event', 'Ticket', 'purchase', 'rmqs-website-thank-you');
-        setTimeout(function(){
-          window.location.replace("/thank-you");
-        }, 2000);
-      };
-
-      window.EBWidgets.createWidget({
-          widgetType: 'checkout',
-          eventId: '59533630692',
-          modal: true,
-          modalTriggerElementId: 'eventbrite-widget-modal-trigger-59533630692',
-          onOrderComplete: exampleCallback
-      });
-  </script>
   <section class="bg-light pt-6 pb-6">
     <div class="container">
       <div class="row justify-content-center mb-3">
@@ -193,4 +172,26 @@ footer-logo: /img/logo-pink.png
       shareWindow($(this).attr("href"),$(this).attr("class"), window.location.pathname);
     });
   });
+</script>
+
+<script type="text/javascript">
+
+    $("#eventbrite-widget-modal-trigger-59533630692").click(function(e) {
+      e.preventDefault();
+    });
+
+    var exampleCallback = function() {
+      ga('send', 'event', 'Ticket', 'purchase', 'rmqs-website-thank-you');
+      setTimeout(function(){
+        window.location.replace("/thank-you");
+      }, 2000);
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '59533630692',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-59533630692',
+        onOrderComplete: exampleCallback
+    });
 </script>
