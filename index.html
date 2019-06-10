@@ -74,10 +74,7 @@ footer-logo: /img/logo-pink.png
           });
 
           var exampleCallback = function() {
-            gtag('event', 'purchase', {
-              'event_category' : 'ticket',
-              'event_label' : 'rmqs-website'
-            });
+            ga('send', 'event', 'Ticket', 'purchase', 'rmqs-website');
             setTimeout(function(){
               window.location.replace("/thank-you");
             }, 2000);
