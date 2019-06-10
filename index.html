@@ -50,17 +50,10 @@ footer-logo: /img/logo-pink.png
               friends will join us this year, to take part together in the constant evolution
               of message-queuing and RabbitMQ.
             </p>
-            <p>
-              Stay tuned and subscribe to our newsletter to get the latest news and updates. You can also follow us on twitter <a href="https://twitter.com/RabbitMQSummit?ref_src=twsrc%5Etfw" target="_blank" class="pink">@rabbitmqsummit</a>.
-            </p>
-            <p>
-              Interested in becoming a sponsor?
-              Send us an email to <a href="mailto:info@rabbitmqsummit.com" class="pink">info@rabbitmqsummit.com</a> and we will get back to you with a sponsorship brochure.
-            </p>
           </div>
         </div>
       </div>
-      <!--
+      <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
       <div class="row justify-content-center mb-5">
         <div class="col-11 col-md-4 col-lg-5 text-center">
           <label class="button-lines-wrap">
@@ -68,13 +61,30 @@ footer-logo: /img/logo-pink.png
             <span class="lines"></span>
             <span class="lines"></span>
             <span class="lines"></span>
-            <a href="https://www.eventbrite.com/e/rabbitmq-summit-tickets-45597419108" target="_blank" class="btn btn-primary w-100 text-uppercase big-space-mono">
+            <a id="eventbrite-widget-modal-trigger-59533630692" href="https://www.eventbrite.co.uk/e/rabbitmq-summit-2019-tickets-59533630692" target="_blank" class="btn btn-primary w-100 text-uppercase big-space-mono">
               Buy your ticket
             </a>
           </label>
         </div>
       </div>
-    -->
+      <script type="text/javascript">
+
+          $("#eventbrite-widget-modal-trigger-59533630692").click(function(e) {
+            e.preventDefault();
+          });
+
+          var exampleCallback = function() {
+              console.log('Order complete!');
+          };
+
+          window.EBWidgets.createWidget({
+              widgetType: 'checkout',
+              eventId: '59533630692',
+              modal: true,
+              modalTriggerElementId: 'eventbrite-widget-modal-trigger-59533630692',
+              onOrderComplete: exampleCallback
+          });
+      </script>
       <div class="row justify-content-center mb-5">
         <div class="col-12 col-lg-10">
           <form id="subForm" action="https://erlang-solutions.us18.list-manage.com/subscribe/post?u=423b69277281ee496d4012469&amp;id=31b3107785" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="form text-info js-cm-form pt-3">
