@@ -43,9 +43,9 @@ footer-logo: /img/logo-pink.png
             {{ page.share-message }}
           </div>
           <div class="mt-2 text-center btn-confirmed-container social-buttons">
-            <a class="btn btn-primary mb-2 text-uppercase space-mono" href="//twitter.com/share?text={{ page.share-message }}&amp;url=http://bit.ly/2Wj9bgb&amp;hashtags=rabbitmq,rabbitmqsummit" role="button" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet this</a>
-            <a class="btn btn-primary mb-2 text-uppercase space-mono" href="https://www.linkedin.com/shareArticle?mini=true&url=http://bit.ly/2Wj9bgb" role="button" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Share on LinkedIn</a>
-            <a class="btn btn-primary mb-2 text-uppercase space-mono" href="//www.facebook.com/sharer/sharer.php?u=http://bit.ly/2Wj9bgb" role="button" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> Share on Facebook</a>
+            <a class="btn btn-primary mb-2 text-uppercase space-mono" id="twitter" href="//twitter.com/share?text={{ page.share-message }}&amp;url=http://bit.ly/2Wj9bgb&amp;hashtags=rabbitmq,rabbitmqsummit" role="button" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet this</a>
+            <a class="btn btn-primary mb-2 text-uppercase space-mono" id="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://bit.ly/2Wj9bgb" role="button" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Share on LinkedIn</a>
+            <a class="btn btn-primary mb-2 text-uppercase space-mono" id="facebook" href="//www.facebook.com/sharer/sharer.php?u=http://bit.ly/2Wj9bgb" role="button" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> Share on Facebook</a>
           </div>
         </div>
       </div>
@@ -169,7 +169,7 @@ footer-logo: /img/logo-pink.png
     };
     $(".social-buttons a").click(function(e){
       e.preventDefault();
-      shareWindow($(this).attr("href"),$(this).attr("class"), window.location.pathname);
+      shareWindow($(this).attr("href"),$(this).attr("id"), window.location.pathname);
     });
   });
 </script>
