@@ -1,13 +1,15 @@
 - start: '10:30'
   etime: '11:15'
   title: 'Observe and understand RabbitMQ'
-  speaker: Gerhard Lazu & Michal Kuratczyk
+  speaker: Gerhard Lazu
   abstract: >-
     RabbitMQ exposes metrics and healthchecks that answer all questions.
     Future RabbitMQ versions will make it easy to visualise and understand
     what happens under the hood. Join me to learn about the future of
     RabbitMQ observability.
   img: /img/speakers/gerhard-lazu.jpg
+  co-speaker: Michal Kuratczyk
+  co-img: /img/speakers/michal-kuratczyk.jpg
 - start: '10:30'
   etime: '11:15'
   title: 'Practical advice for the care and feeding of RabbitMQ'
@@ -20,11 +22,13 @@
 - start: '11:20'
   etime: '11:45'
   title: 'EventSourcing with RabbitMQ'
-  speaker: Riccardo Piccoli & Basilio Vera
+  speaker: Riccardo Piccoli
   abstract: >-
     We will go through Softonic's distributed Event Sourcing solution applied to
     its microservices environment, implementing it leveraging RabbitMQ.
   img: /img/speakers/riccardo-piccoli.jpg
+  co-speaker:  Basilio Vera
+  co-img: /img/speakers/basilio-vera.jpg
 - start: '11:20'
   etime: '11:45'
   title: 'Do not guess, Trace'
@@ -102,3 +106,5 @@
     configuring, monitoring, updating and modifying our RabbitMQ service. In this talk we'll go into how AMQP
     and RabbitMQ can be used to power a micro service architecture from the bottom up with flexibility and reliability.
   img: /img/speakers/lovisa-johansson.jpg
+  co-speaker:  Anders Bälter
+  co-img: /img/speakers/anders-balter.jpg

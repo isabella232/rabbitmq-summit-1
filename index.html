@@ -346,7 +346,12 @@ footer-logo: /img/logo-pink.png
             <div class="row">
               <div class="col-12 col-xl-10 text-sm">
                 <p class="mb-lg-4">
-                  <em>{{ activity.speaker }}</em>
+                  <em>
+                    {{ activity.speaker }}
+                    {% if activity.co-speaker %}
+                      &amp; {{ activity.co-speaker }}
+                    {% endif %}
+                  </em>
                 </p>
                 <p>{{ activity.abstract }}</p>
                 {% if activity.topic1 %}
@@ -362,16 +367,11 @@ footer-logo: /img/logo-pink.png
           </div>
         </div>
         {% if activity.img %}
-        <div class="col-12 col-md-2 order-2 order-sm-3">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              <div class="skew-box">
-                <div class="img-wrap">
-                  <img src="{{ activity.img }}" alt="{{ activity.speaker }}" />
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-12 col-md-2 order-2 order-sm-3 mb-2">
+          <img src="{{ activity.img }}" alt="{{ activity.speaker }}" class="speaker-profile mr-1 mt-1" />
+          {% if activity.co-speaker %}
+            <img src="{{ activity.co-img }}" alt="{{ activity.co-speaker }}" class="speaker-profile mr-1 mt-1" />
+          {% endif %}
         </div>
         {% else %}
         <div class="col-12 col-md-2 order-2 order-sm-3">
