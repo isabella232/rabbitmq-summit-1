@@ -371,28 +371,28 @@ address{
 	>.row{
 		@include media(">=desktop") {
 			&:nth-child(1n) {
-				transform: translateX(50px);
+				transform: translateX(90px);
 			}
 			&:nth-child(2n) {
-				transform: translateX(0);
+				transform: translateX(50px);
 			}
 			&:nth-child(3n) {
-				transform: translateX(-50px);
+				transform: translateX(10px);
 			}
 			&:nth-child(4n) {
-				transform: translateX(-100px);
+				transform: translateX(-30px);
 			}
 			&:nth-child(5n) {
-				transform: translateX(-150px);
+				transform: translateX(-70px);
 			}
 			&:nth-child(6n) {
-				transform: translateX(-200px);
+				transform: translateX(-110px);
 			}
 		}
 	}
 	.img-wrap{
-		max-width: 130px;
-		max-height: 160px;
+		max-width: 100px;
+		max-height: 130px;
 		overflow: hidden;
 		position: relative;
 		margin: 0 auto;
@@ -411,7 +411,7 @@ address{
 			}
 		}
 		.img-holder{
-			min-height: 150px;
+			min-height: 120px;
 			width: 138%;
 			background-size: 99% 105%;
 			background-repeat: no-repeat;
@@ -424,7 +424,7 @@ address{
 			}
 			@include media(">=desktop") {
 				width: 135%;
-				transform: skewX(15deg) translateX(-23px);
+				transform: skewX(15deg) translateX(-17px);
 			}
 		}
 	}
