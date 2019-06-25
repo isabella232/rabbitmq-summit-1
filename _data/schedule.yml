@@ -31,15 +31,18 @@
   co-img: /img/speakers/basilio-vera.jpg
 - start: '11:20'
   etime: '11:45'
-  title: 'Do not guess, Trace'
-  speaker: Kacper Mentel
+  title: >
+    WeWork's "good enough" order guarantee
+  speaker: Ilana Sufrin
   abstract: >-
-    RabbitMQ runs on a battle-tested Erlang VM which provides many exceptional features for Distributed,
-    Fault-Tolerant, Highly Available and Robust systems out of the box. But this doesn't always prevent
-    our RabbitMQ installation from misbehaving without clear signs of what's wrong. It can be frustrating
-    for operators and developers. Here Tracing, another Erlang feature, comes to the rescue!
-    There are a number of techniques that use it to find a root cause of a failure. I'll guide you through them in this talk.
-  img: /img/speakers/kacper-mentel.jpg
+    Through a good understanding of their data needs and a willingness to compromise, Ilana and Avikam figured out how to 
+    rearchitect their app's RabbitMQ pipeline in order to save their company developer time and money. 
+    They are here to show you a strategy to guarantee message serialization when order matters, 
+    and to convince you that sometimes the best solution is just "good enough". 
+    This talk dives into a real-life story of using, and fixing, RabbitMQ at WeWork.
+  img: /img/speakers/ilana-sufrin.jpg
+  co-speaker:  Avikam Agur
+  co-img: /img/speakers/avikam-agur.jpg
 - start: '11:50'
   etime: '12:35'
   title: 'Feature complete: Uncovering the true cost different RabbitMQ features and configurations'
@@ -76,6 +79,17 @@
     which one is better for MQTT, or which one to use? RabbitMQ for
     MQTT, or EMQX? Join me in this talk as I answer these questions
     and help users decide on the best choice MQTT broker to use.
+- start: '13:35'
+  etime: '14:20'
+  title: 'Do not guess, Trace'
+  speaker: Kacper Mentel
+  abstract: >-
+    RabbitMQ runs on a battle-tested Erlang VM which provides many exceptional features for Distributed,
+    Fault-Tolerant, Highly Available and Robust systems out of the box. But this doesn't always prevent
+    our RabbitMQ installation from misbehaving without clear signs of what's wrong. It can be frustrating
+    for operators and developers. Here Tracing, another Erlang feature, comes to the rescue!
+    There are a number of techniques that use it to find a root cause of a failure. I'll guide you through them in this talk.
+  img: /img/speakers/kacper-mentel.jpg
 - start: '14:25'
   etime: '14:50'
   title: 'Rapidly building streaming applications with RabbitMQ, Spring Cloud Streams and SCDF'
