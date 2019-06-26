@@ -122,3 +122,13 @@
   img: /img/speakers/lovisa-johansson.jpg
   co-speaker:  Anders Bälter
   co-img: /img/speakers/anders-balter.jpg
+- start: '14:55'
+  etime: '15:40'
+  title: 'Lifting the lid on Quorum Queues'
+  speaker: Karl Nilsson
+  abstract: >-
+    Quorum Queues are a promising new RabbitMQ feature but how do they work under the hood? 
+    What were the design decisions and trade-offs that had to be made and what even is Raft?
+    <br/><br/>
+    In this session I aim to explain how Quorum Queues came about as well as a high-level overview of the design.
+  img: /img/speakers/karl-nilsson.jpg
