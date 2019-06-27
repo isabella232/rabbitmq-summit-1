@@ -1,14 +1,15 @@
 - start: '09:15'
   etime: '10:00'
-  title: 'Keynote: Growing a farm of rabbits'
+  title: 'Keynote: Growing a farm of rabbits to scale financial applications'
   speaker: Will Hoy
   abstract: >-
-    Today, Bloomberg's many engineering teams around the globe have the luxury of access 
-    to a fully-managed RabbitMQ platform. This allows them to self-provision vhosts at 
-    the click of a button. Bloomberg's RabbitMQ infrastructure team does the rest, 
-    enabling them to focus solely on the applications they're developing at scale.
-    But it wasn't always this way...<br/><br/>
-    This talk will take you on the evolution of Bloomberg's RabbitMQ infrastructure.
+    Today, Bloomberg's many engineering teams around the globe have the luxury 
+    of access to a fully-managed RabbitMQ platform. 
+    This enables them to achieve scalability, flexibility, and maintainability, 
+    without needing to focus on the RabbitMQ Server details. We’ll see how one 
+    such team has used the platform to build a system at scale which is capable 
+    of servicing billions of financial data requests each day, and highlight the 
+    architecture that streamlines their request routing.
   img: /img/speakers/will-hoy.jpg
   co-speaker: David Liu
   co-img: /img/speakers/david-liu.jpg
