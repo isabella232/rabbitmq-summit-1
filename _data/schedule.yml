@@ -1,3 +1,17 @@
+- start: '09:15'
+  etime: '10:00'
+  title: 'Keynote: Growing a farm of rabbits'
+  speaker: Will Hoy
+  abstract: >-
+    Today, Bloomberg's many engineering teams around the globe have the luxury of access 
+    to a fully-managed RabbitMQ platform. This allows them to self-provision vhosts at 
+    the click of a button. Bloomberg's RabbitMQ infrastructure team does the rest, 
+    enabling them to focus solely on the applications they're developing at scale.
+    But it wasn't always this way...<br/><br/>
+    This talk will take you on the evolution of Bloomberg's RabbitMQ infrastructure.
+  img: /img/speakers/will-hoy.jpg
+  co-speaker: David Liu
+  co-img: /img/speakers/david-liu.jpg
 - start: '10:30'
   etime: '11:15'
   title: 'Observe and understand RabbitMQ'
