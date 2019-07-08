@@ -1,6 +1,6 @@
-- start: '09:15'
-  etime: '10:00'
-  title: 'Keynote: Growing a farm of rabbits to scale financial applications'
+- start: "09:15"
+  etime: "10:00"
+  title: "Keynote: Growing a farm of rabbits to scale financial applications"
   speaker: Will Hoy
   abstract: >-
     Today, Bloomberg's many engineering teams around the globe have the luxury 
@@ -13,9 +13,18 @@
   img: /img/speakers/will-hoy.jpg
   co-speaker: David Liu
   co-img: /img/speakers/david-liu.jpg
-- start: '10:30'
-  etime: '11:15'
-  title: 'Observe and understand RabbitMQ'
+- start: "09:15"
+  etime: "10:00"
+  title: "An update from the RabbitMQ team"
+  speaker: Michael Klishin
+  abstract: >-
+    A lot has happened since the last RabbitMQ Summit. Hear from the RabbitMQ core engineering team about what near term updates to 3.8 will include as well as longer-term vision for making RabbitMQ more protocol agnostic, easier to manage and scale, and changes to the schema database.
+  img: /img/speakers/michael-klishin.jpg
+  co-speaker: Diana Parra Corbacho
+  co-img: /img/speakers/diana-parra-corbacho.jpg
+- start: "10:30"
+  etime: "11:15"
+  title: "Observe and understand RabbitMQ"
   speaker: Gerhard Lazu
   abstract: >-
     RabbitMQ exposes metrics and healthchecks that answer all questions.
@@ -25,27 +34,27 @@
   img: /img/speakers/gerhard-lazu.jpg
   co-speaker: Michal Kuratczyk
   co-img: /img/speakers/michal-kuratczyk.jpg
-- start: '10:30'
-  etime: '11:15'
-  title: 'Practical advice for the care and feeding of RabbitMQ'
+- start: "10:30"
+  etime: "11:15"
+  title: "Practical advice for the care and feeding of RabbitMQ"
   speaker: Gavin Roy
   abstract: >-
     After 10 years of heavy use of RabbitMQ in production, common problems,
     patterns, and solutions have emerged. In this talk we will cover architecture,
     configuration and operational management, monitoring, and maybe a disaster story or two.
   img: /img/speakers/gavin-roy.jpg
-- start: '11:20'
-  etime: '11:45'
-  title: 'EventSourcing with RabbitMQ'
+- start: "11:20"
+  etime: "11:45"
+  title: "EventSourcing with RabbitMQ"
   speaker: Riccardo Piccoli
   abstract: >-
     We will go through Softonic's distributed Event Sourcing solution applied to
     its microservices environment, implementing it leveraging RabbitMQ.
   img: /img/speakers/riccardo-piccoli.jpg
-  co-speaker:  Basilio Vera
+  co-speaker: Basilio Vera
   co-img: /img/speakers/basilio-vera.jpg
-- start: '11:20'
-  etime: '11:45'
+- start: "11:20"
+  etime: "11:45"
   title: >
     WeWork's "good enough" order guarantee
   speaker: Ilana Sufrin
@@ -56,11 +65,11 @@
     and to convince you that sometimes the best solution is just "good enough". 
     This talk dives into a real-life story of using, and fixing, RabbitMQ at WeWork.
   img: /img/speakers/ilana-sufrin.jpg
-  co-speaker:  Avikam Agur
+  co-speaker: Avikam Agur
   co-img: /img/speakers/avikam-agur.jpg
-- start: '11:50'
-  etime: '12:35'
-  title: 'Feature complete: Uncovering the true cost different RabbitMQ features and configurations'
+- start: "11:50"
+  etime: "12:35"
+  title: "Feature complete: Uncovering the true cost different RabbitMQ features and configurations"
   speaker: Jack Vanlightly
   abstract: >-
     They call RabbitMQ the swiss army knife of messaging systems, but what impact do all those features have on performance?<br/><br/>
@@ -68,9 +77,9 @@
     We'll see concrete numbers and come to actionable conclusions that will help you make more balanced decisions regarding
     the tradeoffs of the powerful functionality available vs performance.
   img: /img/speakers/jack-vanlightly.jpg
-- start: '11:50'
-  etime: '12:35'
-  title: 'Monitoring & scaling based on RabbitMQ telemetry'
+- start: "11:50"
+  etime: "12:35"
+  title: "Monitoring & scaling based on RabbitMQ telemetry"
   speaker: Omar Elasfar
   abstract: >-
     Zalando's Communication platform products are powered by a RabbitMQ cluster as the broker for all service to
@@ -80,9 +89,9 @@
     compute power has been a seamless effort with backlogs as a steering point alongside CPU utilization of
     the consumer application.
   img: /img/speakers/omar-elasfar.jpg
-- start: '13:35'
-  etime: '14:20'
-  title: 'RabbitMQ MQTT vs EMQX'
+- start: "13:35"
+  etime: "14:20"
+  title: "RabbitMQ MQTT vs EMQX"
   speaker: Grigory Starinkin
   abstract: >-
     RabbitMQ is a multi-protocol messaging broker, which, on a vanilla
@@ -94,9 +103,9 @@
     which one is better for MQTT, or which one to use? RabbitMQ for
     MQTT, or EMQX? Join me in this talk as I answer these questions
     and help users decide on the best choice MQTT broker to use.
-- start: '13:35'
-  etime: '14:20'
-  title: 'Do not guess, Trace'
+- start: "13:35"
+  etime: "14:20"
+  title: "Do not guess, Trace"
   speaker: Kacper Mentel
   abstract: >-
     RabbitMQ runs on a battle-tested Erlang VM which provides many exceptional features for Distributed,
@@ -105,18 +114,18 @@
     for operators and developers. Here Tracing, another Erlang feature, comes to the rescue!
     There are a number of techniques that use it to find a root cause of a failure. I'll guide you through them in this talk.
   img: /img/speakers/kacper-mentel.jpg
-- start: '14:25'
-  etime: '14:50'
-  title: 'Rapidly building streaming applications with RabbitMQ, Spring Cloud Streams and SCDF'
+- start: "14:25"
+  etime: "14:50"
+  title: "Rapidly building streaming applications with RabbitMQ, Spring Cloud Streams and SCDF"
   speaker: Madhav Sathe
   abstract: >-
     In this session you will learn how to use Spring Cloud Streams with RabbitMQ.
     We will build data pipeline using Spring Cloud Data Flow. We will demonstrate
     how applications can be deployed and scaled using Cloud Foundry. This is a live-coding session.
   img: /img/speakers/madhav-sathe.jpg
-- start: '14:25'
-  etime: '14:50'
-  title: 'How to use multiple RabbitMQ brokers with SpringBoot'
+- start: "14:25"
+  etime: "14:50"
+  title: "How to use multiple RabbitMQ brokers with SpringBoot"
   speaker: Wander Costa
   abstract: >-
     How to connect your SpringBoot application to multiple RabbitMQ brokers?
@@ -125,9 +134,9 @@
     to dedicated brokers for different use cases or contexts.
     To solve these problems in hundreds of micro-services, we wrote this simple-to-use open source library.
   img: /img/speakers/wander-costa.jpg
-- start: '14:55'
-  etime: '15:40'
-  title: 'Running RabbitMQ at Scale'
+- start: "14:55"
+  etime: "15:40"
+  title: "Running RabbitMQ at Scale"
   speaker: Lovisa Johansson
   abstract: >-
     CloudAMQP provides RabbitMQ clusters as a service, but what happens behind the scenes?
@@ -135,11 +144,11 @@
     configuring, monitoring, updating and modifying our RabbitMQ service. In this talk we'll go into how AMQP
     and RabbitMQ can be used to power a micro service architecture from the bottom up with flexibility and reliability.
   img: /img/speakers/lovisa-johansson.jpg
-  co-speaker:  Anders Bälter
+  co-speaker: Anders Bälter
   co-img: /img/speakers/anders-balter.jpg
-- start: '14:55'
-  etime: '15:40'
-  title: 'Lifting the lid on Quorum Queues'
+- start: "14:55"
+  etime: "15:40"
+  title: "Lifting the lid on Quorum Queues"
   speaker: Karl Nilsson
   abstract: >-
     Quorum Queues are a promising new RabbitMQ feature but how do they work under the hood? 
