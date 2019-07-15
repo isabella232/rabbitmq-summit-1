@@ -101,40 +101,20 @@ footer-logo: /img/logo-pink.png
       <h3 class="text-uppercase text-primary text-center mt-7 mb-4 mb-lg-5">Keynote Speakers</h3>
       <div class="row justify-content-center mb-4 mb-md-7">
         <div class="speakers speakers-keynote col-10 col-md-12 col-lg-12">
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-6 mb-5 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-lg-4 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/will-hoy.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Will Hoy</h5>
-                    <p class="text-primary text-uppercase mb-1">Team Lead</p>
-                    <p class="text-primary text-uppercase mb-1">Bloomberg L.P.</p>
-                  </div>
+            <div class="speaker-list speaker-list--keynote">
+            {% for speaker in site.data.speakers %}
+            {% if speaker.keynote %}
+              <div class="speaker">
+                <div class="speaker__img speaker__img--keynote" style="background-image: url({{ speaker.img }});""></div>
+                <div class="speaker__text">
+                  <h5 class="text-light text-uppercase mb-1">{{ speaker.speaker }}</h5>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.role }}</p>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
                 </div>
               </div>
+            {% endif %}
+            {% endfor %}
             </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-5 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-lg-4 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/david-liu.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">David Liu</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">Bloomberg L.P.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -144,299 +124,19 @@ footer-logo: /img/logo-pink.png
       <h3 class="text-uppercase text-primary text-center mb-4 mb-lg-7">Speakers</h3>
       <div class="row justify-content-center">
         <div class="speakers col-10 col-md-12 col-lg-11">
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/gerhard-lazu.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Gerhard Lazu</h5>
-                    <p class="text-primary text-uppercase mb-1">Core RabbitMQ Dev</p>
-                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
-                  </div>
+          <div class="speaker-list">
+            {% for speaker in site.data.speakers %}
+            {% unless speaker.keynote %}
+              <div class="speaker">
+                <div class="speaker__img" style="background-image: url({{ speaker.img }});""></div>
+                <div class="speaker__text">
+                  <h5 class="text-light text-uppercase mb-1">{{ speaker.speaker }}</h5>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.role }}</p>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
                 </div>
               </div>
-            </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-4 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/michal-kuratczyk.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Michal Kuratczyk</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/gavin-roy.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Gavin Roy</h5>
-                    <p class="text-primary text-uppercase mb-1">VP of Architecture</p>
-                    <p class="text-primary text-uppercase mb-1">AWeber Communications</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/wander-costa.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Wander Costa</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">Intelligent Apps GmbH</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/lovisa-johansson.jpg)"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Lovisa Johansson</h5>
-                    <p class="text-primary text-uppercase mb-1">RabbitMQ Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">CloudAMQP</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/anders-balter.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Anders Bälter</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">CloudAMQP</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/ilana-sufrin.jpg)"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Ilana Sufrin</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">WeWork</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/avikam-agur.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Avikam Agur</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">WeWork</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="speakers col-10 col-md-12 col-lg-11 mt-lg-8">
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/riccardo-piccoli.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Riccardo Piccoli</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">Softonic</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/basilio-vera.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Basilio Vera</h5>
-                    <p class="text-primary text-uppercase mb-1">Principal Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">Softonic</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/kacper-mentel.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Kacper Mentel</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Developer</p>
-                    <p class="text-primary text-uppercase mb-1">Erlang Solutions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-4 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/jack-vanlightly.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Jack Vanlightly</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">SII Concatel, 84codes</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/omar-elasfar.jpg)"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Omar Elasfar</h5>
-                    <p class="text-primary text-uppercase mb-1">Senior Manager</p>
-                    <p class="text-primary text-uppercase mb-1">Zalando</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/madhav-sathe.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Madhav Sathe</h5>
-                    <p class="text-primary text-uppercase mb-1">Platform Architect</p>
-                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4 mb-md-0">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/michael-klishin.jpg)"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Michael Klishin</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/diana-parra-corbacho.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Diana Parra Corbacho</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-10 col-md-6 col-xl-5 mb-4">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-5 mb-3 mb-md-0">
-                  <div class="skew-box img-wrap">
-                    <div class="img-holder" style="background-image: url(/img/speakers/karl-nilsson.jpg);"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-7">
-                  <div class="info skew-box pl-1">
-                    <h5 class="text-light text-uppercase mb-1">Karl Nilsson</h5>
-                    <p class="text-primary text-uppercase mb-1">Software Engineer</p>
-                    <p class="text-primary text-uppercase mb-1">Pivotal</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {% endunless %}
+            {% endfor %}
           </div>
         </div>
       </div>

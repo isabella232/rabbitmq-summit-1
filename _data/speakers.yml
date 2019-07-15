@@ -1,0 +1,78 @@
+- speaker: Will Hoy
+  role: Team Lead
+  company: Bloomberg L.P.
+  img: /img/speakers/will-hoy.jpg
+  keynote: true
+- speaker: David Liu
+  role: Software Engineer
+  company: Bloomberg L.P.
+  img: /img/speakers/david-liu.jpg
+  keynote: true
+- speaker: Gerhard Lazu
+  role: Core RabbitMQ Dev
+  company: Pivotal
+  img: /img/speakers/gerhard-lazu.jpg
+- speaker: Michal Kuratczyk
+  role: Software Engineer
+  company: Pivotal
+  img: /img/speakers/michal-kuratczyk.jpg
+- speaker: Gavin Roy
+  role: VP of Architecture
+  company: AWeber Communications
+  img: /img/speakers/gavin-roy.jpg
+- speaker: Wander Costa
+  role: Software Engineer
+  company: Intelligent Apps GmbH
+  img: /img/speakers/wander-costa.jpg
+- speaker: Lovisa Johansson
+  role: RabbitMQ Engineer
+  company: CloudAMQP
+  img: /img/speakers/lovisa-johansson.jpg
+- speaker: Anders Bälter
+  role: Software Engineer
+  company: CloudAMQP
+  img: /img/speakers/anders-balter.jpg
+- speaker: Ilana Sufrin
+  role: Software Engineer
+  company: WeWork
+  img: /img/speakers/michael-klishin.jpg
+- speaker: Avikam Agur
+  role: Software Engineer
+  company: WeWork
+  img: /img/speakers/avikam-agur.jpg
+- speaker: Riccardo Piccoli
+  role: Software Engineer
+  company: Softonic
+  img: /img/speakers/riccardo-piccoli.jpg
+- speaker: Basilio Vera
+  role: Principal Engineer
+  company: Softonic
+  img: /img/speakers/basilio-vera.jpg
+- speaker: Kacper Mentel
+  role: Software Developer
+  company: Erlang Solutions
+  img: /img/speakers/kacper-mentel.jpg
+- speaker: Jack Vanlightly
+  role: Software Engineer
+  company: SII Concatel, 84codes
+  img: /img/speakers/jack-vanlightly.jpg
+- speaker: Omar Elasfar
+  role: Senior Manager
+  company: Zalando
+  img: /img/speakers/omar-elasfar.jpg
+- speaker: Madhav Sathe
+  role: Platform Architect
+  company: Pivotal
+  img: /img/speakers/madhav-sathe.jpg
+- speaker: Michael Klishin
+  role: Software Engineer
+  company: Pivotal
+  img: /img/speakers/michael-klishin.jpg
+- speaker: Diana Parra Corbacho
+  role: Software Engineer
+  company: Pivotal
+  img: /img/speakers/diana-parra-corbacho.jpg
+- speaker: Karl Nilsson
+  role: Software Engineer
+  company: Pivotal
+  img: /img/speakers/karl-nilsson.jpg
