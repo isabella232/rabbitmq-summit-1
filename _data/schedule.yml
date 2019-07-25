@@ -103,6 +103,7 @@
     which one is better for MQTT, or which one to use? RabbitMQ for
     MQTT, or EMQX? Join me in this talk as I answer these questions
     and help users decide on the best choice MQTT broker to use.
+  img: /img/speakers/grigory-starinkin.jpg
 - start: "13:35"
   etime: "14:20"
   title: "Do not guess, Trace"
