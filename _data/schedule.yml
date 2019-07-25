@@ -117,12 +117,10 @@
   img: /img/speakers/kacper-mentel.jpg
 - start: "14:25"
   etime: "14:50"
-  title: "Rapidly building streaming applications with RabbitMQ, Spring Cloud Streams and SCDF"
+  title: "Rapidly Building Event Driven and Streaming Applications with RabbitMQ"
   speaker: Madhav Sathe
   abstract: >-
-    In this session you will learn how to use Spring Cloud Streams with RabbitMQ.
-    We will build data pipeline using Spring Cloud Data Flow. We will demonstrate
-    how applications can be deployed and scaled using Cloud Foundry. This is a live-coding session.
+    In this session we explore a variety of modern event processing and streaming solutions built on top of RabbitMQ. We will demonstrate how Spring Cloud Streams and RabbitMQ provide abstractions for developers to easily build event driven apps. Furthermore, the audience will take away tools and techniques to solve stateless and stateful streaming problems using RabbitMQ and Reactive Streams. This is a live-coding session.
   img: /img/speakers/madhav-sathe.jpg
 - start: "14:25"
   etime: "14:50"
