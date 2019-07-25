@@ -224,22 +224,12 @@ footer-logo: /img/logo-pink.png
             {% endif %}
           </div>
         </div>
-        {% if activity.img %}
         <div class="col-12 col-md-2 order-2 order-sm-3 mb-2">
           <img src="/img/speakers/{{ activity.speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg" alt="{{ activity.speaker }}" class="speaker-profile mr-1 mt-1" />
           {% if activity.co-speaker %}
             <img src="/img/speakers/{{ activity.co-speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg" alt="{{ activity.co-speaker }}" class="speaker-profile mr-1 mt-1" />
           {% endif %}
         </div>
-        {% else %}
-        <div class="col-12 col-md-2 order-2 order-sm-3">
-          <div class="row">
-            <div class="schedule-speaker mb-3">
-              &nbsp;
-            </div>
-          </div>
-        </div>
-        {% endif %}
       </div>
       {% endfor %}
     </div>
