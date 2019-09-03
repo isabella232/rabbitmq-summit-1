@@ -126,6 +126,14 @@
     our RabbitMQ installation from misbehaving without clear signs of what's wrong. It can be frustrating
     for operators and developers. Here Tracing, another Erlang feature, comes to the rescue!
     There are a number of techniques that use it to find a root cause of a failure. I'll guide you through them in this talk.
+- start: "13:35"
+  etime: "14:20"
+  title: "Using the source-oriented exchanges pattern to keep events in order"
+  speaker: Alex Thomas
+  role: Tech Lead 
+  company: Oliver Wyman
+  abstract: >-
+    Almost every introduction to publish-subscribe technology embraces a model where different message types appear on correspondingly distinct topics. Unfortunately this introduces a rather fundamental flaw into common integration scenarios: it loses the order of events across the topics. The effects of this unintended re-ordering can be significant, forcing developers to implement elaborate workarounds. Using the "source-oriented exchanges" pattern, Alex will show how RabbitMQ offer a way to implement the equivalent of topics without losing track of the overall order of messages.
 - start: "14:25"
   etime: "14:50"
   title: "Rapidly Building Event Driven and Streaming Applications with RabbitMQ"
