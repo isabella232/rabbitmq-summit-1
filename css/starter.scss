@@ -1183,3 +1183,77 @@ a.pink:hover {
     }
   }
 }
+
+.schedule {
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
+  margin-bottom: 5rem;
+  
+  &:nth-col(2n) {
+    .two {
+      background-color: pink;
+    }
+  }
+  
+  .group-event {
+    grid-column: 2/4; 
+  }
+
+  .two, .alone {
+    grid-column: auto/span 1;
+  }
+
+  .group-event {
+    background-color: $purple;
+    
+    .text-uppercase {
+      color: $white;
+    }
+  }
+
+  .time {
+    padding: 1rem 1rem 1rem 0;
+    h4 { 
+      margin-bottom: 0 
+    }
+  }
+
+  .group-event {
+    padding: 1rem 1rem 1rem 1rem;
+    -webkit-clip-path: polygon(1% 0, 100% 0%, 99% 100%, 0% 100%);
+    clip-path: polygon(1% 0, 100% 0%, 99% 100%, 0% 100%);
+
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+
+  .two {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .alone {
+    padding: 1rem .5rem 1rem 1rem;
+  }
+
+  .column-border {
+    border-right: 1px dashed $gray-200;
+  }
+}
+
+@include media-breakpoint-down(sm) { 
+  .schedule {
+    grid-template-columns: min-content 1fr 1fr;
+
+    .alone, .group-event, .time, .two {
+      padding: .5rem;
+    }
+    .group-event {
+      display: grid;
+      align-items: center;
+    }
+    .time {
+      padding-left: 0;
+    }
+  }
+}

@@ -141,6 +141,7 @@ footer-logo: /img/logo-pink.png
           <div class="speaker-list">
             {% for speaker in site.data.schedule %}
             {% unless speaker.keynote %}
+            {% if speaker.speaker %}
               <div class="speaker">
                 <div class="speaker__img" style="background-image: url(/img/speakers/{{ speaker.speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg);"></div>
                 <div class="speaker__text">
@@ -163,6 +164,7 @@ footer-logo: /img/logo-pink.png
                 </div>
               </div>
               {% endif %}
+            {% endif %}
             {% endunless %}
             {% endfor %}
           </div>
@@ -175,63 +177,75 @@ footer-logo: /img/logo-pink.png
       <a name="schedule"></a>
       <div class="row justify-content-center mb-3">
         <div class="col-12">
-          <h3 class="text-uppercase pt-4 pt-lg-6 text-center text-primary mb-5 editable">
-            Abstracts
-          </h3>
-          <!--
+
           <h3 class="text-uppercase pt-4 pt-lg-6 text-center text-primary mb-2 editable">
             Schedule
           </h3>
           <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">
             <time datetime="2018-11-12">MONDAY 4 November</time>
           </h3>
-          -->
         </div>
       </div>
+      <div class="schedule">
       {% for activity in site.data.schedule %}
-      <div class="row border-bottom pb-0 pb-lg-3 mb-5 mb-lg-5 justify-content-center">
-        <!--
-        <div class="col-6 col-md-3 order-1">
-          <h4 class="text-primary text-uppercase text-left text-sm-right">
-            <time datetime="2018-11-12T{{ activity.start }}">{{ activity.start }} - {{ activity.etime }}</time>
-          </h4>
-        </div>
-        -->
-        <div class="col-12 col-md-9 order-3 order-sm-2">
-          <div class="text text-success">
-            <h4 class="text-uppercase mb-2">{{ activity.title }}</h4>
-            {% if activity.abstract %}
-            <div class="row">
-              <div class="col-12 col-xl-10 text-sm">
+        {% case activity.template %}
+          {% when 'group' %}
+            {% if activity.start %}
+              <div class="time">
+                <h4 class="text-primary text-uppercase text-left">
+                  <time datetime="2019-11-04T{{ activity.start }}">{{ activity.start }}{% if activity.etime %}-{{ activity.etime }}{% endif %}</time>
+                </h4>
+              </div>
+            {% endif %}
+            <div class="group-event">
+              <h4 class="text-uppercase">{{ activity.title }}</h4>
+            </div>
+          {% when 'alone' %}
+            {% if activity.start %}
+              <div class="time">
+                <h4 class="text-primary text-uppercase text-left">
+                  <time datetime="2019-11-04T{{ activity.start }}">{{ activity.start }}{% if activity.etime %}-{{ activity.etime }}{% endif %}</time>
+                </h4>
+              </div>
+            {% endif %}
+            <div class="alone column-border">
+              <h4 class="text-uppercase mb-2">{{ activity.title }}</h4>
+              {% if activity.speaker %}
                 <p class="mb-lg-4">
                   <em>
-                    {{ activity.speaker }}
-                    {% if activity.co-speaker %}
-                      &amp; {{ activity.co-speaker }}
-                    {% endif %}
+                    {{ activity.speaker }}{% if activity.co-speaker %} &amp; {{ activity.co-speaker }}{% endif %}
                   </em>
                 </p>
+              {% endif %}
+              {% if activity.abstract %}
                 <p>{{ activity.abstract }}</p>
-                {% if activity.topic1 %}
-                <ol>
-                  <li>{{ activity.topic1 }}</li>
-                  {% if activity.topic2 %}<li>{{ activity.topic2 }}</li>{% endif %}
-                  {% if activity.topic3 %}<li>{{ activity.topic3 }}</li>{% endif %}
-                </ol>
+              {% endif %}
+            </div>
+            <div class="two">&nbsp;</div>
+          {% when 'two' %}
+            {% if activity.start %}
+                <div class="time">
+                  <h4 class="text-primary text-uppercase text-left">
+                    <time datetime="2019-11-04T{{ activity.start }}">{{ activity.start }}{% if activity.etime %}-{{ activity.etime }}{% endif %}</time>
+                  </h4>
+                </div>
+              {% endif %}
+              <div class="two{% if activity.start %} column-border{% endif %}">
+                <h4 class="text-uppercase mb-2">{{ activity.title }}</h4>
+                {% if activity.speaker %}
+                <p class="mb-lg-4">
+                  <em>
+                    {{ activity.speaker }}{% if activity.co-speaker %} &amp; {{ activity.co-speaker }}{% endif %}
+                  </em>
+                </p>
+              {% endif %}
+                {% if activity.abstract %}
+                  <p>{{ activity.abstract }}</p>
                 {% endif %}
               </div>
-            </div>
-            {% endif %}
-          </div>
-        </div>
-        <div class="col-12 col-md-2 order-2 order-sm-3 mb-2">
-          <img src="/img/speakers/{{ activity.speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg" alt="{{ activity.speaker }}" class="speaker-profile mr-1 mt-1" />
-          {% if activity.co-speaker %}
-            <img src="/img/speakers/{{ activity.co-speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg" alt="{{ activity.co-speaker }}" class="speaker-profile mr-1 mt-1" />
-          {% endif %}
-        </div>
-      </div>
+        {% endcase %}
       {% endfor %}
+      </div>
     </div>
   </section>
   <section class="event-section skew-img-section pt-3 pt-lg-7 pt-xl-9 pb-0 bg-light">

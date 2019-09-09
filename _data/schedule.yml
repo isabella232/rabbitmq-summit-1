@@ -1,23 +1,15 @@
+- start: "08:00"
+  etime: "09:00"
+  title: "Registration"
+  template: group
+- start: "09:00"
+  etime: "09:15" 
+  title: "Welcome to the RabbitMQ summit 2019"
+  template: alone
 - start: "09:15"
   etime: "10:00"
+  title: "Keynote: An update from the RabbitMQ team"
   keynote: true
-  title: "Keynote: Growing a farm of rabbits to scale financial applications"
-  speaker: Will Hoy
-  role: Team Lead
-  company: Bloomberg L.P.
-  abstract: >-
-    Today, Bloomberg's many engineering teams around the globe have the luxury 
-    of access to a fully-managed RabbitMQ platform. 
-    This enables them to achieve scalability, flexibility, and maintainability, 
-    without needing to focus on the RabbitMQ Server details. We’ll see how one 
-    such team has used the platform to build a system at scale which is capable 
-    of servicing billions of financial data requests each day, and highlight the 
-    architecture that streamlines their request routing.
-  co-speaker: David Liu
-  co-role: Software Engineer
-- start: "09:15"
-  etime: "10:00"
-  title: "An update from the RabbitMQ team"
   speaker: Michael Klishin
   role: Software Engineer
   company: Pivotal
@@ -25,19 +17,11 @@
     A lot has happened since the last RabbitMQ Summit. Hear from the RabbitMQ core engineering team about what near term updates to 3.8 will include as well as longer-term vision for making RabbitMQ more protocol agnostic, easier to manage and scale, and changes to the schema database.
   co-speaker: Diana Parra Corbacho
   co-role: Software Engineer
-- start: "10:30"
-  etime: "11:15"
-  title: "Observe and understand RabbitMQ"
-  speaker: Gerhard Lazu
-  role: Core RabbitMQ Dev
-  company: Pivotal
-  abstract: >-
-    RabbitMQ exposes metrics and healthchecks that answer all questions.
-    Future RabbitMQ versions will make it easy to visualise and understand
-    what happens under the hood. Join me to learn about the future of
-    RabbitMQ observability.
-  co-speaker: Michal Kuratczyk
-  co-role: Software Engineer
+  template: alone
+- start: "10:00"
+  etime: "10:30"
+  title: "Break"
+  template: group
 - start: "10:30"
   etime: "11:15"
   title: "Practical advice for the care and feeding of RabbitMQ"
@@ -48,17 +32,18 @@
     After 10 years of heavy use of RabbitMQ in production, common problems,
     patterns, and solutions have emerged. In this talk we will cover architecture,
     configuration and operational management, monitoring, and maybe a disaster story or two.
-- start: "11:20"
-  etime: "11:45"
-  title: "EventSourcing with RabbitMQ"
-  speaker: Riccardo Piccoli
-  role: Software Engineer
-  company: Softonic
+  template: two
+- title: "Do not guess, Trace"
+  speaker: Kacper Mentel
+  role: Software Developer
+  company: Erlang Solutions
   abstract: >-
-    We will go through Softonic's distributed Event Sourcing solution applied to
-    its microservices environment, implementing it leveraging RabbitMQ.
-  co-speaker: Basilio Vera
-  co-role: Principal Engineer
+    RabbitMQ runs on a battle-tested Erlang VM which provides many exceptional features for Distributed,
+    Fault-Tolerant, Highly Available and Robust systems out of the box. But this doesn't always prevent
+    our RabbitMQ installation from misbehaving without clear signs of what's wrong. It can be frustrating
+    for operators and developers. Here Tracing, another Erlang feature, comes to the rescue!
+    There are a number of techniques that use it to find a root cause of a failure. I'll guide you through them in this talk.
+  template: two
 - start: "11:20"
   etime: "11:45"
   title: >
@@ -74,17 +59,17 @@
     This talk dives into a real-life story of using, and fixing, RabbitMQ at WeWork.
   co-speaker: Avikam Agur
   co-role: Software Engineer
-- start: "11:50"
-  etime: "12:35"
-  title: "Feature complete: Uncovering the true cost different RabbitMQ features and configurations"
-  speaker: Jack Vanlightly
+  template: two
+- title: "Lifting the lid on Quorum Queues"
+  speaker: Karl Nilsson
   role: Software Engineer
-  company: SII Concatel, 84codes
+  company: Pivotal
   abstract: >-
-    They call RabbitMQ the swiss army knife of messaging systems, but what impact do all those features have on performance?<br/><br/>
-    In this talk we'll review common features and their effect on end-to-end latency, throughput and broker load.
-    We'll see concrete numbers and come to actionable conclusions that will help you make more balanced decisions regarding
-    the tradeoffs of the powerful functionality available vs performance.
+    Quorum Queues are a promising new RabbitMQ feature but how do they work under the hood? 
+    What were the design decisions and trade-offs that had to be made and what even is Raft?
+    <br/><br/>
+    In this session I aim to explain how Quorum Queues came about as well as a high-level overview of the design.
+  template: two
 - start: "11:50"
   etime: "12:35"
   title: "Monitoring & scaling based on RabbitMQ telemetry"
@@ -98,9 +83,55 @@
     we collect and react on in real time. Managing cost efficiency and finding the right spot to launch more
     compute power has been a seamless effort with backlogs as a steering point alongside CPU utilization of
     the consumer application.
+  template: two
+- title: "Observe and understand RabbitMQ"
+  speaker: Gerhard Lazu
+  role: Core RabbitMQ Dev
+  company: Pivotal
+  abstract: >-
+    RabbitMQ exposes metrics and healthchecks that answer all questions.
+    Future RabbitMQ versions will make it easy to visualise and understand
+    what happens under the hood. Join me to learn about the future of
+    RabbitMQ observability.
+  co-speaker: Michal Kuratczyk
+  co-role: Software Engineer
+  template: two
+- start: "12:35"
+  etime: "13:35"
+  title: "Lunch"
+  template: group
 - start: "13:35"
-  etime: "14:20"
-  title: "RabbitMQ MQTT vs EMQX"
+  etime: "14:00"
+  title: "How to use multiple RabbitMQ brokers with SpringBoot"
+  speaker: Wander Costa
+  role: Software Engineer
+  company: Intelligent Apps GmbH
+  abstract: >-
+    How to connect your SpringBoot application to multiple RabbitMQ brokers?
+    But why do you need multiple RabbitMQ brokers in the first place? The solution I'm
+    going to present solves different use cases: from brokers in different PAAS providers
+    to dedicated brokers for different use cases or contexts.
+    To solve these problems in hundreds of micro-services, we wrote this simple-to-use open source library.
+  template: two
+- title: "Using the source-oriented exchanges pattern to keep events in order"
+  speaker: Alex Thomas
+  role: Tech Lead 
+  company: Oliver Wyman
+  abstract: >-
+    Almost every introduction to publish-subscribe technology embraces a model where different message types appear on correspondingly distinct topics. Unfortunately this introduces a rather fundamental flaw into common integration scenarios: it loses the order of events across the topics. The effects of this unintended re-ordering can be significant, forcing developers to implement elaborate workarounds. Using the "source-oriented exchanges" pattern, Alex will show how RabbitMQ offer a way to implement the equivalent of topics without losing track of the overall order of messages.
+  template: two
+- start: "14:05"
+  etime: "14:30"
+  title: "Rapidly Building Event Driven and Streaming Applications with RabbitMQ"
+  speaker: Madhav Sathe
+  role: Platform Architect
+  company: Pivotal
+  abstract: >-
+    In this session we explore a variety of modern event processing and streaming solutions built on top of RabbitMQ. We will demonstrate how Spring Cloud Streams and RabbitMQ provide abstractions for developers to easily build event driven apps. Furthermore, the audience will take away tools and techniques to solve stateless and stateful streaming problems using RabbitMQ and Reactive Streams. This is a live-coding session.
+  co-speaker: Marcial Rosales
+  co-role: Principal Engineer
+  template: two
+- title: "RabbitMQ MQTT vs EMQX"
   speaker: Grigory Starinkin
   role: Erlang Developer
   company: Erlang Solutions
@@ -114,50 +145,29 @@
     which one is better for MQTT, or which one to use? RabbitMQ for
     MQTT, or EMQX? Join me in this talk as I answer these questions
     and help users decide on the best choice MQTT broker to use.
-- start: "13:35"
-  etime: "14:20"
-  title: "Do not guess, Trace"
-  speaker: Kacper Mentel
-  role: Software Developer
-  company: Erlang Solutions
-  abstract: >-
-    RabbitMQ runs on a battle-tested Erlang VM which provides many exceptional features for Distributed,
-    Fault-Tolerant, Highly Available and Robust systems out of the box. But this doesn't always prevent
-    our RabbitMQ installation from misbehaving without clear signs of what's wrong. It can be frustrating
-    for operators and developers. Here Tracing, another Erlang feature, comes to the rescue!
-    There are a number of techniques that use it to find a root cause of a failure. I'll guide you through them in this talk.
-- start: "13:35"
-  etime: "14:20"
-  title: "Using the source-oriented exchanges pattern to keep events in order"
-  speaker: Alex Thomas
-  role: Tech Lead 
-  company: Oliver Wyman
-  abstract: >-
-    Almost every introduction to publish-subscribe technology embraces a model where different message types appear on correspondingly distinct topics. Unfortunately this introduces a rather fundamental flaw into common integration scenarios: it loses the order of events across the topics. The effects of this unintended re-ordering can be significant, forcing developers to implement elaborate workarounds. Using the "source-oriented exchanges" pattern, Alex will show how RabbitMQ offer a way to implement the equivalent of topics without losing track of the overall order of messages.
-- start: "14:25"
-  etime: "14:50"
-  title: "Rapidly Building Event Driven and Streaming Applications with RabbitMQ"
-  speaker: Madhav Sathe
-  role: Platform Architect
-  company: Pivotal
-  abstract: >-
-    In this session we explore a variety of modern event processing and streaming solutions built on top of RabbitMQ. We will demonstrate how Spring Cloud Streams and RabbitMQ provide abstractions for developers to easily build event driven apps. Furthermore, the audience will take away tools and techniques to solve stateless and stateful streaming problems using RabbitMQ and Reactive Streams. This is a live-coding session.
-  co-speaker: Marcial Rosales
-  co-role: Principal Engineer
-- start: "14:25"
-  etime: "14:50"
-  title: "How to use multiple RabbitMQ brokers with SpringBoot"
-  speaker: Wander Costa
+  template: two
+- start: "14:35"
+  etime: "15:00"
+  title: "EventSourcing with RabbitMQ"
+  speaker: Riccardo Piccoli
   role: Software Engineer
-  company: Intelligent Apps GmbH
+  company: Softonic
   abstract: >-
-    How to connect your SpringBoot application to multiple RabbitMQ brokers?
-    But why do you need multiple RabbitMQ brokers in the first place? The solution I'm
-    going to present solves different use cases: from brokers in different PAAS providers
-    to dedicated brokers for different use cases or contexts.
-    To solve these problems in hundreds of micro-services, we wrote this simple-to-use open source library.
-- start: "14:55"
+    We will go through Softonic's distributed Event Sourcing solution applied to
+    its microservices environment, implementing it leveraging RabbitMQ.
+  co-speaker: Basilio Vera
+  co-role: Principal Engineer
+  template: alone
+- start: "15:05"
   etime: "15:40"
+  title: "Panel debate"
+  template: alone
+- start: "15:40"
+  etime: "16:10"
+  title: "Break"
+  template: group
+- start: "16:10"
+  etime: "16:55"
   title: "Running RabbitMQ at Scale"
   speaker: Lovisa Johansson
   role: RabbitMQ Engineer
@@ -169,14 +179,39 @@
     and RabbitMQ can be used to power a micro service architecture from the bottom up with flexibility and reliability.
   co-speaker: Anders Bälter
   co-role: Software Engineer
-- start: "14:55"
-  etime: "15:40"
-  title: "Lifting the lid on Quorum Queues"
-  speaker: Karl Nilsson
+  template: two
+- title: "Feature complete: Uncovering the true cost different RabbitMQ features and configurations"
+  speaker: Jack Vanlightly
   role: Software Engineer
-  company: Pivotal
+  company: SII Concatel, 84codes
   abstract: >-
-    Quorum Queues are a promising new RabbitMQ feature but how do they work under the hood? 
-    What were the design decisions and trade-offs that had to be made and what even is Raft?
-    <br/><br/>
-    In this session I aim to explain how Quorum Queues came about as well as a high-level overview of the design.
+    They call RabbitMQ the swiss army knife of messaging systems, but what impact do all those features have on performance?<br/><br/>
+    In this talk we'll review common features and their effect on end-to-end latency, throughput and broker load.
+    We'll see concrete numbers and come to actionable conclusions that will help you make more balanced decisions regarding
+    the tradeoffs of the powerful functionality available vs performance.
+  template: two
+- start: "17:00"
+  etime: "17:45"
+  keynote: true
+  title: "Keynote: Growing a farm of rabbits to scale financial applications"
+  speaker: Will Hoy
+  role: Team Lead
+  company: Bloomberg L.P.
+  abstract: >-
+    Today, Bloomberg's many engineering teams around the globe have the luxury 
+    of access to a fully-managed RabbitMQ platform. 
+    This enables them to achieve scalability, flexibility, and maintainability, 
+    without needing to focus on the RabbitMQ Server details. We’ll see how one 
+    such team has used the platform to build a system at scale which is capable 
+    of servicing billions of financial data requests each day, and highlight the 
+    architecture that streamlines their request routing.
+  co-speaker: David Liu
+  co-role: Software Engineer
+  template: alone
+- start: "15:05"
+  etime: "15:40"
+  title: "Closing Remarks"
+  template: alone
+- start: "18:00"
+  title: "Drinks"
+  template: group
