@@ -1187,6 +1187,15 @@ a.pink:hover {
   }
 }
 
+@include media-breakpoint-down(lg) { 
+  .speaker-list--keynote .speaker {
+    &:nth-child(1) { transform: translateX(20px);} 
+    &:nth-child(2) { transform: translateX(10px); }
+    &:nth-child(3) { transform: translateX(0px);} 
+    &:nth-child(4) { transform: translateX(-10px); }
+  }
+}
+
 .schedule {
   display: grid;
   grid-template-columns: max-content 1fr 1fr;
