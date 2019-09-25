@@ -148,15 +148,7 @@
   template: two
 - start: "14:35"
   etime: "15:00"
-  title: "EventSourcing with RabbitMQ"
-  speaker: Riccardo Piccoli
-  role: Software Engineer
-  company: Softonic
-  abstract: >-
-    We will go through Softonic's distributed Event Sourcing solution applied to
-    its microservices environment, implementing it leveraging RabbitMQ.
-  co-speaker: Basilio Vera
-  co-role: Principal Engineer
+  title: "To be announced"
   template: alone
 - start: "15:05"
   etime: "15:40"
