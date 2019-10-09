@@ -105,7 +105,7 @@
   title: "How to use multiple RabbitMQ brokers with SpringBoot"
   speaker: Wander Costa
   role: Software Engineer
-  company: Intelligent Apps GmbH
+  company: FreeNow
   abstract: >-
     How to connect your SpringBoot application to multiple RabbitMQ brokers?
     But why do you need multiple RabbitMQ brokers in the first place? The solution I'm
