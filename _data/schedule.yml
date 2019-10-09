@@ -175,7 +175,7 @@
 - title: "Feature complete: Uncovering the true cost different RabbitMQ features and configurations"
   speaker: Jack Vanlightly
   role: Software Engineer
-  company: SII Concatel, 84codes
+  company: Pivotal
   abstract: >-
     They call RabbitMQ the swiss army knife of messaging systems, but what impact do all those features have on performance?<br/><br/>
     In this talk we'll review common features and their effect on end-to-end latency, throughput and broker load.
