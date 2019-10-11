@@ -148,7 +148,17 @@
   template: two
 - start: "14:35"
   etime: "15:00"
-  title: "To be announced"
+  title: "Uncommon monitoring and analytics for RabbitMQ"
+  speaker: Scott Corrigan
+  role: VP of Tech
+  company: Nastel
+  abstract: >-
+    In order to detect anomalies and prevent runtime issues that can compromise the delivery of business services that depend on RabbitMQ, effective monitoring, alerting and analytics tools can make a big difference. But are all of the available tools alike? Attend this session to discover
+    <ul>
+    <li>How Nastel solutions offer a simplified method for delivering notifications, trend & pattern detection and proactive alerting, for improved availability and reliability of RabbitMQ.</li>
+    <li>How metrics from the RabbitMQ management interface can be combined and correlated with datapoints from other sources (infrastructure, applications, log files and OS) to provide high value insights and situational awareness.</li>
+    <li>How streaming and analytics of time-series data from your RabbitMQ environment can provide anomaly detection, root cause analysis, and capacity planning.</li>
+    </ul>
   template: alone
 - start: "15:05"
   etime: "15:40"
