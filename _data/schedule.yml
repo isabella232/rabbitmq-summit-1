@@ -148,28 +148,6 @@
   template: two
 - start: "14:35"
   etime: "15:00"
-  title: "Uncommon monitoring and analytics for RabbitMQ"
-  speaker: Scott Corrigan
-  role: VP of Tech
-  company: Nastel
-  abstract: >-
-    In order to detect anomalies and prevent runtime issues that can compromise the delivery of business services that depend on RabbitMQ, effective monitoring, alerting and analytics tools can make a big difference. But are all of the available tools alike? Attend this session to discover
-    <ul>
-    <li>How Nastel solutions offer a simplified method for delivering notifications, trend & pattern detection and proactive alerting, for improved availability and reliability of RabbitMQ.</li>
-    <li>How metrics from the RabbitMQ management interface can be combined and correlated with datapoints from other sources (infrastructure, applications, log files and OS) to provide high value insights and situational awareness.</li>
-    <li>How streaming and analytics of time-series data from your RabbitMQ environment can provide anomaly detection, root cause analysis, and capacity planning.</li>
-    </ul>
-  template: alone
-- start: "15:05"
-  etime: "15:40"
-  title: "Panel debate"
-  template: alone
-- start: "15:40"
-  etime: "16:10"
-  title: "Break"
-  template: group
-- start: "16:10"
-  etime: "16:55"
   title: "Running RabbitMQ at Scale"
   speaker: Lovisa Johansson
   role: RabbitMQ Engineer
@@ -182,7 +160,29 @@
   co-speaker: Anders Bälter
   co-role: Software Engineer
   template: two
-- title: "Feature complete: Uncovering the true cost different RabbitMQ features and configurations"
+- title: "Uncommon monitoring and analytics for RabbitMQ"
+  speaker: Scott Corrigan
+  role: VP of Tech
+  company: Nastel
+  abstract: >-
+    In order to detect anomalies and prevent runtime issues that can compromise the delivery of business services that depend on RabbitMQ, effective monitoring, alerting and analytics tools can make a big difference. But are all of the available tools alike? Attend this session to discover
+    <ul>
+    <li>How Nastel solutions offer a simplified method for delivering notifications, trend & pattern detection and proactive alerting, for improved availability and reliability of RabbitMQ.</li>
+    <li>How metrics from the RabbitMQ management interface can be combined and correlated with datapoints from other sources (infrastructure, applications, log files and OS) to provide high value insights and situational awareness.</li>
+    <li>How streaming and analytics of time-series data from your RabbitMQ environment can provide anomaly detection, root cause analysis, and capacity planning.</li>
+    </ul>
+  template: two
+- start: "15:05"
+  etime: "15:40"
+  title: "Panel debate"
+  template: alone
+- start: "15:40"
+  etime: "16:10"
+  title: "Break"
+  template: group
+- start: "16:10"
+  etime: "16:55"
+  title: "Feature complete: Uncovering the true cost different RabbitMQ features and configurations"
   speaker: Jack Vanlightly
   role: Software Engineer
   company: Pivotal
@@ -191,7 +191,7 @@
     In this talk we'll review common features and their effect on end-to-end latency, throughput and broker load.
     We'll see concrete numbers and come to actionable conclusions that will help you make more balanced decisions regarding
     the tradeoffs of the powerful functionality available vs performance.
-  template: two
+  template: alone
 - start: "17:00"
   etime: "17:45"
   keynote: true
