@@ -4,7 +4,7 @@
   template: group
 - start: "09:00"
   etime: "09:15" 
-  title: "Welcome to the RabbitMQ summit 2019"
+  title: "Welcome and introduction"
   template: alone
 - start: "09:15"
   etime: "10:00"
