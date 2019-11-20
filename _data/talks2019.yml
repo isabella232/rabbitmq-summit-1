@@ -1,0 +1,65 @@
+- title: 'Keynote: An update from the RabbitMQ team'
+  speaker: Michael Klishin & Diana Parra Corbacho
+  youtube: InqY3l69yCs
+  lecture-img: /img/videos-2019/rmqs19-klishin-parra-corbacho.jpg
+- title: 'Practical advice for the care and feeding of RabbitMQ'
+  speaker: Gavin Roy
+  youtube: ZAEXEN_LvE4
+  lecture-img: /img/videos-2019/rmqs19-roy.jpg
+- title: 'Do not guess, Trace'
+  speaker: Kacper Mentel
+  youtube: sCudkorq86E
+  lecture-img: /img/videos-2019/rmqs19-mentel.jpg
+- title: >
+    WeWork's "good enough" order guarantee
+  speaker: Ilana Sufrin & Avikam Agur
+  youtube: PXFpxKsW4SM
+  lecture-img: /img/videos-2019/rmqs19-sufrin-agur.jpg
+- title: 'Lifting the lid on Quorum Queues'
+  speaker: Karl Nilsson
+  youtube: _oUDZbWtuJw
+  lecture-img: /img/videos-2019/rmqs19-nilsson.jpg
+- title: 'Monitoring & scaling based on RabbitMQ telemetry'
+  speaker: Omar Elasfar
+  youtube: jCEwYPedJdw
+  lecture-img: /img/videos-2019/rmqs19-elasfar.jpg
+- title: 'Observe and understand RabbitMQ'
+  speaker: Gerhard Lazu & Michal Kuratczyk
+  youtube: 6qUD5bLHPUY
+  lecture-img: /img/videos-2019/rmqs19-lazu-kuratczyk.jpg
+- title: 'How to use multiple RabbitMQ brokers with SpringBoot'
+  speaker: Wander Costa
+  youtube: 2eSHgkBbSFY
+  lecture-img: /img/videos-2019/rmqs19-costa.jpg
+- title: 'Using the source-oriented exchanges pattern to keep events in order'
+  speaker: Alex Thomas
+  youtube: 74Jm0oGdop8
+  lecture-img: /img/videos-2019/rmqs19-thomas.jpg
+- title: 'Rapidly Building Event Driven and Streaming Applications with RabbitMQ'
+  speaker: Madhav Sathe & Marcial Rosales
+  youtube: PCCTpCfNyUk
+  lecture-img: /img/videos-2019/rmqs19-sathe-rosales.jpg
+- title: 'RabbitMQ MQTT vs EMQX'
+  speaker: Grigory Starinkin
+  youtube: k9DxUVOaz8g
+  lecture-img: /img/videos-2019/rmqs19-starinkin.jpg
+- title: 'Running RabbitMQ at Scale'
+  speaker: Lovisa Johansson & Anders Bälter
+  youtube: 6P-GcXFAHjE
+  lecture-img: /img/videos-2019/rmqs19-johansson-balter.jpg
+- title: 'Uncommon monitoring and analytics for RabbitMQ'
+  speaker: Scott Corrigan
+  youtube: CDRvXuPMM_0
+  lecture-img: /img/videos-2019/rmqs19-corrigan.jpg
+- title: 'Panel debate'
+  speaker: Dormain Drewitz, Jack Vanlightly, Carl Hörberg, Michael Klishin, Ayanda Dube
+  youtube: DR-64AUBX-s
+  lecture-img: /img/videos-2019/rmqs19-panel.jpg
+- title: 'Feature complete: Uncovering the true cost different RabbitMQ features and configurations'
+  speaker: Jack Vanlightly
+  youtube: T8PspEW_8J0
+  lecture-img: /img/videos-2019/rmqs19-vanlightly.jpg
+- title: 'Keynote: Growing a farm of rabbits to scale financial applications'
+  speaker: Will Hoy & David Liu
+  youtube: tTh1nIKEOU4
+  lecture-img: /img/videos-2019/rmqs19-hoy-liu.jpg

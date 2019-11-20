@@ -11,13 +11,29 @@ footer-logo: /img/logo-pink.png
   <section class="bg-section pt-3 pt-lg-9 pb-3 pb-md-4" style="background-image: url(/img/bg-hero.png);">
     <div class="container">
       <div class="row align-items-center justify-content-center mb-4 mb-lg-2 top-hero">
-        <div class="col-10 col-md-6 col-lg-4 col-xl-3 mt-4 mb-4 text-center">
-          <a href="/" class="d-block text-center text-xl-left">
-            <img src="/img/logo.png" alt="RabbitMQ Summit 2019" />
-          </a>
+        <div class="col-10 col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-0 text-center">
+          <div class="logo-wrap skew-box">
+            <div class="logo">
+              <a href="/" class="d-block pr-0 pr-md-4 text-center text-xl-left">
+                <img src="/img/logo.png" alt="RabbitMQ Summit 2019" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-4 col-xl-5 mb-3 mb-md-0 text-center text-md-left">
+          <h2 class="text-uppercase text-primary mb-0">
+            <time datetime="2019-11-04"><span class="editable">4 November</span></time>
+          </h2>
+        </div>
+        <div class="col-11 col-lg-4 col-xl-3 text-center">
+          <div class="head-wrap skew-box">
+            <h1 class="text-secondary mb-0 editable">
+              ILEC Centre <span class="d-block">&bull;London&bull;</span>
+            </h1>
+          </div>
         </div>
       </div>
-      <div class="row justify-content-center mb-4 mt-4">
+      <div class="row justify-content-center mb-5 mt-5">
         <div class="col-12 col-lg-10">
           <div class="text-sm text-info mb-3">
             <p class="editable">
@@ -26,7 +42,7 @@ footer-logo: /img/logo-pink.png
           </div>
         </div>
       </div>
-      <div class="row justify-content-center mb-7" id="newsletter">
+      <div class="row justify-content-center mb-5" id="newsletter">
         <div class="col-12 col-lg-10">
           <form id="subForm" action="https://erlang-solutions.us18.list-manage.com/subscribe/post?u=423b69277281ee496d4012469&amp;id=31b3107785" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="form text-info js-cm-form pt-3">
             <a name="subscribe"></a>
@@ -57,17 +73,6 @@ footer-logo: /img/logo-pink.png
           </form>
         </div>
       </div>
-      <div class="row justify-content-center mb-4 mt-4">
-        <div class="col-12 mb-4 text-center">
-          <h4 class="text-uppercase text-secondary editable">Organisers</h4>
-          <a href="https://www.84codes.com" target="_blank">
-            <img src="/img/logos/logo-84codes.png" alt="84codes" class="w-100 sp-logo editable mt-3 mr-0 mr-sm-4" />
-          </a>
-          <a href="https://erlang-solutions.com" target="_blank">
-            <img src="/img/logos/logo-erlang-solutions.png" alt="erlang solutions" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
-          </a>
-        </div>
-      </div>
     </div>
   </section>
   <section class="bg-light pt-7 pb-6 pt-lg-6">
@@ -80,14 +85,14 @@ footer-logo: /img/logo-pink.png
       <div class="row justify-content-center">
         {% for talk in site.data.talks2019 %}
         <div class="col-12 col-md-6 col-xl-5 mb-5">
-          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" data-playlist="PLDUzG2yLXrU7gQAzZwMEkjkfTy0L5FsJx" target="_blank">
+          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" target="_blank">
             <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
           </a>
           <div class="links mt-1 mb-2">
             {% if talk.slideshare %}
             <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
             {% endif %}
-            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLDUzG2yLXrU7gQAzZwMEkjkfTy0L5FsJx" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch the talk</a>
+            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Lecture</a>
           </div>
         </div>
         {% endfor %}
@@ -98,7 +103,14 @@ footer-logo: /img/logo-pink.png
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 mb-7 text-center">
-          <h3 class="text-uppercase text-primary editable">Sponsors 2019</h3>
+          <h3 class="text-uppercase text-secondary editable">Organisers</h3>
+          <a href="https://www.84codes.com" target="_blank">
+            <img src="/img/logos/logo-84codes.png" alt="84codes" class="w-100 sp-logo editable mt-3 mr-0 mr-sm-4" />
+          </a>
+          <a href="https://erlang-solutions.com" target="_blank">
+            <img src="/img/logos/logo-erlang-solutions.png" alt="erlang solutions" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
+          </a>
+        </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
@@ -122,63 +134,6 @@ footer-logo: /img/logo-pink.png
         <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
           <h3 class="text-uppercase text-secondary editable">Silver Sponsor</h3>
           <a href="https://www.cogin.com/" target="_blank">
-            <img src="/img/logos/logo-queue-explorer.png" alt="Queue Explorer" class="w-100 sp-logo editable mt-3" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg-light pt-7 pb-6 pt-lg-6">
-    <div class="container">
-      <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">Talks from 2018</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        {% for talk in site.data.talks2018 %}
-        <div class="col-12 col-md-6 col-xl-5 mb-5">
-          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" data-playlist="PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" target="_blank">
-            <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
-          </a>
-          <div class="links mt-1 mb-2">
-            {% if talk.slideshare %}
-            <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
-            {% endif %}
-            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch the talk</a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-  <section class="sponsor-section pt-7 pb-6">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 mb-7 text-center">
-          <h3 class="text-uppercase text-primary editable">Sponsors 2018</h3>
-        </div>
-        <div class="col-12 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Platinum Sponsor</h3>
-          <a href="https://pivotal.io" target="_blank">
-            <img src="/img/logos/logo-pivotal.png" alt="Pivotal" class="w-100 sp-logo editable mt-3" />
-          </a>
-          <a href="//tech.labs.oliverwyman.com/" target="_blank">
-            <img src="/img/logos/logo-lshift.png" alt="LShift" class="w-100 sp-logo editable mt-3" />
-          </a>
-        </div>
-        <div class="col-12 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Gold Sponsor</h3>
-          <a href="https://trifork.com/" target="_blank">
-            <img src="/img/logos/logo-trifork.png" alt="Trifork - Think Software" class="w-100 sp-logo editable mt-3" />
-          </a>
-          <a href="https://aws.amazon.com/" target="_blank">
-            <img src="/img/logos/logo-aws.png" alt="Amazon Web Services" class="w-100 sp-logo editable mt-3" />
-          </a>
-        </div>
-        <div class="col-12 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Silver Sponsor</h3>
-          <a href="https://www.cogin.com" target="_blank">
             <img src="/img/logos/logo-queue-explorer.png" alt="Queue Explorer" class="w-100 sp-logo editable mt-3" />
           </a>
         </div>
