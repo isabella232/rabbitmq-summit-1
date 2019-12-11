@@ -1,6 +1,6 @@
 - title: 'Keynote: An update from the RabbitMQ team'
   speaker: Michael Klishin & Diana Parra Corbacho
-  youtube: InqY3l69yCs
+  youtube: K5wZUoz4dak
   lecture-img: /img/videos-2019/rmqs19-klishin-parra-corbacho.jpg
 - title: 'Practical advice for the care and feeding of RabbitMQ'
   speaker: Gavin Roy
@@ -25,7 +25,7 @@
   lecture-img: /img/videos-2019/rmqs19-elasfar.jpg
 - title: 'Observe and understand RabbitMQ'
   speaker: Gerhard Lazu & Michal Kuratczyk
-  youtube: 6qUD5bLHPUY
+  youtube: L-tYXpirbpA
   lecture-img: /img/videos-2019/rmqs19-lazu-kuratczyk.jpg
 - title: 'How to use multiple RabbitMQ brokers with SpringBoot'
   speaker: Wander Costa
@@ -53,7 +53,7 @@
   lecture-img: /img/videos-2019/rmqs19-corrigan.jpg
 - title: 'Panel debate'
   speaker: Dormain Drewitz, Jack Vanlightly, Carl Hörberg, Michael Klishin, Ayanda Dube
-  youtube: DR-64AUBX-s
+  youtube: UPKaCnpXGgE
   lecture-img: /img/videos-2019/rmqs19-panel.jpg
 - title: 'Feature complete: Uncovering the true cost different RabbitMQ features and configurations'
   speaker: Jack Vanlightly
