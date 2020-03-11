@@ -1,0 +1,34 @@
+  
+#notification {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+
+  .alert {
+    background-color: $deep-purple;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 0;
+    border-right: 0;
+    border-top: 0;
+    color: $white;
+    margin-bottom: 0;
+
+    strong, a.pink {
+      font-family: $roboto-medium;
+    }
+
+    .close {
+      color: $gray-100;
+      font-weight: normal;
+      opacity: .9;
+      text-shadow: none;
+      &:hover {
+        opacity: .5;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}
