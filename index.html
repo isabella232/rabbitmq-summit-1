@@ -138,97 +138,6 @@ footer-logo: /img/logo-2021-pink.png
       </div>
     </div>
   </section>
-  <section class="sponsor-section pt-7 pb-6">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 mb-7 text-center">
-          <h3 class="text-uppercase text-primary editable">Sponsors 2019</h3>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Platinum Sponsor</h3>
-          <a href="https://pivotal.io" target="_blank">
-            <img src="/img/logos/logo-pivotal.png" alt="Pivotal" class="w-100 sp-logo editable mt-3" />
-          </a>
-          <a href="https://www.oliverwyman.com/" target="_blank">
-            <img src="/img/logos/logo-oliver-wyman.png" alt="Oliver Wyman" class="w-100 sp-logo editable mt-3" />
-          </a>
-        </div>
-        <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Gold Sponsor</h3>
-          <a href="https://www.nastel.com/" target="_blank">
-            <img src="/img/logos/logo-nastel.png" alt="Nastel" class="w-100 sp-logo editable mt-3" />
-          </a>
-          <a href="https://aws.amazon.com/" target="_blank">
-            <img src="/img/logos/logo-aws.png" alt="Amazon Web Services" class="w-100 sp-logo editable mt-3">
-          </a>
-        </div>
-        <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Silver Sponsor</h3>
-          <a href="https://www.cogin.com/" target="_blank">
-            <img src="/img/logos/logo-queue-explorer.png" alt="Queue Explorer" class="w-100 sp-logo editable mt-3" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg-light pt-7 pb-6 pt-lg-6">
-    <div class="container">
-      <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">Talks from 2018</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        {% for talk in site.data.talks2018 %}
-        <div class="col-12 col-md-6 col-xl-5 mb-5">
-          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" data-playlist="PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" target="_blank">
-            <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
-          </a>
-          <div class="links mt-1 mb-2">
-            {% if talk.slideshare %}
-            <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
-            {% endif %}
-            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLDUzG2yLXrU4Lz33ZzSdHyfqdHJ8Zum5A" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch the talk</a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-  <section class="sponsor-section pt-7 pb-6">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 mb-7 text-center">
-          <h3 class="text-uppercase text-primary editable">Sponsors 2018</h3>
-        </div>
-        <div class="col-12 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Platinum Sponsor</h3>
-          <a href="https://pivotal.io" target="_blank">
-            <img src="/img/logos/logo-pivotal.png" alt="Pivotal" class="w-100 sp-logo editable mt-3" />
-          </a>
-          <a href="//tech.labs.oliverwyman.com/" target="_blank">
-            <img src="/img/logos/logo-lshift.png" alt="LShift" class="w-100 sp-logo editable mt-3" />
-          </a>
-        </div>
-        <div class="col-12 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Gold Sponsor</h3>
-          <a href="https://trifork.com/" target="_blank">
-            <img src="/img/logos/logo-trifork.png" alt="Trifork - Think Software" class="w-100 sp-logo editable mt-3" />
-          </a>
-          <a href="https://aws.amazon.com/" target="_blank">
-            <img src="/img/logos/logo-aws.png" alt="Amazon Web Services" class="w-100 sp-logo editable mt-3" />
-          </a>
-        </div>
-        <div class="col-12 col-md-4 text-center mb-5">
-          <h3 class="text-uppercase text-secondary editable">Silver Sponsor</h3>
-          <a href="https://www.cogin.com" target="_blank">
-            <img src="/img/logos/logo-queue-explorer.png" alt="Queue Explorer" class="w-100 sp-logo editable mt-3" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="bg-light pt-6 pb-6 pb-xl-6 ">
     <div class="container">
       <div class="row justify-content-center mb-3">
@@ -239,6 +148,50 @@ footer-logo: /img/logo-2021-pink.png
             <p class="editable">We are dedicated to providing a harassment-free conference experience for everyone, regardless of gender identity, sexual orientation, disability, physical appearance, body size, race, religion.. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue. </p>
             <p class="editable">Participants asked to stop any harassing behavior are expected to comply immediately.</p>
             <p class="editable">We expect participants to follow these rules at all conference venues and conference-related social events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skew-img-section bg-light pb-0 pt-6 pt-xl-7">
+    <div class="container-fluid">
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 ">
+          <h3 class="text-uppercase text-primary text-center editable">
+            Become a Sponsor
+          </h3>
+        </div>
+      </div>
+      <div class="skew-img-row right row align-items-center">
+        <div class="col-12 col-lg-5 col-xl-5 mr-auto ml-auto mb-5 mb-lg-0">
+          <div class="text text-sm text-success sponsor-info">
+            <p class="editable">
+              Become part of our conference and let's make it the best RabbitMQ Summit it can be. Accessed from anywhere in the world, the event incorporates all the key components of our in-person conference and some more.
+            </p>
+            <p class="editable">
+              The conference is hosted on a platform that focuses on social interaction and allows everyone to connect online in one place. It will also allow you to:
+            </p>
+            <ul>
+              <li class="editable">Promote your brand and company in front of 300 RabbitMQ professionals</li>
+              <li class="editable">Recruit developers, engineers, DevOps and some of the best talent in the industry</li>
+              <li class="editable">Expand your network by meeting like-minded professionals within the RabbitMQ community</li>
+              <li class="editable">Reach out to individuals and communicate the process, preconditions, culture and most importantly the technology</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 col-xl-7 img-event-wrap">
+          <div class="skew-box py-10 py-lg-12" style="background-image: url(/img/lines-bg.jpg);">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 text interested text-light text-center text-lg-left">
+                <h3 class="text-uppercase mb-lg-1 editable">
+                  <span class="d-lg-none">Want to know more?</span> Contact us <span class="d-none d-lg-inline">now</span>
+                </h3>
+                <p class="mb-lg-1 text-sm editable">
+                  Explore our sponsorship possibilities and receive our sponsorship brochure by sending us an email:
+                </p>
+                <a href="mailto:info@rabbitmqsummit.com" class="email-address text-primary">info@rabbitmqsummit.com</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
