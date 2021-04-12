@@ -1,11 +1,7 @@
-- name: Dormain Drewitz
-  company: VMware
-  title: Senior Director
-  img: dormain-drewitz.jpg
-- name: Jack Vanlightly
-  company: Pivotal
-  title: Software Engineer
-  img: jack-vanlightly.jpg
+- name: John Samuel
+  company: Erlang Solutions
+  title: Head of RabbitMQ & London Projects
+  img: john-samuel.png
 - name: Lovisa Johansson
   company: 84codes AB
   title: Marketing Manager
@@ -18,7 +14,7 @@
   company: Erlang Solutions
   title:  Lead Engineer
   img: ayanda-dube.jpg
-- name: Bryan Hunt
+- name: Gabor Olah
   company: Erlang Solutions
-  title: Solutions Architect
-  img: bryan-hunt3.jpg
+  title: Developer
+  img: gabor-olah.png
