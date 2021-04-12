@@ -31,7 +31,7 @@ footer-logo: /img/logo-2021-pink.png
               Past events have included speakers from Pivotal (creators of RabibtMQ, Goldman Sachs, Bloomberg, Microsoft, CloudAMQP, Erlang Solutions and many more.
               This year, we expect our most esteemed speaking line up to date.
               Don't miss out on your chance to hear the case studies, success stories and RabbitMQ development strategies from the world's biggest companies.<br><br>
-              Interested in becoming a sponsor? Send us an email to <a href="mailto:info@codesync.global">info@codesync.global</a> and we will get back to you with a sponsorship brochure.<br><br>
+              Interested in becoming a sponsor? Send us an email to <a href="mailto:info@codesync.global" class="pink">info@codesync.global</a> and we will get back to you with a sponsorship brochure.<br><br>
 
               <h4 class="text-uppercase text-secondary editable">Waiting list</h4>
               Sign up for our Very Early Bird waiting list to get exclusive access to the conference's best-priced tickets.<br>
@@ -65,6 +65,40 @@ footer-logo: /img/logo-2021-pink.png
           </label>
         </div>
       </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+        <div class="col-12">
+          <h4 class="text-uppercase text-center text-primary mb-3 editable">
+            Programme Committee
+          </h4>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <div class="col-12">
+          <div class="text text-sm text-success">
+            <p class="editable text-center">
+              The following RabbitMQ Summit Committee has the honor to review, rate and select submissions.
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="row justify-content-center committee">
+        {% for person in site.data.committee %}
+        <div class="col-12 col-sm-6 col-md-5 mb-3">
+          <div class="media">
+            <div class="img mr-3" style="background-image: url(/img/committee/{{ person.img }})"></div>
+            <div class="media-body">
+              <h5 class="mt-0 text-uppercase">{{ person.name }}</h5>
+              <p class="mb-1">
+                <strong class="pink space-mono">{{ person.company }}</strong>
+              </p>
+              <p class="mb-0">
+                {{ person.title }}
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
     </div>
 </section>
 <section class="sponsor-section pt-7 pb-6">
