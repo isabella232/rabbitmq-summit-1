@@ -159,7 +159,7 @@ footer-logo: /img/logo-2021-pink.png
               </div>
               {% if speaker.co-speaker %}
               <div class="speaker">
-                <div class="speaker__img" style="background-image: url(/img/speakers/{{ speaker.speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg);""></div>
+                <div class="speaker__img" style="background-image: url(/img/speakers/{{ speaker.co-speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg);""></div>
                 <div class="speaker__text">
                   <h5 class="text-light text-uppercase mb-1">{{ speaker.co-speaker }}</h5>
                   <p class="text-primary text-uppercase mb-1">{{ speaker.co-role }}</p>
