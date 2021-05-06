@@ -5,4 +5,17 @@
   role: Senior Software Developer
   company: VMware
   abstract:
-  template: alone
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  title: "RabbitMQ has a problem. Let us tell you about it."
+  speaker: David Ansari
+  role: OpenSource Contributor running RabbitMQ on Kubernetes
+  company: VMware
+  abstract: >-
+    RabbitMQ exposes a wealth of metrics, logs, and events, and has decent dashboards. However, we know that users only look at dashboards when there is a problem.
+    Wouldn't it be great if RabbitMQ notified you when there is a problem in the making? How about a run book on how to fix that specific problem? Imagine if some problems could even be fixed automatically.
+    Let us show you what we have so far, and the direction that we are going towards.
+  template: two
+  co-speaker: Gerhard	Lazu
+  co-role: Staff Software Engineer
