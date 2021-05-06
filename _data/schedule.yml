@@ -25,7 +25,7 @@
   speaker: Denis Germain
   role: Senior SRE
   company: Deezer
-  abstract: >--
+  abstract: >-
     "3 years ago, the company I work for decided to start again, from scratch. Instead of on-prem softwares, we started to develop dozens of cloud based microservices communicating with each other AND on-prem cutting equipments.
     And which tool better to do this than RabbitMQ? But of course, deploying highly available message brokers in a cloud based environment with no prior experience has brought its share of surprises.
     In this talk, I'll share with you some of the rooky mistakes that we may or may not have made ;-)
