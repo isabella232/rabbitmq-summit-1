@@ -39,7 +39,7 @@
   etime: "11:15"
   title: "RabbitMQ has a problem. Let us tell you about it."
   speaker: David Ansari
-  role: OpenSource Contributor running RabbitMQ on Kubernetes
+  role: Software Engineer
   company: VMware
   abstract: >-
     RabbitMQ exposes a wealth of metrics, logs, and events, and has decent dashboards. However, we know that users only look at dashboards when there is a problem.
