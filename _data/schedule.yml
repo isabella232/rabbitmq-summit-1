@@ -17,7 +17,7 @@
     Wouldn't it be great if RabbitMQ notified you when there is a problem in the making? How about a run book on how to fix that specific problem? Imagine if some problems could even be fixed automatically.
     Let us show you what we have so far, and the direction that we are going towards.
   template: two
-  co-speaker: Gerhard	Lazu
+  co-speaker: Gerhard Lazu
   co-role: Staff Software Engineer
 - start: "10:30"
   etime: "11:15"
