@@ -102,6 +102,43 @@ footer-logo: /img/logo-2021-pink.png
         {% endfor %}
     </div>
 </section>
+<section class="bg-light pt-6 pb-6 pt-xl-7">
+  <div class="container">
+    <div class="row justify-content-center mb-3">
+      <div class="col-12">
+        <h3 class="text-uppercase text-center text-primary mb-5 editable">
+          Register for the conference
+        </h3>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-md-6 order-2 order-md-1">
+        <div class="text text-sm text-success text-center">
+          <div id="eventbrite-widget-container-153980219983"></div>
+
+          <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+          <script type="text/javascript">
+            var exampleCallback = function() {
+                console.log('Order complete!');
+            };
+
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '153980219983',
+                iframeContainerId: 'eventbrite-widget-container-153980219983',
+
+                // Optional
+                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!--Keynote speakers and schedule section-->
 <!--section class="bg-section py-3 py-md-5 pt-lg-2 pb-lg-7 d-none d-md-block" style="background-image: url(/img/bg-img2.png)">
     <div class="container">
