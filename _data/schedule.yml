@@ -35,7 +35,7 @@
   role: VP of Architecture
   company: AWeber Communications
   abstract: >-
-    Rejected is an open-source RabbitMQ consumer framework that makes writing and testing Python based consumers easy. 
+    Rejected is an open-source RabbitMQ consumer framework that makes writing and testing Python based consumers easy.
     In this talk you will learn what makes rejected different, why your organization should use it, and review real world examples of its use.
   template: two
 - start: "10:30"
@@ -49,17 +49,6 @@
     And which tool better to do this than RabbitMQ? But of course, deploying highly available message brokers in a cloud based environment with no prior experience has brought its share of surprises.
     In this talk, I'll share with you some of the rooky mistakes that we may or may not have made ;-)
   template: two
-- start: "10:30"
-  etime: "11:15"
-  title: "War stories from the CloudAMQP support"
-  speaker: Annie Blomgren
-  role: Technical Support Engineer
-  company: 84codes
-  abstract: >-
-    In CloudAMQP we handle more than 3000 support cases per year. In this talk we go through what the most common issues are, and what can be learned from them, as well as some rare issues that can be hard to track down. We also cover some statistics of RabbitMQ clients and their usage.
-  template: two
-  co-speaker: Johan Rhodin
-  co-role: Product Manager
 - start: "10:30"
   etime: "11:15"
   title: "Take The Path Of Least Resistance For Your Test Data"
