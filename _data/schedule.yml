@@ -8,6 +8,38 @@
   template: two
 - start: "10:30"
   etime: "11:15"
+  title: "How to RabbitMQ on kubernetes"
+  speaker: Chunyi Lyu
+  role: Software Engineer
+  company: VMware
+  abstract: >-
+    This talk will introduce you to two a new RabbitMQ projects: cluster operator and messaging topology operator, which are kubernetes operators developed by the RabbitMQ team to help you deploy and use RabbitMQ on kubernetes.
+    The talk will cover the basis of how to configure, deploy, and automate your RabbitMQ deployments using these operators and a demo.
+    After this talk, you should be able to create and operate your own RabbitMQ clusters on any kubernetes cluster.
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  title: "War stories from the CloudAMQP support"
+  speaker: Annie Blomgren
+  role: Technical Support Engineer
+  company: 84codes
+  abstract: >-
+    In CloudAMQP we handle more than 3000 support cases per year. In this talk we go through what the most common issues are, and what can be learned from them, as well as some rare issues that can be hard to track down. We also cover some statistics of RabbitMQ clients and their usage.
+  template: two
+  co-speaker: Johan Rhodin
+  co-role: Product Manager
+- start: "10:30"
+  etime: "11:15"
+  title: "An introduction to Rejected, a Consumer Framework"
+  speaker: Gavin Roy
+  role: VP of Architecture
+  company: AWeber Communications
+  abstract: >-
+    Rejected is an open-source RabbitMQ consumer framework that makes writing and testing Python based consumers easy. 
+    In this talk you will learn what makes rejected different, why your organization should use it, and review real world examples of its use.
+  template: two
+- start: "10:30"
+  etime: "11:15"
   title: "101 ways to break your RabbitMQ"
   speaker: Denis Germain
   role: Senior SRE
