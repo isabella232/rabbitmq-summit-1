@@ -49,21 +49,23 @@
   template: two
 - start: "10:30"
   etime: "11:15"
+  title: "101 ways to break your RabbitMQ"
+  speaker: Denis Germain
+  role: Senior SRE
+  company: Deezer
+  abstract: >-
+    3 years ago, the company I work for decided to start again, from scratch. Instead of on-prem softwares, we started to develop dozens of cloud based microservices communicating with each other AND on-prem cutting equipments.
+    And which tool better to do this than RabbitMQ? But of course, deploying highly available message brokers in a cloud based environment with no prior experience has brought its share of surprises.
+    In this talk, I'll share with you some of the rooky mistakes that we may or may not have made ;-)
+  template: two
+- start: "10:30"
+  etime: "11:15"
   title: "Take The Path Of Least Resistance For Your Test Data"
   speaker: Zach Attas
   role: Lead SDET
   company: ReviewTrackers
   abstract: >-
     Great E2E tests have realistic, unique data, but when a test depends on multiple systems’ databases for its data, this becomes challenging. Sure, you can use a script to insert data into each separate system’s DB. But great E2E tests take advantage of RabbitMQ messaging to get data in place in the same way that would occur in production. This talk covers architecting E2E tests to use implicit waits, to adapt to an event-driven RabbitMQ world!  With tests like these, unforeseen, deployment-halting bugs can be found, and you can have confidence in the natural flow of data into your systems under test!
-  template: two
-- start: "10:30"
-  etime: "11:15"
-  title: "How we built at Vonage a scalable multichannel notification system"
-  speaker: Ori Shofman Shimoni
-  role: Tech lead
-  company: Vonage
-  abstract: >-
-    In the past year and a half, we've built here at Vonage, a complex notification system based on RabbitMQ which is used today for most of the notifications our services send to our client side applications. We would like to share our story in which we - Designed a system architecture with a complex sharding solution & low to zero downtime, faced many issues with the way we used RabbitMQ and creative solutions we found to surpass our issues, and provided a flexible notification infrastructure.
   template: two
 - start: "10:30"
   etime: "11:15"
@@ -80,12 +82,10 @@
   co-role: Staff Software Engineer
 - start: "10:30"
   etime: "11:15"
-  title: "101 ways to break your RabbitMQ"
-  speaker: Denis Germain
-  role: Senior SRE
-  company: Deezer
+  title: "How we built at Vonage a scalable multichannel notification system"
+  speaker: Ori Shofman Shimoni
+  role: Tech lead
+  company: Vonage
   abstract: >-
-    3 years ago, the company I work for decided to start again, from scratch. Instead of on-prem softwares, we started to develop dozens of cloud based microservices communicating with each other AND on-prem cutting equipments.
-    And which tool better to do this than RabbitMQ? But of course, deploying highly available message brokers in a cloud based environment with no prior experience has brought its share of surprises.
-    In this talk, I'll share with you some of the rooky mistakes that we may or may not have made ;-)
+    In the past year and a half, we've built here at Vonage, a complex notification system based on RabbitMQ which is used today for most of the notifications our services send to our client side applications. We would like to share our story in which we - Designed a system architecture with a complex sharding solution & low to zero downtime, faced many issues with the way we used RabbitMQ and creative solutions we found to surpass our issues, and provided a flexible notification infrastructure.
   template: two
