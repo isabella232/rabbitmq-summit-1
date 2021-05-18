@@ -98,3 +98,13 @@
   abstract: >-
     In the past year and a half, we've built here at Vonage, a complex notification system based on RabbitMQ which is used today for most of the notifications our services send to our client side applications. We would like to share our story in which we - Designed a system architecture with a complex sharding solution & low to zero downtime, faced many issues with the way we used RabbitMQ and creative solutions we found to surpass our issues, and provided a flexible notification infrastructure.
   template: two
+- start: "10:30"
+  etime: "11:15"
+  title: "Update from RabbitMQ Core Team"
+  speaker: Ed Byford
+  role: RabbitMQ Product Lead
+  company: VMware
+  abstract: >-
+    Curious about what the RabbitMQ team has been up to since 3.8.16 shipped in
+    May 2021? In this talk we will cover what's coming in next releases.
+  template: two
