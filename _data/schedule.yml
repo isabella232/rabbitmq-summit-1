@@ -83,6 +83,17 @@
   template: two
 - start: "10:30"
   etime: "11:15"
+  title: "Building distributed system for retail with RabbitMq"
+  speaker: Maryna Zhygadlo
+  role: Software Developer
+  company: Diebold Nixdorf
+  abstract: >-
+    This talk is devoted to the real distributed system in retail that has been running on production for 3 years with RabbitMQ cluster in cloud and around 900 nodes on-premises.
+    There will be presented an evolution from a proof of concept to a rollout on the field in numbers and graphs.
+    It introduces the approaches on how to tune RabbitMq through its configuration and different plugins (e.g. federation and shovel).
+  template: two
+- start: "10:30"
+  etime: "11:15"
   title: "Take The Path Of Least Resistance For Your Test Data"
   speaker: Zach Attas
   role: Lead SDET
@@ -102,15 +113,6 @@
   template: two
 - start: "10:30"
   etime: "11:15"
-  title: "How we built at Vonage a scalable multichannel notification system"
-  speaker: Ori Shofman Shimoni
-  role: Tech lead
-  company: Vonage
-  abstract: >-
-    In the past year and a half, we've built here at Vonage, a complex notification system based on RabbitMQ which is used today for most of the notifications our services send to our client side applications. We would like to share our story in which we - Designed a system architecture with a complex sharding solution & low to zero downtime, faced many issues with the way we used RabbitMQ and creative solutions we found to surpass our issues, and provided a flexible notification infrastructure.
-  template: two
-- start: "10:30"
-  etime: "11:15"
   title: "RabbitMQ has a problem. Let us tell you about it."
   speaker: David Ansari
   role: Software Engineer
@@ -122,6 +124,15 @@
   template: two
   co-speaker: Gerhard Lazu
   co-role: Staff Software Engineer
+- start: "10:30"
+  etime: "11:15"
+  title: "How we built at Vonage a scalable multichannel notification system"
+  speaker: Ori Shofman Shimoni
+  role: Tech lead
+  company: Vonage
+  abstract: >-
+    In the past year and a half, we've built here at Vonage, a complex notification system based on RabbitMQ which is used today for most of the notifications our services send to our client side applications. We would like to share our story in which we - Designed a system architecture with a complex sharding solution & low to zero downtime, faced many issues with the way we used RabbitMQ and creative solutions we found to surpass our issues, and provided a flexible notification infrastructure.
+  template: two
 - start: "10:30"
   etime: "11:15"
   title: "Update from RabbitMQ Core Team"
