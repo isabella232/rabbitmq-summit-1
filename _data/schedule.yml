@@ -135,6 +135,14 @@
   template: two
 - start: "10:30"
   etime: "11:15"
+  title: "TBA"
+  speaker: David Lucia
+  role: VP of Engineering
+  company: Simplebet
+  abstract:
+  template: two
+- start: "10:30"
+  etime: "11:15"
   title: "Update from RabbitMQ Core Team"
   speaker: Ed Byford
   role: RabbitMQ Product Lead
