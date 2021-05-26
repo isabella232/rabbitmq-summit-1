@@ -72,17 +72,6 @@
   co-role: Software Engineer
 - start: "10:30"
   etime: "11:15"
-  title: "101 ways to break your RabbitMQ"
-  speaker: Denis Germain
-  role: Senior SRE
-  company: Deezer
-  abstract: >-
-    3 years ago, the company I work for decided to start again, from scratch. Instead of on-prem softwares, we started to develop dozens of cloud based microservices communicating with each other AND on-prem cutting equipments.
-    And which tool better to do this than RabbitMQ? But of course, deploying highly available message brokers in a cloud based environment with no prior experience has brought its share of surprises.
-    In this talk, I'll share with you some of the rooky mistakes that we may or may not have made ;-)
-  template: two
-- start: "10:30"
-  etime: "11:15"
   title: "Building distributed system for retail with RabbitMq"
   speaker: Maryna Zhygadlo
   role: Software Developer
@@ -91,6 +80,17 @@
     This talk is devoted to the real distributed system in retail that has been running on production for 3 years with RabbitMQ cluster in cloud and around 900 nodes on-premises.
     There will be presented an evolution from a proof of concept to a rollout on the field in numbers and graphs.
     It introduces the approaches on how to tune RabbitMq through its configuration and different plugins (e.g. federation and shovel).
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  title: "101 ways to break your RabbitMQ"
+  speaker: Denis Germain
+  role: Senior SRE
+  company: Deezer
+  abstract: >-
+    3 years ago, the company I work for decided to start again, from scratch. Instead of on-prem softwares, we started to develop dozens of cloud based microservices communicating with each other AND on-prem cutting equipments.
+    And which tool better to do this than RabbitMQ? But of course, deploying highly available message brokers in a cloud based environment with no prior experience has brought its share of surprises.
+    In this talk, I'll share with you some of the rooky mistakes that we may or may not have made ;-)
   template: two
 - start: "10:30"
   etime: "11:15"
@@ -140,6 +140,25 @@
   role: VP of Engineering
   company: Simplebet
   abstract:
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  title: "Panel discussion on streams"
+  speaker: Karl Nilsson
+  role: Staff Software Engineer
+  company: VMware
+  abstract:
+  template: two
+  co-speaker: Arnaud Cogoluègnes
+  co-role: Staff Engineer
+- start: "10:30"
+  etime: "11:15"
+  title: "Introducing stream support in RabbitMQ"
+  speaker: Arnaud Cogoluègnes
+  role: Staff Engineer
+  company: VMware
+  abstract: >-
+    RabbitMQ is driving an effort to implement a log-type data structure, with stream support on top of the AMQP 0-9-1 protocol and a new blazing fast protocol created for the occasion. Streams unlock scenarios that could have been tedious to implement in the old days of RabbitMQ: large fan-outs, replay & time travel, large logs, very high throughput (1 million messages per second on a 3-node cluster).
   template: two
 - start: "10:30"
   etime: "11:15"
