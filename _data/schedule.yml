@@ -151,6 +151,14 @@
   template: two
   co-speaker: Arnaud Cogoluègnes
   co-role: Staff Engineer
+- start: "10:30"
+  etime: "11:15"
+  title: "Panel discussion on streams"
+  speaker: Gabor Olah
+  role: Developer
+  company: Erlang Solutions
+  abstract:
+  template: two
 #- start: "10:30"
 #  etime: "11:15"
 #  title: "Introducing stream support in RabbitMQ"
