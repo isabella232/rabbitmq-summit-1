@@ -10,6 +10,11 @@
   speaker: Will Hoy & David Liu
   youtube: tTh1nIKEOU4
   lecture-img: /img/videos-2019/rmqs19-hoy-liu.jpg
+- title: What we've learned from running thousands of production RabbitMQ clusters
+  speaker: Lovisa Johansson
+  youtube: ez9kQEhHsnc
+  slideshare: https://www.slideshare.net/RabbitMQ-summit/what-weve-learned-from-running-thousands-of-production-rabbitmq-clusters-lovisa-johansson
+  lecture-img: /img/videos/talk-lovisa-johansson.jpg
 - title: 'Keynote: Idiomatic RabbitMQ'
   speaker: Gavin Roy
   youtube: 8Zf4zTatQYA
@@ -20,8 +25,3 @@
   youtube: etT_VMkYrdI
   slideshare: http://real-world.rabbitmq.pivotal.io/
   lecture-img: /img/videos/talk-gerhard-lazu.jpg
-- title: What we've learned from running thousands of production RabbitMQ clusters
-  speaker: Lovisa Johansson
-  youtube: ez9kQEhHsnc
-  slideshare: https://www.slideshare.net/RabbitMQ-summit/what-weve-learned-from-running-thousands-of-production-rabbitmq-clusters-lovisa-johansson
-  lecture-img: /img/videos/talk-lovisa-johansson.jpg
