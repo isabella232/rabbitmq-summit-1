@@ -144,6 +144,14 @@
 - start: "10:30"
   etime: "11:15"
   title: "Panel discussion on streams"
+  speaker: Diana Parra Corbacho
+  role: Software Engineer
+  company: Pivotal
+  abstract:
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  title: "Panel discussion on streams"
   speaker: Karl Nilsson
   role: Staff Software Engineer
   company: VMware
