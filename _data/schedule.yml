@@ -1,5 +1,9 @@
+- start: "09:00"
+  etime: "09:15"
+  title: "Welcome and introduction"
+  template: group
 - start: "09:15"
-  etime: "10:00"
+  etime: "10:05"
   title: "TBA"
   keynote: true
   speaker: Sophie DeBenedetto
@@ -9,7 +13,10 @@
   co-speaker: Steven Nunez
   co-role: Senior Software Engineer
   template: alone
-- start: "10:30"
+- start: '10:05'
+  etime: '10:05 - 11:35'
+  title: Coffee Break
+- start: "10:35"
   etime: "11:15"
   title: "RabbitMQ and service mesh integration"
   speaker: Gabriele Santomaggio
@@ -17,7 +24,7 @@
   company: VMware
   abstract:
   template: two
-- start: "10:30"
+- start: "10:35"
   etime: "11:15"
   title: "How to RabbitMQ on kubernetes"
   speaker: Chunyi Lyu
@@ -28,7 +35,7 @@
     The talk will cover the basis of how to configure, deploy, and automate your RabbitMQ deployments using these operators and a demo.
     After this talk, you should be able to create and operate your own RabbitMQ clusters on any kubernetes cluster.
   template: two
-- start: "10:30"
+- start: "10:35"
   etime: "11:15"
   title: "War stories from the CloudAMQP support"
   speaker: Annie Blomgren
@@ -39,8 +46,8 @@
   template: two
   co-speaker: Johan Rhodin
   co-role: Product Manager
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "An introduction to Rejected, a Consumer Framework"
   speaker: Gavin Roy
   role: VP of Architecture
@@ -49,8 +56,8 @@
     Rejected is an open-source RabbitMQ consumer framework that makes writing and testing Python based consumers easy.
     In this talk you will learn what makes rejected different, why your organization should use it, and review real world examples of its use.
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Stream processing IoT time series data with RabbitMQ & InfluxDB"
   speaker: Samantha Wang
   role: Product Manager
@@ -58,8 +65,8 @@
   abstract: >-
     In this session, Samantha Wang, Product Manager at InfluxData will showcase how to stream time series data to your IoT application using RabbitMQ queues and InfluxDB, drawing upon deployments done at Cisco, IBM, PayPal, and Tesla that allow both to ingest 1 million metrics per second.
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Building Scalable Resilient IoT Messaging"
   speaker: Gregory Green
   role: Advisor Solution Engineer
@@ -70,8 +77,8 @@
   template: two
   co-speaker: Demetrious Robinson
   co-role: Software Engineer
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Building distributed system for retail with RabbitMq"
   speaker: Maryna Zhygadlo
   role: Software Developer
@@ -81,8 +88,8 @@
     There will be presented an evolution from a proof of concept to a rollout on the field in numbers and graphs.
     It introduces the approaches on how to tune RabbitMq through its configuration and different plugins (e.g. federation and shovel).
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "101 ways to break your RabbitMQ"
   speaker: Denis Germain
   role: Senior SRE
@@ -92,8 +99,8 @@
     And which tool better to do this than RabbitMQ? But of course, deploying highly available message brokers in a cloud based environment with no prior experience has brought its share of surprises.
     In this talk, I'll share with you some of the rooky mistakes that we may or may not have made ;-)
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Take The Path Of Least Resistance For Your Test Data"
   speaker: Zach Attas
   role: Lead SDET
@@ -101,8 +108,8 @@
   abstract: >-
     Great E2E tests have realistic, unique data, but when a test depends on multiple systems’ databases for its data, this becomes challenging. Sure, you can use a script to insert data into each separate system’s DB. But great E2E tests take advantage of RabbitMQ messaging to get data in place in the same way that would occur in production. This talk covers architecting E2E tests to use implicit waits, to adapt to an event-driven RabbitMQ world!  With tests like these, unforeseen, deployment-halting bugs can be found, and you can have confidence in the natural flow of data into your systems under test!
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Proxying Rabbits For Stability & Reliability"
   speaker: Adam Casey
   role: Software Engineer
@@ -111,8 +118,8 @@
     Our team provides a reliable, maintainable RabbitMQ as a Service platform available for Bloomberg’s 6,000+ engineers.
     This talk introduces amqpprox, our AMQP 0.9.1 proxy, and deep dives into how it works & how we use it to tackle problems such as Load Balancing & Broker Upgrades.
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "RabbitMQ has a problem. Let us tell you about it."
   speaker: David Ansari
   role: Software Engineer
@@ -124,8 +131,8 @@
   template: two
   co-speaker: Gerhard Lazu
   co-role: Staff Software Engineer
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "How we built at Vonage a scalable multichannel notification system"
   speaker: Ori Shofman Shimoni
   role: Tech lead
@@ -133,24 +140,24 @@
   abstract: >-
     In the past year and a half, we've built here at Vonage, a complex notification system based on RabbitMQ which is used today for most of the notifications our services send to our client side applications. We would like to share our story in which we - Designed a system architecture with a complex sharding solution & low to zero downtime, faced many issues with the way we used RabbitMQ and creative solutions we found to surpass our issues, and provided a flexible notification infrastructure.
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "TBA"
   speaker: David Lucia
   role: VP of Engineering
   company: Simplebet
   abstract:
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Panel discussion on streams"
   speaker: Diana Parra Corbacho
   role: Software Engineer
   company: Pivotal
   abstract:
   template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Panel discussion on streams"
   speaker: Karl Nilsson
   role: Staff Software Engineer
@@ -159,8 +166,8 @@
   template: two
   co-speaker: Arnaud Cogoluègnes
   co-role: Staff Engineer
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Panel discussion on streams"
   speaker: Gabor Olah
   role: Developer
@@ -176,8 +183,8 @@
 #  abstract: >-
 #    RabbitMQ is driving an effort to implement a log-type data structure, with stream support on top of the AMQP 0-9-1 protocol and a new blazing fast protocol created for the occasion. Streams unlock scenarios that could have been tedious to implement in the old days of RabbitMQ: large fan-outs, replay & time travel, large logs, very high throughput (1 million messages per second on a 3-node cluster).
 #  template: two
-- start: "10:30"
-  etime: "11:15"
+- start: "11:25"
+  etime: "12:05"
   title: "Update from RabbitMQ Core Team"
   speaker: Ed Byford
   role: RabbitMQ Product Lead
