@@ -1,5 +1,5 @@
----
----
+--- 
+--- 
 @charset "UTF-8";
 /*
 Theme: RabbitMQ Summit
@@ -1112,7 +1112,7 @@ a.pink:hover {
 	grid-template-columns: repeat(2, minmax(min-content, max-content));
 	grid-column-gap: 3rem;
 	grid-row-gap: 2rem;
-
+ 
 	.speaker {
 		display: grid;
 		transform: skewX(-4deg);
@@ -1130,7 +1130,7 @@ a.pink:hover {
 			display: block;
 			background-size: cover;
       background-position: center center;
-
+      
       &--keynote {
         width: 120px;
         height: 120px;
@@ -1172,7 +1172,7 @@ a.pink:hover {
 			transform: translateX(-40px);
 		}
   }
-
+  
   &--keynote {
     grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
 
@@ -1187,29 +1187,28 @@ a.pink:hover {
   }
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(lg) { 
   .speaker-list--keynote .speaker {
-    &:nth-child(1) { transform: translateX(20px);}
+    &:nth-child(1) { transform: translateX(20px);} 
     &:nth-child(2) { transform: translateX(10px); }
-    &:nth-child(3) { transform: translateX(0px);}
+    &:nth-child(3) { transform: translateX(0px);} 
     &:nth-child(4) { transform: translateX(-10px); }
   }
 }
 
 .schedule {
   display: grid;
-  grid-template-columns: max-content 1fr 1fr 1fr;
-  // added extra 1fr to test if it divides the schedule into three columns
+  grid-template-columns: max-content 1fr 1fr;
   margin-bottom: 5rem;
-
+  
   &:nth-col(2n) {
     .two {
       background-color: pink;
     }
   }
-
+  
   .group-event {
-    grid-column: 2/4;
+    grid-column: 2/4; 
   }
 
   .two, .alone {
@@ -1218,7 +1217,7 @@ a.pink:hover {
 
   .group-event {
     background-color: $purple;
-
+    
     .text-uppercase {
       color: $white;
     }
@@ -1226,8 +1225,8 @@ a.pink:hover {
 
   .time {
     padding: 1rem 1rem 1rem 0;
-    h4 {
-      margin-bottom: 0
+    h4 { 
+      margin-bottom: 0 
     }
   }
 
@@ -1254,7 +1253,7 @@ a.pink:hover {
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(sm) { 
   .schedule {
     grid-template-columns: min-content 1fr 1fr;
 
