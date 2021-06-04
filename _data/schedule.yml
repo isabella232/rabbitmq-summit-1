@@ -49,15 +49,15 @@
     Rejected is an open-source RabbitMQ consumer framework that makes writing and testing Python based consumers easy.
     In this talk you will learn what makes rejected different, why your organization should use it, and review real world examples of its use.
   template: two
-- start: "10:30"
-  etime: "11:15"
-  title: "Stream processing IoT time series data with RabbitMQ & InfluxDB"
-  speaker: Samantha Wang
-  role: Product Manager
-  company: InfluxData
-  abstract: >-
-    In this session, Samantha Wang, Product Manager at InfluxData will showcase how to stream time series data to your IoT application using RabbitMQ queues and InfluxDB, drawing upon deployments done at Cisco, IBM, PayPal, and Tesla that allow both to ingest 1 million metrics per second.
-  template: two
+# - start: "10:30"
+#   etime: "11:15"
+#   title: "Stream processing IoT time series data with RabbitMQ & InfluxDB"
+#   speaker: Samantha Wang
+#   role: Product Manager
+#   company: InfluxData
+#   abstract: >-
+#     In this session, Samantha Wang, Product Manager at InfluxData will showcase how to stream time series data to your IoT application using RabbitMQ queues and InfluxDB, drawing upon deployments done at Cisco, IBM, PayPal, and Tesla that allow both to ingest 1 million metrics per second.
+#   template: two
 - start: "10:30"
   etime: "11:15"
   title: "Building Scalable Resilient IoT Messaging"
