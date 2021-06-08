@@ -126,6 +126,14 @@
   co-role: Staff Software Engineer
 - start: "10:30"
   etime: "11:15"
+  title: "Fireside chat on client libraries"
+  speaker: Carl Hörberg
+  role: CEO and founder
+  company: 84codes
+  abstract:
+  template: two
+- start: "10:30"
+  etime: "11:15"
   title: "How we built at Vonage a scalable multichannel notification system"
   speaker: Ori Shofman Shimoni
   role: Tech lead
