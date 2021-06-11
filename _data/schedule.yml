@@ -169,6 +169,14 @@
   co-role: Staff Engineer
 - start: "10:30"
   etime: "11:15"
+  title: "Varonis journey"
+  speaker: Ophir Gregory Ziskind
+  role: Software Engineer
+  company: Varonis
+  abstract:
+  template: two
+- start: "10:30"
+  etime: "11:15"
   title: "Panel discussion on streams"
   speaker: Gabor Olah
   role: Developer
