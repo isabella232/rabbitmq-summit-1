@@ -154,7 +154,7 @@
   title: "Panel discussion on streams"
   speaker: Diana Parra Corbacho
   role: Software Engineer
-  company: Pivotal
+  company: VMware
   abstract:
   template: two
 - start: "10:30"
@@ -213,4 +213,4 @@
     May 2021? In this talk we will cover what's coming in next releases.
   template: two
   co-speaker: Yaron Parasol
-  co-role: Product Manager
+  co-role: Product Manager Tanzu RabbitMQ
