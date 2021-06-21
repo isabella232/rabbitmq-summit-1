@@ -152,6 +152,7 @@
 - start: "10:30"
   etime: "11:15"
   title: "Panel discussion on streams"
+  keynote: true
   speaker: Diana Parra Corbacho
   role: Software Engineer
   company: VMware
@@ -160,6 +161,7 @@
 - start: "10:30"
   etime: "11:15"
   title: "Panel discussion on streams"
+  keynote: true
   speaker: Karl Nilsson
   role: Staff Software Engineer
   company: VMware
@@ -179,6 +181,7 @@
   etime: "11:15"
   title: "Panel discussion on streams"
   speaker: Gabor Olah
+  keynote: true
   role: Developer
   company: Erlang Solutions
   abstract:
