@@ -183,15 +183,16 @@
   company: Erlang Solutions
   abstract:
   template: two
-#- start: "10:30"
-#  etime: "11:15"
-#  title: "Introducing stream support in RabbitMQ"
-#  speaker: Arnaud Cogoluègnes
-#  role: Staff Engineer
-#  company: VMware
-#  abstract: >-
-#    RabbitMQ is driving an effort to implement a log-type data structure, with stream support on top of the AMQP 0-9-1 protocol and a new blazing fast protocol created for the occasion. Streams unlock scenarios that could have been tedious to implement in the old days of RabbitMQ: large fan-outs, replay & time travel, large logs, very high throughput (1 million messages per second on a 3-node cluster).
-#  template: two
+- start: "10:30"
+  etime: "11:15"
+  title: "Introducing stream support in RabbitMQ"
+  keynote: true
+  speaker: Arnaud Cogoluègnes
+  role: Staff Engineer
+  company: VMware
+  abstract: >-
+    RabbitMQ is driving an effort to implement a log-type data structure, with stream support on top of the AMQP 0-9-1 protocol and a new blazing fast protocol created for the occasion. Streams unlock scenarios that could have been tedious to implement in the old days of RabbitMQ: large fan-outs, replay & time travel, large logs, very high throughput (1 million messages per second on a 3-node cluster).
+  template: two
 - start: "10:30"
   etime: "11:15"
   title: "Update from RabbitMQ Core Team"
