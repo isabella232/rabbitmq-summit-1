@@ -105,6 +105,7 @@ footer-logo: /img/logo-2021-pink.png
           </script>
   </div>
 </section>
+
 <!--Keynote speakers and schedule section-->
 <section class="bg-section py-3 py-md-5 pt-lg-2 pb-lg-7 d-none d-md-block" style="background-image: url(/img/bg-img2.png)">
     <div class="container" id="speakers">
@@ -183,6 +184,49 @@ footer-logo: /img/logo-2021-pink.png
       </div>
     </div>
   </section>
+<!--sponsors -->
+<section class="sponsor-section pt-7 pb-6">
+  <div class="row align-items-center justify-content-center mb-4 mb-lg-2 top-hero">
+    <div class="row justify-content-center mb-4 mt-4">
+      <div class="col-12 mb-4 text-center">
+        <h4 class="text-uppercase text-secondary editable">Organisers</h4>
+        <a href="https://erlang-solutions.com" target="_blank">
+          <img src="/img/logos/logo-erlang-solutions.png" alt="Erlang Solutions" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
+          <img src="/img/logos/logo-codesync-rmq.png" alt="Code Sync" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
+        </a>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
+          <h4 class="text-uppercase text-secondary editable">Platinum Sponsor</h4>
+           <a href="https://84codes.com" target="_blank">
+             <img src="/img/logos/logo-84codes-green-transparent.png" alt="84codes" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
+           </a>
+           <a href="https://www.influxdata.com" target="_blank">
+             <img src="/img/logos/logo-influxdata.png" alt="influxdata" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
+          </a>
+          <a href="https://aws.amazon.com" target="_blank">
+            <img src="/img/logos/logo-aws.png" alt="amazonaws" class="w-75 sp-logo editable mt-3" />
+         </a>
+         </div>
+         <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
+           <h4 class="text-uppercase text-secondary editable">Silver Sponsor</h4>
+            <a href="https://vmware.com" target="_blank">
+              <img src="/img/logos/logo-VMware.png" alt="vmware" class="w-100 sp-logo editable mt-3" />
+            </a>
+          </div>
+          <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
+            <h4 class="text-uppercase text-secondary editable">Media Sponsor</h4>
+             <a href="https://startopsgroup.com/" target="_blank">
+               <img src="/img/logos/logo-startopsgroup.png" alt="startopsgroup" class="w-100 sp-logo editable mt-3" />
+             </a>
+             <a href="https://beamrad.io/" target="_blank">
+               <img src="/img/logos/logo-beamradio.png" alt="beamradio" class="w-100 sp-logo editable mt-3" />
+             </a>
+           </div>
+    </div>
+  </div>
+</section>
+
   <section class="bg-light pt-6 pb-6 pt-xl-7">
     <div class="container" id="schedule">
       <div class="row justify-content-center mb-3">
@@ -206,83 +250,7 @@ footer-logo: /img/logo-2021-pink.png
       </div>
     </div>
   </section>
-  <!--section class="bg-light pt-4 pb-6 pt-lg-6">
-    <div class="container">
-      <a name="schedule"></a>
-      <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h3 class="text-uppercase pt-4 pt-lg-6 text-center text-primary mb-2 editable">
-            Schedule
-          </h3>
-          <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">
-            <time datetime="2018-11-12">July 13</time>
-          </h3>
-        </div>
-      </div>
-      <div class="schedule">
-      {% for activity in site.data.schedule %}
-        {% case activity.template %}
-          {% when 'group' %}
-            {% if activity.start %}
-              <div class="time">
-                <h4 class="text-primary text-uppercase text-left">
-                  <time datetime="2019-11-04T{{ activity.start }}">{{ activity.start }}{% if activity.etime %}-{{ activity.etime }}{% endif %}</time>
-                </h4>
-              </div>
-            {% endif %}
-            <div class="group-event">
-              <h4 class="text-uppercase">{{ activity.title }}</h4>
-            </div>
-          {% when 'alone' %}
-            {% if activity.start %}
-              <div class="time">
-                <h4 class="text-primary text-uppercase text-left">
-                  <time datetime="2019-11-04T{{ activity.start }}">{{ activity.start }}{% if activity.etime %}-{{ activity.etime }}{% endif %}</time>
-                </h4>
-              </div>
-            {% endif %}
-            <div class="alone column-border">
-              <h4 class="text-uppercase mb-2">{{ activity.title }}</h4>
-              {% if activity.speaker %}
-                <p class="mb-lg-4">
-                  <em>
-                    {{ activity.speaker }}{% if activity.co-speaker %} &amp; {{ activity.co-speaker }}{% endif %}
-                  </em>
-                </p>
-              {% endif %}
-              {% if activity.abstract %}
-                <p>{{ activity.abstract }}</p>
-              {% endif %}
-            </div>
-            <div class="two">&nbsp;</div>
-          {% when 'two' %}
-            {% if activity.start %}
-                <div class="time">
-                  <h4 class="text-primary text-uppercase text-left">
-                    <time datetime="2021-07-04T{{ activity.start }}">{{ activity.start }}{% if activity.etime %}-{{ activity.etime }}{% endif %}</time>
-                  </h4>
-                </div>
-              {% endif %}
-              <div class="two{% if activity.start %} column-border{% endif %}">
-                <h4 class="text-uppercase mb-2">{{ activity.title }}</h4>
-                {% if activity.speaker %}
-                <p class="mb-lg-4">
-                  <em>
-                    {{ activity.speaker }}{% if activity.co-speaker %} &amp; {{ activity.co-speaker }}{% endif %}
-                  </em>
-                </p>
-              {% endif %}
-                {% if activity.abstract %}
-                  <p>{{ activity.abstract }}</p>
-                {% endif %}
-              </div>
-        {% endcase %}
-      {% endfor %}
-      </div>
-    </div>
-  </section>
 
-<!-- End of keynote speakers and schedule section>
 
 <!--Training section -->
 <section class="event-section skew-img-section pt-3 pt-lg-7 pt-xl-9 pb-0 bg-light">
@@ -462,47 +430,7 @@ footer-logo: /img/logo-2021-pink.png
     <!-- Tutorial 2 end -->
   </section>
   <!-- end of training section -->
-<section class="sponsor-section pt-7 pb-6">
-  <div class="row align-items-center justify-content-center mb-4 mb-lg-2 top-hero">
-    <div class="row justify-content-center mb-4 mt-4">
-      <div class="col-12 mb-4 text-center">
-        <h4 class="text-uppercase text-secondary editable">Organisers</h4>
-        <a href="https://erlang-solutions.com" target="_blank">
-          <img src="/img/logos/logo-erlang-solutions.png" alt="Erlang Solutions" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
-          <img src="/img/logos/logo-codesync-rmq.png" alt="Code Sync" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
-        </a>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
-          <h4 class="text-uppercase text-secondary editable">Platinum Sponsor</h4>
-           <a href="https://84codes.com" target="_blank">
-             <img src="/img/logos/logo-84codes-green-transparent.png" alt="84codes" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
-           </a>
-           <a href="https://www.influxdata.com" target="_blank">
-             <img src="/img/logos/logo-influxdata.png" alt="influxdata" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" />
-          </a>
-          <a href="https://aws.amazon.com" target="_blank">
-            <img src="/img/logos/logo-aws.png" alt="amazonaws" class="w-75 sp-logo editable mt-3" />
-         </a>
-         </div>
-         <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
-           <h4 class="text-uppercase text-secondary editable">Silver Sponsor</h4>
-            <a href="https://vmware.com" target="_blank">
-              <img src="/img/logos/logo-VMware.png" alt="vmware" class="w-100 sp-logo editable mt-3" />
-            </a>
-          </div>
-          <div class="col-12 col-lg-6 col-md-4 text-center mb-5">
-            <h4 class="text-uppercase text-secondary editable">Media Sponsor</h4>
-             <a href="https://startopsgroup.com/" target="_blank">
-               <img src="/img/logos/logo-startopsgroup.png" alt="startopsgroup" class="w-100 sp-logo editable mt-3" />
-             </a>
-             <a href="https://beamrad.io/" target="_blank">
-               <img src="/img/logos/logo-beamradio.png" alt="beamradio" class="w-100 sp-logo editable mt-3" />
-             </a>
-           </div>
-    </div>
-  </div>
-</section>
+
 <section class="skew-img-section bg-light pb-0 pt-6 pt-xl-7">
   <div class="container-fluid" id="sponsors">
     <div class="row justify-content-center mb-5">
