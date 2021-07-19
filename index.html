@@ -115,14 +115,14 @@ footer-logo: /img/logo-2021-pink.png
       <div class="row justify-content-center">
         {% for talk in site.data.talks2021 %}
         <div class="col-12 col-md-6 col-xl-5 mb-5">
-          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" data-playlist="PLDUzG2yLXrU7gQAzZwMEkjkfTy0L5FsJx" target="_blank">
+          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" data-playlist="PLvL2NEhYV4Zs2ZakMrMBO_tr-CgEbOLRL" target="_blank">
             <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
           </a>
           <div class="links mt-1 mb-2">
             {% if talk.slideshare %}
             <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
             {% endif %}
-            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLDUzG2yLXrU7gQAzZwMEkjkfTy0L5FsJx" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch the talk</a>
+            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLvL2NEhYV4Zs2ZakMrMBO_tr-CgEbOLRL" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch the talk</a>
           </div>
         </div>
         {% endfor %}
