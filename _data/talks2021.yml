@@ -1,12 +1,8 @@
-- title: 'Keynote: '
-  speaker: To Be Confirmed Soon
-  description:
-  lecture-img: /img/videos-2019/rmqs19-klishin-parra-corbacho.jpg
+- title: 'Keynote: Bringing a Ferrari to a Horse Race: Going From Background Jobs to Event-Driven Microservices with RabbitMQ'
+  speaker: Sophie DeBenedetto & Steven Nunez
+  youtube: x4ZApyHrI8g
+  lecture-img: /img/videos-2021/rmqs21-sophie-steven.png
 - title: 'Practical advice for the care and feeding of RabbitMQ'
   speaker: Gavin Roy
-  description:
-  lecture-img: /img/videos-2019/rmqs19-roy.jpg
-- title: 'Do not guess, Trace'
-  speaker: Kacper Mentel
-  description:
-  lecture-img: /img/videos-2019/rmqs19-mentel.jpg
+  youtube: K5wZUoz4dak
+  lecture-img: /img/videos-2021/rmqs19-roy.jpg
