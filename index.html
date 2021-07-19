@@ -113,7 +113,7 @@ footer-logo: /img/logo-2021-pink.png
         </div>
       </div>
       <div class="row justify-content-center">
-        {% for talk in site.data.best-talks %}
+        {% for talk in site.data.talks2021 %}
         <div class="col-12 col-md-6 col-xl-5 mb-5">
           <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" data-playlist="PLDUzG2yLXrU7gQAzZwMEkjkfTy0L5FsJx" target="_blank">
             <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
