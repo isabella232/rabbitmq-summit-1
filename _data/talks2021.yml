@@ -1,9 +1,18 @@
 - title: 'Keynote: Bringing a Ferrari to a Horse Race: Going From Background Jobs to Event-Driven Microservices with RabbitMQ'
   speaker: Sophie DeBenedetto & Steven Nunez
   youtube: x4ZApyHrI8g
+  slideshare: https://drive.google.com/file/d/1_GD6ZAUcW0T0D0ihp6jtPpIdxAjtonto/view?usp=sharing
   lecture-img: /img/videos-2021/rmqs21-sophie-steven.png
 - title: 'Keynote: Introducing stream support in RabbitMQ'
   speaker: Arnaud Cogoluègnes
   youtube: PnmGoMiaJhE
   slideshare: https://drive.google.com/file/d/12q0wUSNcbgsTbO0QbDBqgRUtlbu2ln5V/view?usp=sharing
+  lecture-img: /img/videos-2021/rmqs21-arnaud.png
+- title: 'Fireside chat session on client libraries'
+  speaker: Gavin Roy; Michael Klishin & Carl Hörberg
+  youtube: cYIkjB3hYAk
+  lecture-img: /img/videos-2021/rmqs21-arnaud.png
+- title: 'Keynote: Panel discussion: The new RabbitMQ Streams'
+  speaker: Arnaud Cogoluègnes; Diana Parra Corbacho; Gabor Olah & Karl Nilsson
+  youtube: dhhr2LVPF1c
   lecture-img: /img/videos-2021/rmqs21-arnaud.png
