@@ -1,28 +1,28 @@
-#- name: John Samuel
-#  company: Erlang Solutions
-#  title: Head of RabbitMQ & London Projects
-#  img: john-samuel.png
-- name: Ayanda Dube
-  company: 8x8
-  title:  Principal Engineer
-  img: ayanda-dube.jpg
-- name: Lovisa Johansson
-  company: 84codes AB
-  title: Marketing Manager
-  img: lovisa-johansson.jpg
-- name: Johan Rhodin
-  company: 84codes Inc
-  title: Product Manager
-  img: johan-rhodin.jpg
+- name: John Samuel
+  company: Erlang Solutions
+  title: Head of RabbitMQ & London Projects
+  img: john-samuel.png
+#- name: Ayanda Dube
+#  company: 8x8
+#  title:  Principal Engineer
+#  img: ayanda-dube.jpg
+#- name: Lovisa Johansson
+#  company: 84codes AB
+#  title: Marketing Manager
+#  img: lovisa-johansson.jpg
+#- name: Johan Rhodin
+#  company: 84codes Inc
+#  title: Product Manager
+#  img: johan-rhodin.jpg
 - name: Gabor Olah
   company: Erlang Solutions
   title: Developer
   img: gabor-olah.png
-- name: Michal Kuratczyk
-  company: VMware
-  title: Staff Software Engineer
-  img: michal-kuratczyk.jpeg
-- name: Francesco Cesarini
-  company: Erlang Solutions
-  title: Technical Director
-  img: francesco-cesarini.jpg
+#- name: Michal Kuratczyk
+#  company: VMware
+#  title: Staff Software Engineer
+#  img: michal-kuratczyk.jpeg
+#- name: Francesco Cesarini
+#  company: Erlang Solutions
+#  title: Technical Director
+#  img: francesco-cesarini.jpg
