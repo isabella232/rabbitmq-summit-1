@@ -78,6 +78,71 @@ footer-logo: /img/logo-pink-2022.png
       </div>
     </div>
   </section>
+
+<!-- CFT session -->
+  <section class="bg-light pt-6 pb-6 pt-xl-7">
+    <div class="container" id="cft">
+      <div class="row justify-content-center mb-3">
+        <div class="col-12">
+          <h3 class="text-uppercase text-center text-primary mb-5 editable">
+            Call for talks
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+          <div class="text text-sm text-success text-center">
+            <p class="editable">
+              The process openes on 2nd March and closes on 1st May 2022.
+              Would you like to present a talk at the uplcoming RabbitMQ Summit 2022, and share your experience and knowledge with the audience?
+              This year we're accepting both in-person and virtual talks.
+            </p>
+            <!--<label class="button-lines-wrap mt-4 text-center text-md-left mb-5 ml-4">
+              <a class="big-space-mono btn btn-primary text-uppercase" href="" target="_blank">Submit<span class="d-none d-sm-inline"></span></a>
+            </label>-->
+          </div>
+        </div>
+      </div>
+      <div class="img-effect-wrap mb-3">
+        <img src="/img/line-green.png" alt="image description" class="w-100">
+      </div>
+      <div class="row justify-content-center mb-3">
+          <div class="col-12">
+            <h4 class="text-uppercase text-center text-primary mb-3 editable">
+              Programme Committee
+            </h4>
+          </div>
+      </div>
+      <div class="row justify-content-center mb-5" id="programme-committee">
+          <div class="col-12">
+            <div class="text text-sm text-success">
+              <p class="editable text-center">
+                The following RabbitMQ Summit Committee has the honor to review, rate and select submissions.
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="row justify-content-center committee">
+          {% for person in site.data.committee %}
+          <div class="col-12 col-sm-6 col-md-5 mb-3">
+            <div class="media">
+              <div class="img mr-3" style="background-image: url(/img/committee/{{ person.img }})"></div>
+              <div class="media-body">
+                <h5 class="mt-0 text-uppercase">{{ person.name }}</h5>
+                <p class="mb-1">
+                  <strong class="pink space-mono">{{ person.company }}</strong>
+                </p>
+                <p class="mb-0">
+                  {{ person.title }}
+                </p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+  </section> -->
+
+<!-- Register session -->
 <!--<section class="bg-light pt-6 pb-6 pt-xl-7">
   <div class="container" id="register">
     <div class="row justify-content-center mb-3">
@@ -110,6 +175,7 @@ footer-logo: /img/logo-pink-2022.png
   </div>
 </section>
 !-->
+<!-- Talk recordings session -->
 <section class="bg-light pt-7 pb-6 pt-lg-6">
     <div class="container" id="videos">
       <div class="row justify-content-center mb-3">
@@ -150,6 +216,7 @@ footer-logo: /img/logo-pink-2022.png
 <!--<div class="img-effect-wrap mb-3">
   <img src="/img/line-green.png" alt="image description" class="w-100">
 </div>
+
 <section class="bg-light pt-6 pb-6 pt-xl-7">
   <div class="container" id="stream">
     <div class="row justify-content-center mb-3">
@@ -166,6 +233,7 @@ footer-logo: /img/logo-pink-2022.png
       </div>
   </div>
 </section>
+
 <!-- Meetup session -->
 <!--<section class="event-section skew-img-section pt-3 pt-lg-7 pt-xl-9 pb-0 bg-light">
     <div class="container-fluid" id="meetup">
@@ -213,6 +281,7 @@ footer-logo: /img/logo-pink-2022.png
     </div>
 </section>
 <!-- Meetup end -->
+
 <!--Keynote speakers and schedule section-->
 <!--<section class="bg-section py-3 py-md-5 pt-lg-2 pb-lg-7 d-none d-md-block" style="background-image: url(/img/bg-img2.png)">
     <div class="container" id="speakers">
@@ -291,6 +360,7 @@ footer-logo: /img/logo-pink-2022.png
       </div>
     </div>
   </section>
+  
 <!--schedule -->
 <!--  <section class="bg-light pt-6 pb-6 pt-xl-7">
     <div class="container" id="schedule">
@@ -641,69 +711,6 @@ footer-logo: /img/logo-pink-2022.png
           </label>
       </div>
   </div>
-</section> -->
-
-<!-- Diversity-->
-<section class="bg-light pt-6 pb-6 pt-xl-7">
-  <div class="container" id="cft">
-    <div class="row justify-content-center mb-3">
-      <div class="col-12">
-        <h3 class="text-uppercase text-center text-primary mb-5 editable">
-          Call for talks
-        </h3>
-      </div>
-    </div>
-    <div class="row justify-content-center mb-5">
-      <div class="col-12 col-md-6 order-2 order-md-1">
-        <div class="text text-sm text-success text-center">
-          <p class="editable">
-            The process openes on 2nd March and closes on 1st May 2022.
-            Would you like to present a talk at the uplcoming RabbitMQ Summit 2022, and share your experience and knowledge with the audience?
-            This year we're accepting both in-person and virtual talks.
-          </p>
-          <!--<label class="button-lines-wrap mt-4 text-center text-md-left mb-5 ml-4">
-            <a class="big-space-mono btn btn-primary text-uppercase" href="" target="_blank">Submit<span class="d-none d-sm-inline"></span></a>
-          </label>-->
-        </div>
-      </div>
-    </div>
-    <div class="img-effect-wrap mb-3">
-      <img src="/img/line-green.png" alt="image description" class="w-100">
-    </div>
-    <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h4 class="text-uppercase text-center text-primary mb-3 editable">
-            Programme Committee
-          </h4>
-        </div>
-    </div>
-    <div class="row justify-content-center mb-5" id="programme-committee">
-        <div class="col-12">
-          <div class="text text-sm text-success">
-            <p class="editable text-center">
-              The following RabbitMQ Summit Committee has the honor to review, rate and select submissions.
-            </p>
-          </div>
-        </div>
-    </div>
-    <div class="row justify-content-center committee">
-        {% for person in site.data.committee %}
-        <div class="col-12 col-sm-6 col-md-5 mb-3">
-          <div class="media">
-            <div class="img mr-3" style="background-image: url(/img/committee/{{ person.img }})"></div>
-            <div class="media-body">
-              <h5 class="mt-0 text-uppercase">{{ person.name }}</h5>
-              <p class="mb-1">
-                <strong class="pink space-mono">{{ person.company }}</strong>
-              </p>
-              <p class="mb-0">
-                {{ person.title }}
-              </p>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-    </div>
 </section> -->
   <div class="img-effect-wrap mb-3">
     <img src="/img/line-green.png" alt="image description" class="w-100">
