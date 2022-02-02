@@ -10,6 +10,10 @@
 #  company: 84codes AB
 #  title: Marketing Manager
 #  img: lovisa-johansson.jpg
+- name: Michal Kuratczyk
+  company: VMware
+  title: Staff Software Engineer
+  img: michal-kuratczyk.jpeg
 #- name: Johan Rhodin
 #  company: 84codes Inc
 #  title: Product Manager
@@ -18,10 +22,6 @@
   company: Erlang Solutions
   title: Developer
   img: gabor-olah.png
-#- name: Michal Kuratczyk
-#  company: VMware
-#  title: Staff Software Engineer
-#  img: michal-kuratczyk.jpeg
 #- name: Francesco Cesarini
 #  company: Erlang Solutions
 #  title: Technical Director
