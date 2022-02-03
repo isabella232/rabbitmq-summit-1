@@ -1,3 +1,7 @@
+- name: Lovisa Johansson
+  company: 84codes AB
+  title: Marketing Manager
+  img: lovisa-johansson.jpg
 - name: John Samuel
   company: Erlang Solutions
   title: Head of RabbitMQ & London Projects
@@ -6,18 +10,14 @@
 #  company: 8x8
 #  title:  Principal Engineer
 #  img: ayanda-dube.jpg
-#- name: Lovisa Johansson
-#  company: 84codes AB
-#  title: Marketing Manager
-#  img: lovisa-johansson.jpg
 - name: Michal Kuratczyk
   company: VMware
   title: Staff Software Engineer
   img: michal-kuratczyk.jpeg
-#- name: Johan Rhodin
-#  company: 84codes Inc
-#  title: Product Manager
-#  img: johan-rhodin.jpg
+- name: Johan Rhodin
+  company: 84codes Inc
+  title: Product Manager
+  img: johan-rhodin.jpg
 - name: Gabor Olah
   company: Erlang Solutions
   title: Developer
@@ -25,7 +25,6 @@
 - name:
   company:
   title:
-  img:
 #- name: Francesco Cesarini
 #  company: Erlang Solutions
 #  title: Technical Director
