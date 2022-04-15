@@ -16,3 +16,21 @@
   speaker: Arnaud Cogoluègnes; Diana Parra Corbacho; Gabor Olah & Karl Nilsson
   youtube: dhhr2LVPF1c
   lecture-img: /img/videos-2021/rmqs21-firesidechat.png
+- title: 'RabbitMQ has a problem - Let us tell you about it'
+  speaker: David Ansari & Gerhard Lazu
+  youtube: Z2fRY4TRYcs
+  lecture-img: /img/videos-2021/rmqs21-david-gerhard.jpg
+- title: 'Update from Rabbit Core Team'
+  speaker: Ed Byford; Michał Kuratczyk & Yaron Parasol
+  youtube: KDpSWE4qyxU
+  slideshare: https://whova.com/xems/whova_backend/get_event_s3_file_api/?eventkey=f85b0c5f18bc9afa0e1e690afba1e8c95ee34769e479f07a91d3dab7a07b36f5&event_id=codeb1_202105&file_url=https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/files/fqqog_Team_Summit_Update_RabbitMQ_Summit_2021.pdf
+  lecture-img: /img/videos-2021/rmqs21-update.jpg
+- title: 'How to RabbitMQ on kubernetes'
+  speaker: Chunyi Lyu
+  slideshare: https://whova.com/xems/whova_backend/get_event_s3_file_api/?eventkey=f85b0c5f18bc9afa0e1e690afba1e8c95ee34769e479f07a91d3dab7a07b36f5&event_id=codeb1_202105&file_url=https://d1keuthy5s86c8.cloudfront.net/static/ems/upload/files/yfqlk_how_to_rabbitmq_on_kubernetes_updated_version_.pdf
+  youtube: Nzz1p_t2l1U
+  lecture-img: /img/videos-2021/rmqs21-chunyi.png
+- title: 'Varonis journey deploying RabbitMQ'
+  speaker: Ophir Gregory Ziskind
+  youtube: aUZf1jZcKoQ
+  lecture-img: /img/videos-2021/rmqs21-ophir.png
