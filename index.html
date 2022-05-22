@@ -149,113 +149,6 @@ footer-logo: /img/logo-pink-2022.png
 </script>
   </div>
 </section>
-<section class="sponsor-section pt-7 pb-6">
-  <div class="container" id="organisers">
-    <div class="row justify-content-center mb-4 mt-4">
-      <div class="col-12 mb-4 text-center">
-        <h4 class="text-uppercase text-secondary editable">Organisers</h4>
-        <a href="https://erlang-solutions.com" target="_blank">
-          <img src="/img/logos/logo-erlang-solutions.png" alt="Erlang Solutions" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" /></a>
-        <a href="https://codesync.global" target="_blank">
-          <img src="/img/logos/logo-codesync-rmq.png" alt="Code Sync" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" /></a>
-        </a>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <label class="button-lines-wrap mt-4 text-center mb-5">
-            <a class="big-space-mono btn btn-primary text-uppercase" href="#how-to-sponsor">Become Sponsor</a>
-          </label>
-        </div>
-    </div>
-  </div>
-</section>
-<!-- CFT section -->
-  <section class="bg-light pt-6 pb-6 pt-xl-7">
-    <div class="container" id="cft">
-      <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h3 class="text-uppercase text-center text-primary mb-5 editable">
-            Call for talks (CLOSED!)
-          </h3>
-        </div>
-      </div>
-      <div class="row justify-content-center mb-5">
-        <div class="col-12 col-md-6 order-2 order-md-1">
-          <div class="text text-sm text-success text-center">
-            <p class="editable">
-              Would you like to present a talk at the upcoming RabbitMQ Summit 2022, share your experience and knowledge with the audience?
-              This year we're accepting both in-person and virtual talks. The process is open and closes on <b>8 May 2022 at 23:59 BST</b>(CLOSED!).
-            </p>
-<!--            <label class="button-lines-wrap mt-4 text-center mb-5 ml-4">
-              <a class="big-space-mono btn btn-primary text-uppercase" href="https://sessionize.com/rabbitmq-summit-2022" target="_blank">Submit<span class="d-none d-sm-inline"></span></a>
-            </label> -->
-          </div>
-        </div>
-      </div>
-      <div class="img-effect-wrap mb-3">
-        <img src="/img/line-green.png" alt="image description" class="w-100">
-      </div>
-      <div class="row justify-content-center mb-3">
-          <div class="col-12">
-            <h4 class="text-uppercase text-center text-primary mb-3 editable">
-              Programme Committee
-            </h4>
-          </div>
-      </div>
-      <div class="row justify-content-center mb-5" id="programme-committee">
-          <div class="col-12">
-            <div class="text text-sm text-success">
-              <p class="editable text-center">
-                The following RabbitMQ Summit Committee has the honor to review, rate and select submissions.
-              </p>
-            </div>
-          </div>
-      </div>
-      <div class="row justify-content-center committee">
-          {% for person in site.data.committee %}
-          <div class="col-12 col-sm-6 col-md-5 mb-3">
-            <div class="media">
-              <div class="img mr-3" style="background-image: url(/img/committee/{{ person.img }})"></div>
-              <div class="media-body">
-                <h5 class="mt-0 text-uppercase">{{ person.name }}</h5>
-                <p class="mb-1">
-                  <strong class="pink space-mono">{{ person.company }}</strong>
-                </p>
-                <p class="mb-0">
-                  {{ person.title }}
-                </p>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-      </div>
-  </section>
-<!-- Talk recordings session -->
-<section class="bg-light pt-7 pb-6 pt-lg-6">
-    <div class="container" id="videos">
-      <div class="row justify-content-center mb-3">
-        <div class="col-12">
-          <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">Talk recordings from 2021</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        {% for talk in site.data.talks2021 %}
-        <div class="col-12 col-md-6 col-xl-5 mb-5">
-          <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" data-playlist="PLvL2NEhYV4Zs2ZakMrMBO_tr-CgEbOLRL" target="_blank">
-            <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
-          </a>
-          <div class="links mt-1 mb-2">
-            {% if talk.slideshare %}
-            <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
-            {% endif %}
-            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLvL2NEhYV4Zs2ZakMrMBO_tr-CgEbOLRL" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch the talk</a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-</section>
 <!--<div class="img-effect-wrap mb-3">
   <img src="/img/line-green.png" alt="image description" class="w-100">
 </div>
@@ -607,6 +500,113 @@ footer-logo: /img/logo-pink-2022.png
   Tutorial 2 end -->
   </section>
   <!-- end of training section -->
+  <section class="sponsor-section pt-7 pb-6">
+    <div class="container" id="organisers">
+      <div class="row justify-content-center mb-4 mt-4">
+        <div class="col-12 mb-4 text-center">
+          <h4 class="text-uppercase text-secondary editable">Organisers</h4>
+          <a href="https://erlang-solutions.com" target="_blank">
+            <img src="/img/logos/logo-erlang-solutions.png" alt="Erlang Solutions" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" /></a>
+          <a href="https://codesync.global" target="_blank">
+            <img src="/img/logos/logo-codesync-rmq.png" alt="Code Sync" class="w-100 sp-logo editable mt-3 ml-0 ml-sm-4" /></a>
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <label class="button-lines-wrap mt-4 text-center mb-5">
+              <a class="big-space-mono btn btn-primary text-uppercase" href="#how-to-sponsor">Become Sponsor</a>
+            </label>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- CFT section -->
+    <section class="bg-light pt-6 pb-6 pt-xl-7">
+      <div class="container" id="cft">
+        <div class="row justify-content-center mb-3">
+          <div class="col-12">
+            <h3 class="text-uppercase text-center text-primary mb-5 editable">
+              Call for talks (CLOSED!)
+            </h3>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="text text-sm text-success text-center">
+              <p class="editable">
+                Would you like to present a talk at the upcoming RabbitMQ Summit 2022, share your experience and knowledge with the audience?
+                This year we're accepting both in-person and virtual talks. The process is open and closes on <b>8 May 2022 at 23:59 BST</b>(CLOSED!).
+              </p>
+  <!--            <label class="button-lines-wrap mt-4 text-center mb-5 ml-4">
+                <a class="big-space-mono btn btn-primary text-uppercase" href="https://sessionize.com/rabbitmq-summit-2022" target="_blank">Submit<span class="d-none d-sm-inline"></span></a>
+              </label> -->
+            </div>
+          </div>
+        </div>
+        <div class="img-effect-wrap mb-3">
+          <img src="/img/line-green.png" alt="image description" class="w-100">
+        </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col-12">
+              <h4 class="text-uppercase text-center text-primary mb-3 editable">
+                Programme Committee
+              </h4>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5" id="programme-committee">
+            <div class="col-12">
+              <div class="text text-sm text-success">
+                <p class="editable text-center">
+                  The following RabbitMQ Summit Committee has the honor to review, rate and select submissions.
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="row justify-content-center committee">
+            {% for person in site.data.committee %}
+            <div class="col-12 col-sm-6 col-md-5 mb-3">
+              <div class="media">
+                <div class="img mr-3" style="background-image: url(/img/committee/{{ person.img }})"></div>
+                <div class="media-body">
+                  <h5 class="mt-0 text-uppercase">{{ person.name }}</h5>
+                  <p class="mb-1">
+                    <strong class="pink space-mono">{{ person.company }}</strong>
+                  </p>
+                  <p class="mb-0">
+                    {{ person.title }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+  <!-- Talk recordings session -->
+  <section class="bg-light pt-7 pb-6 pt-lg-6">
+      <div class="container" id="videos">
+        <div class="row justify-content-center mb-3">
+          <div class="col-12">
+            <h3 class="text-uppercase text-center text-primary mb-4 mb-lg-5 editable">Talk recordings from 2021</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          {% for talk in site.data.talks2021 %}
+          <div class="col-12 col-md-6 col-xl-5 mb-5">
+            <a href="https://www.youtube.com/watch?v={{ talk.youtube }}" class="talk-image youtube" data-embed="{{ talk.youtube }}" data-playlist="PLvL2NEhYV4Zs2ZakMrMBO_tr-CgEbOLRL" target="_blank">
+              <img src="{{ talk.lecture-img }}" class="img-fluid" alt="{{ talk.title }} - {{ talk.speaker }}" title="{{ talk.title }} - {{ talk.speaker }}"/>
+            </a>
+            <div class="links mt-1 mb-2">
+              {% if talk.slideshare %}
+              <a href="{{ talk.slideshare }}" class="float-right pink" target="_blank"><i class="fa fa-slideshare" aria-hidden="true"></i> Slides</a>
+              {% endif %}
+              <a href="https://www.youtube.com/watch?v={{ talk.youtube }}&list=PLvL2NEhYV4Zs2ZakMrMBO_tr-CgEbOLRL" class="pink"><i class="fa fa-youtube-play" aria-hidden="true"></i> Watch the talk</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+  </section>
 <!--  <section class="sponsor-section pt-7 pb-6">
     <div class="row align-items-center justify-content-center mb-4 mb-lg-2 top-hero">
         <div class="row justify-content-center">
