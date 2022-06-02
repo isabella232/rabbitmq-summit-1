@@ -10,12 +10,58 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
+  title: "Zero Trust RabbitMQ with HashiCorp Vault"
+  speaker: Rob Barnes
+  role: Senior Developer Advocate
+  company: HashiCorp
+  abstract: >-
+      TBA
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
+  title: "An update on Khepri adoption in RabbitMQ"
+  speaker: Michael Klishin
+  role: RabbitMQ contributor of 12 years
+  company: VMware
+  abstract: >-
+    Khepri, RabbitMQ's next generation schema database, has evolved significantly from the last time it was covered at RabbitMQ Summit. So has RabbitMQ core team's understanding of where it can be adopted before RabbitMQ 4.0.
+
+    In this talk we will cover the continued evolution of Khepri, what it has to offer to RabbitMQ users, and how soon they can expect Khepri to ship in a GA release.
+  template: two
+  co-speaker: Diana Parra Corbacho
+  co-role: Staff Engineer
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
+  title: "Write fast, reliable, and secure clients!"
+  speaker: Carl Hörberg
+  role: CEO
+  company: 84codes
+  abstract: >-
+    The RabbitMQ website has over 70 clients listed, so there is naturally a vast array of client libraries. Among these, there are several great, unofficial clients developed by the RabbitMQ community, so what could go wrong? As we aim to deliver the best possible clients, we need to be sure to keep everything above-board and high quality. Carl Hörberg (CloudAMQP) has contributed to several client libraries lately, including the amqp-client for Crystal, the TypeScript client both for Node.js and browsers (using WebSocket), and the amqp-client for Ruby, where the new Ruby client is more than 4 times faster than other Ruby clients.
+
+    In this presentation, Carl talks about how to write fast clients that are also reliable and secure. He also tells you why he decided to write some new libraries.
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
   title: "How to Safely and Reliably Upgrade Your RabbitMQ Cluster While Maintaining 100% Uptime"
   speaker: Stefan Moser
   role: Principal Engineer
   company: AWS, Amazon MQ
   abstract:
     The RabbitMQ team releases new features, bug fixes and security patches at a blistering pace, but *you* have to upgrade your cluster to take advantage of all the awesome new value. Upgrading a RabbitMQ cluster can be a harrowing adventure full of pitfalls and danger lurking around every corner. But fear not, you are not alone! Based on the experience of keeping a large fleet of RabbitMQ clusters up-to-date and running the latest version of RabbitMQ, we’ll walk through all of the steps that you can take to safely, reliably and triumphantly upgrade your RabbitMQ cluster, all while maintaining 100% uptime!
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
+  title: "Fun, interesting and common RabbitMQ use cases"
+  speaker: Lovisa Johansson
+  role: CMO
+  company: 84codes
+  abstract: >-
+    We as human beings have always sought ways to communicate, even when there have been distances between us. The same need exists in the computer world - a method to send, receive, and create the message itself. Despite that, I often get the question; “Where would a message queue fit in my architecture?” Get ready for an answer to that question from the lens of common RabbitMQ use cases that are understandable no matter where you are or what language you’re speaking.
   template: two
 - start: "10:30"
   etime: "11:15"
@@ -69,28 +115,6 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
-  title: "Fun, interesting and common RabbitMQ use cases"
-  speaker: Lovisa Johansson
-  role: CMO
-  company: 84codes
-  abstract: >-
-    We as human beings have always sought ways to communicate, even when there have been distances between us. The same need exists in the computer world - a method to send, receive, and create the message itself. Despite that, I often get the question; “Where would a message queue fit in my architecture?” Get ready for an answer to that question from the lens of common RabbitMQ use cases that are understandable no matter where you are or what language you’re speaking.
-  template: two
-- start: "10:30"
-  etime: "11:15"
-  keynote: false
-  title: "Write fast, reliable, and secure clients!"
-  speaker: Carl Hörberg
-  role: CEO
-  company: 84codes
-  abstract: >-
-    The RabbitMQ website has over 70 clients listed, so there is naturally a vast array of client libraries. Among these, there are several great, unofficial clients developed by the RabbitMQ community, so what could go wrong? As we aim to deliver the best possible clients, we need to be sure to keep everything above-board and high quality. Carl Hörberg (CloudAMQP) has contributed to several client libraries lately, including the amqp-client for Crystal, the TypeScript client both for Node.js and browsers (using WebSocket), and the amqp-client for Ruby, where the new Ruby client is more than 4 times faster than other Ruby clients.
-
-    In this presentation, Carl talks about how to write fast clients that are also reliable and secure. He also tells you why he decided to write some new libraries.
-  template: two
-- start: "10:30"
-  etime: "11:15"
-  keynote: false
   title: "Why does RabbitMQ stop and what can be done about it"
   speaker: Johan Rhodin
   role: CCO
@@ -110,28 +134,4 @@
   abstract: >-
     RabbitMQ 3.9 introduced streams, a new log-type data structure. What is the state of RabbitMQ Streams after one year of existence? Feedback from users helped stabilize and optimize it. The ecosystem grew with new client libraries in several programming languages. But streams are far from feature-complete: super streams, to scale out publishing and consuming, and single active consumer, to handle consumer concurrency, are the two major features coming up.
     Join this session to find out about the present and future of RabbitMQ Streams!
-  template: two
-- start: "10:30"
-  etime: "11:15"
-  keynote: false
-  title: "An update on Khepri adoption in RabbitMQ"
-  speaker: Michael Klishin
-  role: RabbitMQ contributor of 12 years
-  company: VMware
-  abstract: >-
-    Khepri, RabbitMQ's next generation schema database, has evolved significantly from the last time it was covered at RabbitMQ Summit. So has RabbitMQ core team's understanding of where it can be adopted before RabbitMQ 4.0.
-
-    In this talk we will cover the continued evolution of Khepri, what it has to offer to RabbitMQ users, and how soon they can expect Khepri to ship in a GA release.
-  template: two
-  co-speaker: Diana Parra Corbacho
-  co-role: Staff Engineer
-- start: "10:30"
-  etime: "11:15"
-  keynote: false
-  title: "Zero Trust RabbitMQ with HashiCorp Vault"
-  speaker: Rob Barnes
-  role: Senior Developer Advocate
-  company: HashiCorp
-  abstract: >-
-      TBA
   template: two
