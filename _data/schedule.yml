@@ -21,7 +21,7 @@
   etime: "11:15"
   keynote: true
   title: "Quorum Queues: a retrospective"
-  speaker: Karl	Nilsson
+  speaker: Karl Nilsson
   role: RabbitMQ core team member
   company: VMware
   abstract:
