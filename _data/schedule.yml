@@ -31,7 +31,21 @@
   template: one
 - start: "10:30"
   etime: "11:15"
-  keynote: true
+  keynote: false
+  title: "Quorum Queues: a retrospective"
+  speaker: Andrew	Cook
+  role: Engineering Team Lead 
+  company: Enterprise Trading Platform at Bloomberg
+  abstract: >-
+    Learn how Bloomberg's Order Management Systems (OMS) leverage RabbitMQ! We'll talk about how we use RabbitMQ for OMS applications. As you can imagine, these systems require particularly complex topologies in order to satisfy critical service-level requirements related to performance, reliability, scalability, and client isolation.
+
+    The evolution of our OMS topologies posed some common problems. As these systems grew and evolved, virtual hosts became bloated. Workflows that started as simple publisher/consumer pipelines required more steps inserted. Connection strings needed to be changed to adopt amqpprox – a proxy for the RabbitMQ brokers.
+
+    To solve these and other challenges, we needed a system that could easily coordinate changes to the way large numbers of applications use RabbitMQ. We will share how we did this by developing a configuration system that drives our applications’ interactions with the broker, while maintaining the flexibility of a loosely-coupled system.
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
   title: "Quorum Queues: a retrospective"
   speaker: Karl	Nilsson
   role: Software Engineer
