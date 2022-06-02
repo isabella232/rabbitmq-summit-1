@@ -7,17 +7,27 @@
   company: Erlang Solutions
   abstract:
   template: one
-#- start: "10:30"
-#  etime: "11:15"
-#  keynote: true
-#  title: "How to RabbitMQ on kubernetes"
-#  speaker: Chunyi Lyu
-#  role: Software Engineer
-#  company: VMware
-#  abstract: >-
-#    This talk will introduce you to two a new RabbitMQ projects: cluster operator and messaging topology operator, which are kubernetes operators developed by the RabbitMQ team to help you deploy and use RabbitMQ on kubernetes.
-#    The talk will cover the basis of how to configure, deploy, and automate your RabbitMQ deployments using these operators and a demo.
-#    After this talk, you should be able to create and operate your own RabbitMQ clusters on any kubernetes cluster.
-#  template: two
-#  co-speaker: Johan Rhodin
-#  co-role: Product Manager
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
+  title: "How to Safely and Reliably Upgrade Your RabbitMQ Cluster While Maintaining 100% Uptime"
+  speaker: Stefan	Moser
+  role: Principal Engineer
+  company: AWS, Amazon MQ
+  abstract: >-
+    The RabbitMQ team releases new features, bug fixes and security patches at a blistering pace, but *you* have to upgrade your cluster to take advantage of all the awesome new value. Upgrading a RabbitMQ cluster can be a harrowing adventure full of pitfalls and danger lurking around every corner. But fear not, you are not alone! Based on the experience of keeping a large fleet of RabbitMQ clusters up-to-date and running the latest version of RabbitMQ, we’ll walk through all of the steps that you can take to safely, reliably and triumphantly upgrade your RabbitMQ cluster, all while maintaining 100% uptime!
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: true
+  title: "How to RabbitMQ on kubernetes"
+  speaker: Stefan	Moser
+  role: Software Engineer
+  company: VMware
+  abstract: >-
+    This talk will introduce you to two a new RabbitMQ projects: cluster operator and messaging topology operator, which are kubernetes operators developed by the RabbitMQ team to help you deploy and use RabbitMQ on kubernetes.
+    The talk will cover the basis of how to configure, deploy, and automate your RabbitMQ deployments using these operators and a demo.
+    After this talk, you should be able to create and operate your own RabbitMQ clusters on any kubernetes cluster.
+  template: two
+  co-speaker: Johan Rhodin
+  co-role: Product Manager
