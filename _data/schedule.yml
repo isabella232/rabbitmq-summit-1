@@ -34,7 +34,7 @@
   keynote: false
   title: "Quorum Queues: a retrospective"
   speaker: Andrew	Cook
-  role: Engineering Team Lead 
+  role: Engineering Team Lead
   company: Enterprise Trading Platform at Bloomberg
   abstract: >-
     Learn how Bloomberg's Order Management Systems (OMS) leverage RabbitMQ! We'll talk about how we use RabbitMQ for OMS applications. As you can imagine, these systems require particularly complex topologies in order to satisfy critical service-level requirements related to performance, reliability, scalability, and client isolation.
@@ -43,6 +43,19 @@
 
     To solve these and other challenges, we needed a system that could easily coordinate changes to the way large numbers of applications use RabbitMQ. We will share how we did this by developing a configuration system that drives our applications’ interactions with the broker, while maintaining the flexibility of a loosely-coupled system.
   template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
+  title: "RabbitMQ Performance Improvements"
+  speaker: David Ansari
+  role: Software Engineer
+  company: VMware
+  abstract: >-
+    An ideal message broker allows for high throughput and low latency while keeping hardware resource usage as low as possible.
+    This talk presents tooling that helps improve RabbitMQ performance. We provide examples of how we spotted and fixed bottlenecks in the RabbitMQ broker. We show how you can leverage these tools to profile and further optimise the broker given your specific application workload.
+  template: two
+  co-speaker: Michal Kuratczyk
+  co-role: Staff Engineer
 - start: "10:30"
   etime: "11:15"
   keynote: false
