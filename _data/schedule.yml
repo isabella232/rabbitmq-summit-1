@@ -92,6 +92,16 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
+  title: "Pushing RabbitMQ to the limit"
+  speaker: Gabor Olah
+  role: RabbitMQ Consultant
+  company: Erlang Solutions
+  abstract: >-
+    One of the most frequent questions I’m asked about RabbitMQ is whether it can do a specific throughput. My answer is almost always is that it depends. In this talk I will explain what affects RabbitMQ performance through practical examples. I will give a practical introduction to how to use PerfTest, the “official” performance testing tool for RabbitMQ to simulate different workloads over different topologies.
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
   title: "RabbitMQ Performance Improvements"
   speaker: David Ansari
   role: Software Engineer
@@ -102,16 +112,6 @@
   template: two
   co-speaker: Michal Kuratczyk
   co-role: Staff Engineer
-- start: "10:30"
-  etime: "11:15"
-  keynote: false
-  title: "Pushing RabbitMQ to the limit"
-  speaker: Gabor Olah
-  role: RabbitMQ Consultant
-  company: Erlang Solutions
-  abstract: >-
-    One of the most frequent questions I’m asked about RabbitMQ is whether it can do a specific throughput. My answer is almost always is that it depends. In this talk I will explain what affects RabbitMQ performance through practical examples. I will give a practical introduction to how to use PerfTest, the “official” performance testing tool for RabbitMQ to simulate different workloads over different topologies.
-  template: two
 - start: "10:30"
   etime: "11:15"
   keynote: false
