@@ -14,20 +14,32 @@
   speaker: Stefan	Moser
   role: Principal Engineer
   company: AWS, Amazon MQ
-  abstract: >-
+  abstract:
     The RabbitMQ team releases new features, bug fixes and security patches at a blistering pace, but *you* have to upgrade your cluster to take advantage of all the awesome new value. Upgrading a RabbitMQ cluster can be a harrowing adventure full of pitfalls and danger lurking around every corner. But fear not, you are not alone! Based on the experience of keeping a large fleet of RabbitMQ clusters up-to-date and running the latest version of RabbitMQ, we’ll walk through all of the steps that you can take to safely, reliably and triumphantly upgrade your RabbitMQ cluster, all while maintaining 100% uptime!
   template: two
 - start: "10:30"
   etime: "11:15"
   keynote: true
-  title: "How to RabbitMQ on kubernetes"
-  speaker: Stefan	Moser
+  title: "Quorum Queues: a retrospective"
+  speaker: Karl	Nilsson
+  role: RabbitMQ core team member
+  company: VMware
+  abstract:
+    Quorum Queues were release in RabbitMQ 3.8 in October 2019 and in 3.10 received a whole bunch of requested features such as message TTL and at-least-once dead lettering.
+
+    This session will look back at the history of Quorum Queue development and look at the various design decisions that were taken and discuss what worked and what didn't and what the future may look like.
+  template: one
+- start: "10:30"
+  etime: "11:15"
+  keynote: true
+  title: "Quorum Queues: a retrospective"
+  speaker: Karl	Nilsson
   role: Software Engineer
   company: VMware
   abstract: >-
-    This talk will introduce you to two a new RabbitMQ projects: cluster operator and messaging topology operator, which are kubernetes operators developed by the RabbitMQ team to help you deploy and use RabbitMQ on kubernetes.
-    The talk will cover the basis of how to configure, deploy, and automate your RabbitMQ deployments using these operators and a demo.
-    After this talk, you should be able to create and operate your own RabbitMQ clusters on any kubernetes cluster.
+    Quorum Queues were release in RabbitMQ 3.8 in October 2019 and in 3.10 received a whole bunch of requested features such as message TTL and at-least-once dead lettering.
+
+    This session will look back at the history of Quorum Queue development and look at the various design decisions that were taken and discuss what worked and what didn't and what the future may look like.
   template: two
   co-speaker: Johan Rhodin
   co-role: Product Manager
