@@ -123,19 +123,15 @@
 
     In this talk we will cover the continued evolution of Khepri, what it has to offer to RabbitMQ users, and how soon they can expect Khepri to ship in a GA release.
   template: two
-  co-speaker: Johan Rhodin
-  co-role: Product Manager
+  co-speaker: Diana Parra Corbacho
+  co-role: Staff Engineer
 - start: "10:30"
   etime: "11:15"
   keynote: false
-  title: "Write fast, reliable, and secure clients!"
-  speaker: Carl Hörberg
-  role: CEO
-  company: 84codes
+  title: "Zero Trust RabbitMQ with HashiCorp Vault"
+  speaker: Rob Barnes
+  role: Senior Developer Advocate
+  company: HashiCorp
   abstract: >-
-    The RabbitMQ website has over 70 clients listed, so there is naturally a vast array of client libraries. Among these, there are several great, unofficial clients developed by the RabbitMQ community, so what could go wrong? As we aim to deliver the best possible clients, we need to be sure to keep everything above-board and high quality. Carl Hörberg (CloudAMQP) has contributed to several client libraries lately, including the amqp-client for Crystal, the TypeScript client both for Node.js and browsers (using WebSocket), and the amqp-client for Ruby, where the new Ruby client is more than 4 times faster than other Ruby clients.
-
-    In this presentation, Carl talks about how to write fast clients that are also reliable and secure. He also tells you why he decided to write some new libraries.
+      TBA
   template: two
-  co-speaker: Johan Rhodin
-  co-role: Product Manager
