@@ -11,7 +11,7 @@
   etime: "11:15"
   keynote: false
   title: "How to Safely and Reliably Upgrade Your RabbitMQ Cluster While Maintaining 100% Uptime"
-  speaker: Stefan	Moser
+  speaker: Stefan Moser
   role: Principal Engineer
   company: AWS, Amazon MQ
   abstract:
