@@ -91,6 +91,18 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
+  title: "Why does RabbitMQ stop and what can be done about it"
+  speaker: Johan Rhodin
+  role: CCO
+  company: 84codes
+  abstract: >-
+    Depending on a certain number of factors, the job of a support engineer for CloudAMQP may vary. Every now and then RabbitMQ stops, and Johan has to work quickly to get it up and running, and after that, he needs to make bug reports, sometimes build features around it, and educate other customers.
+
+    In this talk, Johan will walk you through the most common issues, and how he troubleshoots them, and he will share knowledge gained from mistakes made by us, customers, and the community through his own experience.
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
   title: "Write fast, reliable, and secure clients!"
   speaker: Carl Hörberg
   role: CEO
