@@ -44,6 +44,16 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
+  title: "Management, Monitoring and Tracing in RabbitMQ"
+  speaker: Rohini Senthil
+  role: Software Engineer
+  company: McKinsey & Company
+  abstract: >-
+    This session presents a walkthrough of RabbitMQ's Management Plugin and Firehose Tracer, highlighting how they help in addressing the difficulties faced while introducing external monitoring, by providing management and tracing capability in RabbitMQ nodes. As this capability is often crucial to the overall development and debugging process, this session will also showcase a live-coding on how they can be leveraged in building custom tools for monitoring & tracing, tailored to an application’s need. To demonstrate the potential of building custom tools the session will close with a small demo of Rabbitrace, a custom management extension built by the speaker.
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
   title: "Write fast, reliable, and secure clients!"
   speaker: Carl Hörberg
   role: CEO
@@ -78,16 +88,12 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
-  title: "Quorum Queues: a retrospective"
-  speaker: Andrew Cook
-  role: Engineering Team Lead
-  company: Enterprise Trading Platform at Bloomberg
+  title: "How We Rabbit at AWeber"
+  speaker: Gavin Roy
+  role: CTO
+  company: AWeber Communications
   abstract: >-
-    Learn how Bloomberg's Order Management Systems (OMS) leverage RabbitMQ! We'll talk about how we use RabbitMQ for OMS applications. As you can imagine, these systems require particularly complex topologies in order to satisfy critical service-level requirements related to performance, reliability, scalability, and client isolation.
-
-    The evolution of our OMS topologies posed some common problems. As these systems grew and evolved, virtual hosts became bloated. Workflows that started as simple publisher/consumer pipelines required more steps inserted. Connection strings needed to be changed to adopt amqpprox – a proxy for the RabbitMQ brokers.
-
-    To solve these and other challenges, we needed a system that could easily coordinate changes to the way large numbers of applications use RabbitMQ. We will share how we did this by developing a configuration system that drives our applications’ interactions with the broker, while maintaining the flexibility of a loosely-coupled system.
+    RabbitMQ is at the heart of AWeber's event-based distributed architecture, responsible for the delivery of over 75,000 messages per second on average. In this talk we will explore how we've use RabbitMQ in production over the last 10 years, including topologies, standards for use, monitoring, day-to-day operational management, and other technologies we use in conjunction to our RabbitMQ usage.
   template: two
 - start: "10:30"
   etime: "11:15"
@@ -98,6 +104,20 @@
   company: Erlang Solutions
   abstract: >-
     One of the most frequent questions I’m asked about RabbitMQ is whether it can do a specific throughput. My answer is almost always is that it depends. In this talk I will explain what affects RabbitMQ performance through practical examples. I will give a practical introduction to how to use PerfTest, the “official” performance testing tool for RabbitMQ to simulate different workloads over different topologies.
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
+  title: "Managing RabbitMQ Usage at Scale for Bloomberg’s Trading Systems"
+  speaker: Andrew Cook
+  role: Engineering Team Lead
+  company: Enterprise Trading Platform at Bloomberg
+  abstract: >-
+    Learn how Bloomberg's Order Management Systems (OMS) leverage RabbitMQ! We'll talk about how we use RabbitMQ for OMS applications. As you can imagine, these systems require particularly complex topologies in order to satisfy critical service-level requirements related to performance, reliability, scalability, and client isolation.
+
+    The evolution of our OMS topologies posed some common problems. As these systems grew and evolved, virtual hosts became bloated. Workflows that started as simple publisher/consumer pipelines required more steps inserted. Connection strings needed to be changed to adopt amqpprox – a proxy for the RabbitMQ brokers.
+
+    To solve these and other challenges, we needed a system that could easily coordinate changes to the way large numbers of applications use RabbitMQ. We will share how we did this by developing a configuration system that drives our applications’ interactions with the broker, while maintaining the flexibility of a loosely-coupled system.
   template: two
 - start: "10:30"
   etime: "11:15"
