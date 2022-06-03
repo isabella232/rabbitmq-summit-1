@@ -66,6 +66,16 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
+  title: "How We Rabbit at AWeber"
+  speaker: Gavin Roy
+  role: CTO
+  company: AWeber Communications
+  abstract: >-
+    RabbitMQ is at the heart of AWeber's event-based distributed architecture, responsible for the delivery of over 75,000 messages per second on average. In this talk we will explore how we've use RabbitMQ in production over the last 10 years, including topologies, standards for use, monitoring, day-to-day operational management, and other technologies we use in conjunction to our RabbitMQ usage.
+  template: two
+- start: "10:30"
+  etime: "11:15"
+  keynote: false
   title: "How to Safely and Reliably Upgrade Your RabbitMQ Cluster While Maintaining 100% Uptime"
   speaker: Stefan Moser
   role: Principal Engineer
@@ -88,12 +98,13 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
-  title: "How We Rabbit at AWeber"
-  speaker: Gavin Roy
-  role: CTO
-  company: AWeber Communications
+  title: "What's New in RabbitMQ Streams?"
+  speaker: Arnaud Cogoluègnes
+  role: Software engineer, RabbitMQ team
+  company: VMware
   abstract: >-
-    RabbitMQ is at the heart of AWeber's event-based distributed architecture, responsible for the delivery of over 75,000 messages per second on average. In this talk we will explore how we've use RabbitMQ in production over the last 10 years, including topologies, standards for use, monitoring, day-to-day operational management, and other technologies we use in conjunction to our RabbitMQ usage.
+    RabbitMQ 3.9 introduced streams, a new log-type data structure. What is the state of RabbitMQ Streams after one year of existence? Feedback from users helped stabilize and optimize it. The ecosystem grew with new client libraries in several programming languages. But streams are far from feature-complete: super streams, to scale out publishing and consuming, and single active consumer, to handle consumer concurrency, are the two major features coming up.
+    Join this session to find out about the present and future of RabbitMQ Streams!
   template: two
 - start: "10:30"
   etime: "11:15"
@@ -122,19 +133,6 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
-  title: "RabbitMQ Performance Improvements"
-  speaker: David Ansari
-  role: Software Engineer
-  company: VMware
-  abstract: >-
-    An ideal message broker allows for high throughput and low latency while keeping hardware resource usage as low as possible.
-    This talk presents tooling that helps improve RabbitMQ performance. We provide examples of how we spotted and fixed bottlenecks in the RabbitMQ broker. We show how you can leverage these tools to profile and further optimise the broker given your specific application workload.
-  template: two
-  co-speaker: Michal Kuratczyk
-  co-role: Staff Engineer
-- start: "10:30"
-  etime: "11:15"
-  keynote: false
   title: "Why does RabbitMQ stop and what can be done about it"
   speaker: Johan Rhodin
   role: CCO
@@ -147,11 +145,13 @@
 - start: "10:30"
   etime: "11:15"
   keynote: false
-  title: "What's New in RabbitMQ Streams?"
-  speaker: Arnaud Cogoluègnes
-  role: Software engineer, RabbitMQ team
+  title: "RabbitMQ Performance Improvements"
+  speaker: David Ansari
+  role: Software Engineer
   company: VMware
   abstract: >-
-    RabbitMQ 3.9 introduced streams, a new log-type data structure. What is the state of RabbitMQ Streams after one year of existence? Feedback from users helped stabilize and optimize it. The ecosystem grew with new client libraries in several programming languages. But streams are far from feature-complete: super streams, to scale out publishing and consuming, and single active consumer, to handle consumer concurrency, are the two major features coming up.
-    Join this session to find out about the present and future of RabbitMQ Streams!
+    An ideal message broker allows for high throughput and low latency while keeping hardware resource usage as low as possible.
+    This talk presents tooling that helps improve RabbitMQ performance. We provide examples of how we spotted and fixed bottlenecks in the RabbitMQ broker. We show how you can leverage these tools to profile and further optimise the broker given your specific application workload.
   template: two
+  co-speaker: Michal Kuratczyk
+  co-role: Staff Engineer
