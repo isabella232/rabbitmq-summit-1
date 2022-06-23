@@ -231,8 +231,7 @@ footer-logo: /img/logo-pink-2022.png
                 <div class="speaker__img speaker__img--keynote" style="background-image: url(/img/speakers/{{ speaker.speaker | replace: " ", "-" | downcase }}.jpg);""></div>
                 <div class="speaker__text">
                   <h5 class="text-light text-uppercase mb-1">{{ speaker.speaker }}</h5>
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.role }}</p>
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.role }} @ {{ speaker.company }}</p>
                   <p class="text-primary text-uppercase mb-1">Talk: {{ speaker.title }}</p>
                 </div>
               </div>
@@ -241,11 +240,10 @@ footer-logo: /img/logo-pink-2022.png
                 <div class="speaker__img speaker__img--keynote" style="background-image: url(/img/speakers/{{ speaker.co-speaker | replace: " ", "-" | downcase }}.jpg);""></div>
                 <div class="speaker__text">
                   <h5 class="text-light text-uppercase mb-1">{{ speaker.co-speaker }}</h5>
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.co-role }}</p>
                   {% if speaker.co-company %}
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.co-company }}</p>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.co-role }} @ {{ speaker.co-company }}</p>
                   {% else %}
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.co-role }} @ {{ speaker.company }}</p>
                   {% endif %}
                   <p class="text-primary text-uppercase mb-1">Talk: {{ speaker.title }}</p>
                 </div>
@@ -272,8 +270,7 @@ footer-logo: /img/logo-pink-2022.png
                 <div class="speaker__img" style="background-image: url(/img/speakers/{{ speaker.speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg);"></div>
                 <div class="speaker__text">
                   <h5 class="text-light text-uppercase mb-1">{{ speaker.speaker }}</h5>
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.role }}</p>
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.role }} @ {{ speaker.company }}</p>
                   <p class="text-primary text-uppercase mb-1">Talk: {{ speaker.title }}</p>
                 </div>
               </div>
@@ -282,11 +279,10 @@ footer-logo: /img/logo-pink-2022.png
                 <div class="speaker__img" style="background-image: url(/img/speakers/{{ speaker.co-speaker | replace: "ä", "a" | replace: " ", "-" | downcase }}.jpg);""></div>
                 <div class="speaker__text">
                   <h5 class="text-light text-uppercase mb-1">{{ speaker.co-speaker }}</h5>
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.co-role }}</p>
                   {% if speaker.co-company %}
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.co-company }}</p>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.co-role }} @ {{ speaker.co-company }}</p>
                   {% else %}
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
+                  <p class="text-primary text-uppercase mb-1">{{ speaker.co-role }} @ {{ speaker.company }}</p>
                   {% endif %}
                   <p class="text-primary text-uppercase mb-1">Talk: {{ speaker.title }}</p>
                 </div>
