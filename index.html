@@ -233,7 +233,7 @@ footer-logo: /img/logo-pink-2022.png
                   <h5 class="text-light text-uppercase mb-1">{{ speaker.speaker }}</h5>
                   <p class="text-primary text-uppercase mb-1">{{ speaker.role }}</p>
                   <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
-                  <p class="text-primary text-uppercase mb-1">{{ speaker.title }}</p>
+                  <p class="text-primary text-uppercase mb-1">Talk: {{ speaker.title }}</p>
                 </div>
               </div>
               {% if speaker.co-speaker %}
@@ -247,6 +247,7 @@ footer-logo: /img/logo-pink-2022.png
                   {% else %}
                   <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
                   {% endif %}
+                  <p class="text-primary text-uppercase mb-1">Talk: {{ speaker.title }}</p>
                 </div>
               </div>
               {% endif %}
@@ -273,7 +274,7 @@ footer-logo: /img/logo-pink-2022.png
                   <h5 class="text-light text-uppercase mb-1">{{ speaker.speaker }}</h5>
                   <p class="text-primary text-uppercase mb-1">{{ speaker.role }}</p>
                   <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
-                  <p class="text-light text-uppercase mb-1">{{ speaker.title }}</p>
+                  <p class="text-primary text-uppercase mb-1">Talk: {{ speaker.title }}</p>
                 </div>
               </div>
               {% if speaker.co-speaker %}
@@ -287,6 +288,7 @@ footer-logo: /img/logo-pink-2022.png
                   {% else %}
                   <p class="text-primary text-uppercase mb-1">{{ speaker.company }}</p>
                   {% endif %}
+                  <p class="text-primary text-uppercase mb-1">Talk: {{ speaker.title }}</p>
                 </div>
               </div>
               {% endif %}
